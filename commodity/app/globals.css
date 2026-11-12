@@ -74,6 +74,81 @@
   }
 }
 
+/*
+ * Hoạt ảnh mở đầu chạy bằng CSS (không chờ JS) — nội dung vẫn có trong HTML,
+ * và không bị nháy khi trang hydrate.
+ */
+@keyframes rise {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes emerge {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: blur(14px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotateY(-9deg) rotateX(2deg) translateY(0);
+  }
+  50% {
+    transform: rotateY(9deg) rotateX(-1deg) translateY(-8px);
+  }
+}
+@keyframes scroll-cue {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  51% {
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.anim-rise {
+  animation: rise 1.25s var(--ease-cinema) both;
+}
+.anim-emerge {
+  animation: emerge 2s var(--ease-cinema) both;
+}
+.anim-fade {
+  animation: fade-in 1.6s var(--ease-cinema) both;
+}
+.anim-sway {
+  animation: sway 9s ease-in-out infinite;
+}
+.anim-scroll-cue {
+  animation: scroll-cue 2.4s var(--ease-cinema) infinite;
+}
+
 /* NFR-08: tắt chuyển động lớn khi người dùng yêu cầu */
 @media (prefers-reduced-motion: reduce) {
   *,
