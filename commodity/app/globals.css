@@ -151,6 +151,19 @@
   animation: scroll-cue 2.4s var(--ease-cinema) infinite;
 }
 
+@keyframes pet-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.anim-pet-float {
+  animation: pet-float 3.5s ease-in-out infinite;
+}
+
 /* NFR-08: tắt chuyển động lớn khi người dùng yêu cầu */
 @media (prefers-reduced-motion: reduce) {
   *,

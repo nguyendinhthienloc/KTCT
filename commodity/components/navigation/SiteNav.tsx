@@ -82,14 +82,14 @@ export function SiteNav() {
           })}
         </ol>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-4 sm:gap-5">
           <Link href="/thuat-ngu/" className="hidden text-[0.78rem] opacity-70 transition-opacity hover:opacity-100 sm:block">
             Thuật ngữ
           </Link>
           <Link href="/ai/" className="hidden text-[0.78rem] opacity-70 transition-opacity hover:opacity-100 md:block">
             AI
           </Link>
-          <Link href="/gioi-thieu/" className="hidden text-[0.78rem] opacity-70 transition-opacity hover:opacity-100 xl:block">
+          <Link href="/gioi-thieu/" className="text-[0.78rem] opacity-70 transition-opacity hover:opacity-100">
             Giới thiệu
           </Link>
           <span className="hidden text-[0.7rem] tabular-nums opacity-60 md:block" title="Tiến độ khám phá">

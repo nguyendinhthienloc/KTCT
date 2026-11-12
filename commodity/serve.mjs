@@ -52,24 +52,26 @@ const ROOT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const MAX_QUESTION = 500;
 const MAX_HISTORY = 6;
 const MAX_BODY = 32 * 1024;
-const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+const GEMINI_MODELS = ["gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"];
 const CORS_ORIGINS = new Set(["http://localhost:3000", "http://127.0.0.1:3000"]);
 const CHAPTER_IDS = ["khoi-dau", "hang-hoa", "san-xuat", "gia-tri", "tu-ban", "thi-truong", "nhin-lai"];
 const NO_INFO = "Mình chưa có thông tin đó trong hành trình này.";
 
-// Đọc .env đơn giản (KEY=VALUE), không cần gói ngoài. Biến môi trường được ưu tiên.
+// Đọc .env hoặc .env.local đơn giản (KEY=VALUE), không cần gói ngoài. Biến môi trường được ưu tiên.
 const readApiKey = () => {
   if (process.env.GEMINI_API_KEY) return process.env.GEMINI_API_KEY.trim();
-  try {
-    const text = fs.readFileSync(path.join(ROOT_DIR, ".env"), "utf8");
-    for (const raw of text.split(/\r?\n/)) {
-      const line = raw.trim();
-      if (!line || line.startsWith("#")) continue;
-      const m = line.match(/^(?:export\s+)?GEMINI_API_KEY\s*=\s*(.*)$/);
-      if (m) return m[1].trim().replace(/^(["'])(.*)\1$/, "$2");
+  for (const envFile of [".env.local", ".env"]) {
+    try {
+      const text = fs.readFileSync(path.join(ROOT_DIR, envFile), "utf8");
+      for (const raw of text.split(/\r?\n/)) {
+        const line = raw.trim();
+        if (!line || line.startsWith("#")) continue;
+        const m = line.match(/^(?:export\s+)?GEMINI_API_KEY\s*=\s*(.*)$/);
+        if (m) return m[1].trim().replace(/^(["'])(.*)\1$/, "$2");
+      }
+    } catch {
+      /* không tìm thấy tệp này */
     }
-  } catch {
-    /* không có .env */
   }
   return "";
 };
@@ -189,24 +191,40 @@ const parseModelText = (raw) => {
 
 const askGemini = async (key, k, question, history) => {
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), 15000);
+  const timer = setTimeout(() => ctrl.abort(), 25000);
   try {
-    const r = await fetch(GEMINI_URL, {
-      method: "POST",
-      signal: ctrl.signal,
-      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: SYSTEM_PROMPT + "\n\nCONTEXT:\n" + compactContext(k) }] },
-        contents: [...history, { role: "user", parts: [{ text: question }] }],
-        generationConfig: { temperature: 0.3, maxOutputTokens: 700, thinkingConfig: { thinkingBudget: 0 } },
-      }),
-    });
-    if (!r.ok) throw new Error("Gemini HTTP " + r.status);
-    const data = await r.json();
-    const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("") ?? "";
-    const parsed = parseModelText(text);
-    if (!parsed.answer) throw new Error("Phản hồi rỗng");
-    return parsed;
+    let lastError = null;
+    for (const model of GEMINI_MODELS) {
+      try {
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(key)}`;
+        const r = await fetch(url, {
+          method: "POST",
+          signal: ctrl.signal,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: SYSTEM_PROMPT + "\n\nCONTEXT:\n" + compactContext(k) }] },
+            contents: [...history, { role: "user", parts: [{ text: question }] }],
+            generationConfig: { temperature: 0.3, maxOutputTokens: 1500, thinkingConfig: { thinkingBudget: 0 } },
+          }),
+        });
+        if (!r.ok) {
+          const errText = await r.text();
+          lastError = new Error(`Gemini (${model}) HTTP ${r.status}: ${errText.slice(0, 150)}`);
+          // Nếu model này quá tải (503/429), tự động thử model tiếp theo trong danh sách
+          if (r.status === 503 || r.status === 429) continue;
+          throw lastError;
+        }
+        const data = await r.json();
+        const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text ?? "").join("") ?? "";
+        const parsed = parseModelText(text);
+        if (!parsed.answer) throw new Error("Phản hồi rỗng");
+        return parsed;
+      } catch (err) {
+        lastError = err;
+        if (ctrl.signal.aborted) throw err;
+      }
+    }
+    throw lastError ?? new Error("Không thể kết nối tới các model Gemini");
   } finally {
     clearTimeout(timer);
   }

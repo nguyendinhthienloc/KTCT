@@ -62,16 +62,10 @@ export async function ask(question: string, history: Turn[], signal: AbortSignal
 
 export const REPORTS_KEY = "commodity.reports.v1";
 
-/** Lưu báo sai vào localStorage. Trả về false nếu trình duyệt không cho lưu. */
+/** Lưu báo sai trong bộ nhớ phiên làm việc (in-memory). Không lưu vĩnh viễn vào localStorage. */
+const memoryReports: Array<{ question: string; answer: string; chapters: string[]; source: AnswerSource; at: string }> = [];
+
 export function saveReport(entry: { question: string; answer: string; chapters: string[]; source: AnswerSource }): boolean {
-  try {
-    const raw = window.localStorage.getItem(REPORTS_KEY);
-    const parsed: unknown = raw ? JSON.parse(raw) : [];
-    const list = Array.isArray(parsed) ? parsed : [];
-    list.push({ ...entry, at: new Date().toISOString() });
-    window.localStorage.setItem(REPORTS_KEY, JSON.stringify(list.slice(-100)));
-    return true;
-  } catch {
-    return false;
-  }
+  memoryReports.push({ ...entry, at: new Date().toISOString() });
+  return true;
 }
