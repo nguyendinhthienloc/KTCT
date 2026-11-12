@@ -40,7 +40,7 @@ export function GlossaryList({ entries }: { entries: GlossaryEntry[] }) {
         {shown.map((e) => {
           const ch = CHAPTERS.find((c) => c.id === e.chapterId);
           return (
-            <div key={e.id} id={`kn-${e.id}`} className="grid gap-4 border-t border-ink/15 py-10 lg:grid-cols-12 lg:gap-12">
+            <div key={e.id} id={`kn-${e.id}`} className="scroll-mt-24 grid gap-4 border-t border-ink/15 py-10 lg:grid-cols-12 lg:gap-12">
               <dt className="font-display text-3xl font-700 leading-tight tracking-tight lg:col-span-4 lg:text-4xl">
                 {e.term}
               </dt>

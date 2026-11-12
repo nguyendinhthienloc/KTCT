@@ -128,15 +128,19 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                     <RichText text={current.body} />
                   </p>
                   {linked && (
-                    <p className="mt-6 text-sm text-ink/60">
-                      Khái niệm:{" "}
+                    <div className="mt-8 border-l border-bronze pl-5">
+                      <p className="eyebrow mb-2 text-bronze">Khái niệm</p>
+                      <p className="font-serif text-xl italic leading-snug text-ink">{linked.term}</p>
+                      <p className="mt-2 text-[0.92rem] leading-relaxed text-ink/70">
+                        <RichText text={linked.definition} />
+                      </p>
                       <a
-                        href={`#kn-${linked.id}`}
-                        className="font-serif text-lg italic text-ink underline decoration-bronze decoration-1 underline-offset-4"
+                        href={`/thuat-ngu/#kn-tn-${linked.id}`}
+                        className="mt-3 inline-flex items-center gap-2 text-sm text-ink underline decoration-bronze decoration-1 underline-offset-4 transition-colors hover:text-bronze"
                       >
-                        {linked.term}
+                        Xem trong Thuật ngữ <span aria-hidden>→</span>
                       </a>
-                    </p>
+                    </div>
                   )}
                 </div>
               )}
