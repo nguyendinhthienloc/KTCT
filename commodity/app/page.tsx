@@ -39,6 +39,17 @@ export default function Home() {
       <ChapterShell chapterId="nhin-lai">
         <Ch06Recap content={recap} />
       </ChapterShell>
+      <footer className="bg-ink text-ivory">
+        <div className="container-cinema flex flex-wrap items-center justify-between gap-3 border-t border-ivory/10 py-8 text-xs text-ivory/50">
+          <span>
+            COMMODITY<span className="text-bronze">.</span> — Thực hiện bởi{" "}
+            <span className="text-ivory/80">Nguyễn Đình Thiên Lộc</span> · 24125093 · APCS, HCMUS
+          </span>
+          <a href="/gioi-thieu/" className="underline decoration-bronze underline-offset-4 hover:text-ivory">
+            Giới thiệu dự án
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }

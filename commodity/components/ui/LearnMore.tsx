@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { ScrollTrigger } from "@/lib/motion";
 
 /**
  * Khối "Tìm hiểu thêm" — Tầng 2 (giải thích học thuật) thu gọn mặc định,
@@ -16,6 +17,17 @@ export function LearnMore({
   tone?: "dark" | "light";
 }) {
   const [open, setOpen] = useState(false);
+  // Mở/đóng làm trang cao/thấp đi → tính lại vị trí các cảnh ghim (ScrollTrigger) phía dưới,
+  // nếu không các chương sau sẽ ghim sai chỗ và chữ chồng lên nhau.
+  const first = useRef(true);
+  useEffect(() => {
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    return () => cancelAnimationFrame(id);
+  }, [open]);
   const rule = tone === "dark" ? "border-ivory/15" : "border-ink/15";
   return (
     <div className={`container-cinema border-t ${rule} py-8`}>
