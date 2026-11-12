@@ -58,7 +58,7 @@ export function Hero({ content }: { content: IntroContent }) {
         />
 
         <div className="relative flex flex-1 items-center justify-center pt-14">
-          <div data-hero-shirt className="anim-emerge w-[min(68vw,46vh,440px)]" style={{ animationDelay: "0.35s" }}>
+          <div data-hero-shirt className="anim-emerge w-[min(56vw,32vh,380px)]" style={{ animationDelay: "0.35s" }}>
             <div className="[perspective:1200px]">
               <div className="anim-sway">
                 <TShirt />
@@ -75,7 +75,7 @@ export function Hero({ content }: { content: IntroContent }) {
               </p>
               <h1
                 aria-label={content.headline}
-                className="font-display text-[clamp(2.4rem,7.2vw,7rem)] font-800 leading-[0.92] tracking-[-0.035em]"
+                className="font-display text-[clamp(2.6rem,min(7.4vw,10.5vh),7.4rem)] font-800 leading-[1.06] tracking-[-0.03em]"
               >
                 {lines.map((line, i) => (
                   <span

@@ -80,10 +80,12 @@
  */
 @keyframes rise {
   from {
-    transform: translateY(150%);
+    transform: translateY(70%);
+    opacity: 0;
   }
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes emerge {
