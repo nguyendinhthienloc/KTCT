@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import { SiteNav } from "@/components/navigation/SiteNav";
+import { AskTheShirt } from "@/components/ai/AskTheShirt";
 
 const beVietnam = Be_Vietnam_Pro({
   variable: "--font-be-vietnam",
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </a>
         <SiteNav />
         {children}
+        <AskTheShirt />
       </body>
     </html>
   );
