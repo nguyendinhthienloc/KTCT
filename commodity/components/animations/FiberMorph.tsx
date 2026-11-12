@@ -58,19 +58,27 @@ function buildTargets(W: number, H: number, N: number, ctx: CanvasRenderingConte
 
   /* ── Bông: một quả bông 5 múi + sợi tơ bay lơ thơ ── */
   const cotton: [number, number][] = [];
-  const lobe = S * 0.1;
+  // mỗi múi là một khối xốp tròn, mép mềm; 5 múi xếp quanh tâm như quả bông nở
+  const lobe = S * 0.085;
   const lobes = Array.from({ length: 5 }, (_, k) => {
     const a = -Math.PI / 2 + (k * 2 * Math.PI) / 5;
-    return [cx + Math.cos(a) * lobe * 1.05, cy + Math.sin(a) * lobe * 0.95 - lobe * 0.1];
+    return [cx + Math.cos(a) * lobe * 1.25, cy + Math.sin(a) * lobe * 1.15];
   });
   for (let i = 0; i < N; i++) {
-    if (r() < 0.07) {
+    const roll = r();
+    if (roll < 0.05) {
+      // sợi tơ bay lơ thơ quanh quả bông
       const a = r() * Math.PI * 2;
-      const d = lobe * (1.8 + r() * 1.6);
-      cotton.push([cx + Math.cos(a) * d, cy + Math.sin(a) * d * 0.8]);
+      const d = lobe * (2.4 + r() * 1.4);
+      cotton.push([cx + Math.cos(a) * d, cy + Math.sin(a) * d * 0.85]);
+    } else if (roll < 0.1) {
+      // đài hoa sẫm ở giữa
+      cotton.push([cx + gauss() * lobe * 0.18, cy + gauss() * lobe * 0.18]);
     } else {
       const [lx, ly] = lobes[Math.floor(r() * 5)];
-      cotton.push([lx + gauss() * lobe * 0.5, ly + gauss() * lobe * 0.5]);
+      const a = r() * Math.PI * 2;
+      const d = Math.sqrt(r()) * lobe * (0.95 + gauss() * 0.06);
+      cotton.push([lx + Math.cos(a) * d, ly + Math.sin(a) * d]);
     }
   }
 
