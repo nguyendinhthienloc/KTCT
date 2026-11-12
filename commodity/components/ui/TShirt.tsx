@@ -11,15 +11,30 @@ export const SHIRT_PATH =
 
 const COLLAR_BAND = "M155 38 C170 64 230 64 245 38 L252 43 C233 76 167 76 148 43 Z";
 
+/** Tối đi 12% (nhân từng kênh với 0.88) */
+function darken(hex: string, amount = 0.12) {
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  const ch = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) =>
+    Math.round(c * (1 - amount)).toString(16).padStart(2, "0"),
+  );
+  return `#${ch.join("")}`;
+}
+
 export function TShirt({
   className = "",
   label = "Chiếc áo thun cotton trắng",
   shadow = true,
+  tint,
 }: {
   className?: string;
   label?: string;
   shadow?: boolean;
+  /** màu vải (hex); bỏ trống = trắng ngà mặc định */
+  tint?: string;
 }) {
+  const deep = tint ? darken(tint) : undefined;
   const uid = useId().replace(/:/g, "");
   const fabric = `fabric-${uid}`;
   const light = `light-${uid}`;
@@ -35,8 +50,8 @@ export function TShirt({
     >
       <defs>
         <linearGradient id={fabric} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" style={{ stopColor: "var(--color-ivory)" }} />
-          <stop offset="100%" style={{ stopColor: "var(--color-ivory-deep)" }} />
+          <stop offset="0%" style={{ stopColor: tint ?? "var(--color-ivory)" }} />
+          <stop offset="100%" style={{ stopColor: deep ?? "var(--color-ivory-deep)" }} />
         </linearGradient>
         <radialGradient id={light} cx="0.38" cy="0.22" r="0.85">
           <stop offset="0%" stopColor="#ffffff" stopOpacity="0.55" />
@@ -70,7 +85,7 @@ export function TShirt({
       </g>
 
       {/* cổ áo bo */}
-      <path d={COLLAR_BAND} style={{ fill: "var(--color-ivory-deep)" }} stroke="#000" strokeOpacity="0.08" />
+      <path d={COLLAR_BAND} style={{ fill: deep ?? "var(--color-ivory-deep)" }} stroke="#000" strokeOpacity="0.08" />
 
       {/* đường may */}
       <g fill="none" stroke="#000" strokeOpacity="0.16" strokeWidth="0.9" strokeDasharray="3 3">

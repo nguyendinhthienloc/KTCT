@@ -1,98 +1,207 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import type { LifecycleNode, RecapContent } from "@/content/schema";
+import { useEffect, useRef, useState } from "react";
+import type { RecapContent } from "@/content/schema";
 import { CHAPTERS } from "@/content/chapters";
 import { gsap, ScrollTrigger } from "@/lib/motion";
 import { QuizBlock } from "@/components/ui/QuizBlock";
+import { RichText } from "@/components/ui/RichText";
 
-const VB_W = 1000;
-const VB_H = 120;
+/* Vòng đời: các mắt xích nằm trên một vòng tròn — thể hiện tái sản xuất (tích lũy quay về sản xuất). */
+const VB = 600;
+const C = VB / 2;
+const R = 236;
+const round = (v: number) => Math.round(v * 100) / 100;
 
-function NodeLink({ node, i }: { node: LifecycleNode; i: number }) {
-  const num = CHAPTERS.find((c) => c.id === node.chapterId)?.number ?? "";
+function LifecycleRing({ nodes }: { nodes: RecapContent["lifecycle"] }) {
+  const [active, setActive] = useState(0);
+  const n = nodes.length;
+  const pts = nodes.map((_, i) => {
+    const a = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+    // làm tròn để HTML server và client giống hệt nhau (tránh lệch hydration)
+    return { x: round(C + Math.cos(a) * R), y: round(C + Math.sin(a) * R), a };
+  });
+  const node = nodes[active];
+  const chapter = CHAPTERS.find((c) => c.id === node.chapterId);
+
+  // cung sáng từ mắt xích đầu tới mắt xích đang chọn
+  const arcLen = round((active / n) * 2 * Math.PI * R);
+  const circ = round(2 * Math.PI * R);
+
   return (
-    <a
-      href={`#${node.chapterId}`}
-      data-node
-      className="group block border-t border-ivory/15 pt-4 transition-colors hover:border-bronze"
-    >
-      <span className="eyebrow tabular-nums text-bronze">
-        {String(i + 1).padStart(2, "0")} · Chương {num}
-      </span>
-      <span className="mt-2 block font-display text-xl font-700 leading-tight">{node.label}</span>
-      <span className="mt-2 block text-sm leading-relaxed text-ivory/65">{node.summary}</span>
-      <span className="mt-3 block text-xs text-bronze">
-        Quay lại chương{" "}
-        <span aria-hidden className="inline-block transition-transform group-hover:-translate-x-1">
-          ←
-        </span>
-      </span>
-    </a>
+    <div data-ring className="grid items-center gap-12 lg:grid-cols-12">
+      <div className="relative mx-auto aspect-square w-full max-w-[600px] lg:col-span-7">
+        <svg viewBox={`0 0 ${VB} ${VB}`} className="absolute inset-0 h-full w-full" aria-hidden>
+          {/* vòng nền */}
+          <circle cx={C} cy={C} r={R} fill="none" stroke="currentColor" strokeOpacity="0.14" strokeWidth="1" />
+          {/* vòng tự vẽ khi cuộn tới */}
+          <circle
+            data-ring-draw
+            cx={C}
+            cy={C}
+            r={R}
+            fill="none"
+            stroke="var(--color-bronze)"
+            strokeOpacity="0.45"
+            strokeWidth="1"
+            strokeDasharray={circ}
+            strokeDashoffset={0}
+            transform={`rotate(-90 ${C} ${C})`}
+          />
+          {/* cung tiến trình tới mắt xích đang chọn */}
+          <circle
+            cx={C}
+            cy={C}
+            r={R}
+            fill="none"
+            stroke="var(--color-bronze)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeDasharray={`${arcLen} ${circ}`}
+            transform={`rotate(-90 ${C} ${C})`}
+            style={{ transition: "stroke-dasharray 0.8s cubic-bezier(0.22,1,0.36,1)" }}
+          />
+          {/* mũi tên chiều vận động giữa các mắt xích */}
+          {pts.map((p, i) => {
+            const a = p.a + Math.PI / n;
+            const x = round(C + Math.cos(a) * R);
+            const y = round(C + Math.sin(a) * R);
+            const deg = round((a * 180) / Math.PI + 90);
+            return (
+              <path
+                key={i}
+                d="M-5 -4 L0 0 L-5 4"
+                transform={`translate(${x} ${y}) rotate(${deg})`}
+                fill="none"
+                stroke="var(--color-bronze)"
+                strokeOpacity="0.7"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+              />
+            );
+          })}
+        </svg>
+
+        {/* Mắt xích */}
+        {nodes.map((nd, i) => {
+          const on = i === active;
+          const p = pts[i];
+          return (
+            <button
+              key={nd.id}
+              type="button"
+              onClick={() => setActive(i)}
+              aria-pressed={on}
+              aria-label={`Mắt xích ${i + 1}: ${nd.label}`}
+              data-node
+              className="group absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center"
+              style={{ left: `${(p.x / VB) * 100}%`, top: `${(p.y / VB) * 100}%` }}
+            >
+              <span
+                className={`flex size-10 items-center justify-center rounded-full border text-xs tabular-nums transition-all duration-500 ease-cinema sm:size-12 sm:text-sm ${
+                  on
+                    ? "scale-110 border-bronze bg-bronze text-ink"
+                    : "border-ivory/30 bg-ink text-ivory/80 group-hover:border-bronze"
+                }`}
+              >
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span
+                className={`pointer-events-none absolute top-full mt-2 hidden w-28 text-center text-[0.72rem] leading-tight transition-opacity sm:block ${
+                  on ? "text-ivory" : "text-ivory/50"
+                }`}
+              >
+                {nd.label}
+              </span>
+            </button>
+          );
+        })}
+
+        {/* Tâm vòng: mắt xích đang chọn (desktop) */}
+        <div className="pointer-events-none absolute inset-[24%] hidden flex-col items-center justify-center text-center md:flex">
+          <p className="eyebrow text-bronze">
+            {String(active + 1).padStart(2, "0")} / {String(n).padStart(2, "0")}
+          </p>
+          <p key={node.id} className="anim-fade mt-3 font-display text-[clamp(1.4rem,2.4vw,2.2rem)] font-700 leading-tight">
+            {node.label}
+          </p>
+        </div>
+      </div>
+
+      {/* Chi tiết mắt xích */}
+      <div className="lg:col-span-5" aria-live="polite">
+        <p className="eyebrow mb-4 text-bronze">
+          Mắt xích {String(active + 1).padStart(2, "0")}
+          {chapter ? ` · Chương ${chapter.number}` : ""}
+        </p>
+        <h4 key={node.id} className="anim-fade font-display text-[clamp(2rem,3.4vw,3rem)] font-700 leading-[1] tracking-[-0.02em]">
+          {node.label}
+        </h4>
+        <p className="mt-5 max-w-md text-base leading-relaxed text-ivory/70">
+          <RichText text={node.summary} />
+        </p>
+        <div className="mt-8 flex flex-wrap items-center gap-4">
+          <a
+            href={`#${node.chapterId}`}
+            className="inline-flex items-center gap-3 border border-bronze px-5 py-2.5 text-sm text-bronze-soft transition-colors hover:bg-bronze hover:text-ink"
+          >
+            <span aria-hidden>←</span> Quay lại chương {chapter?.title}
+          </a>
+          <button
+            type="button"
+            onClick={() => setActive((active + 1) % n)}
+            className="text-sm text-ivory/60 underline decoration-bronze underline-offset-4 transition-colors hover:text-ivory"
+          >
+            Mắt xích tiếp theo →
+          </button>
+        </div>
+        <p className="mt-10 max-w-md font-serif text-lg italic leading-snug text-ivory/55">
+          Vòng khép lại: giá trị thặng dư được tích lũy, quay trở lại mở rộng sản xuất — và hành trình lại bắt đầu.
+        </p>
+      </div>
+    </div>
   );
 }
 
 export function Ch06Recap({ content }: { content: RecapContent }) {
   const root = useRef<HTMLElement>(null);
-  const nodes = content.lifecycle;
-  const n = nodes.length;
-
-  // Điểm dọc theo đường chảy ngang (viewBox 1000×120), so le lên xuống.
-  const pts = nodes.map((_, i) => ({ x: ((i + 0.5) / n) * VB_W, y: i % 2 === 0 ? 38 : 82 }));
-  let d = `M0 60 C ${pts[0].x / 2} 60, ${pts[0].x / 2} ${pts[0].y}, ${pts[0].x} ${pts[0].y}`;
-  for (let i = 1; i < n; i++) {
-    const q = pts[i - 1];
-    const p = pts[i];
-    const mx = (q.x + p.x) / 2;
-    d += ` C ${mx} ${q.y}, ${mx} ${p.y}, ${p.x} ${p.y}`;
-  }
-  const last = pts[n - 1];
-  d += ` C ${(last.x + VB_W) / 2} ${last.y}, ${(last.x + VB_W) / 2} 60, ${VB_W} 60`;
 
   useEffect(() => {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
-      mm.add(
-        {
-          desktop: "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
-          mobile: "(max-width: 767px) and (prefers-reduced-motion: no-preference)",
-        },
-        (c) => {
-          const desktop = !!c.conditions?.desktop;
-          const sel = desktop ? "[data-path-h]" : "[data-path-v]";
-          const wrap = desktop ? "[data-life-h]" : "[data-life-v]";
-          gsap.fromTo(
-            sel,
-            { strokeDashoffset: 1 },
-            {
-              strokeDashoffset: 0,
-              ease: "none",
-              scrollTrigger: { trigger: wrap, start: "top 80%", end: desktop ? "bottom 45%" : "bottom 60%", scrub: true },
-            },
-          );
-          gsap.from(`${wrap} [data-node]`, {
-            opacity: 0.2,
-            y: 16,
-            stagger: 0.15,
-            duration: 0.8,
-            ease: "power2.out",
-            scrollTrigger: { trigger: wrap, start: "top 75%", once: true },
-          });
-          gsap.from("[data-close-w]", {
-            opacity: 0.1,
-            y: 24,
+      mm.add("(prefers-reduced-motion: no-preference)", () => {
+        const circ = 2 * Math.PI * R;
+        gsap.fromTo(
+          "[data-ring-draw]",
+          { strokeDashoffset: circ },
+          {
+            strokeDashoffset: 0,
             ease: "none",
-            stagger: 0.12,
-            scrollTrigger: { trigger: "[data-closing]", start: "top 70%", end: "center 40%", scrub: true },
-          });
-          gsap.from("[data-rule]", {
-            scaleX: 0,
-            transformOrigin: "left center",
-            ease: "none",
-            scrollTrigger: { trigger: "[data-closing]", start: "center 55%", end: "center 35%", scrub: true },
-          });
-        },
-      );
+            scrollTrigger: { trigger: "[data-ring]", start: "top 85%", end: "center 55%", scrub: true },
+          },
+        );
+        gsap.from("[data-node]", {
+          scale: 0.4,
+          opacity: 0,
+          stagger: 0.08,
+          duration: 0.7,
+          ease: "back.out(1.6)",
+          scrollTrigger: { trigger: "[data-ring]", start: "top 70%", once: true },
+        });
+        gsap.from("[data-close-w]", {
+          opacity: 0.1,
+          y: 24,
+          ease: "none",
+          stagger: 0.12,
+          scrollTrigger: { trigger: "[data-closing]", start: "top 70%", end: "center 40%", scrub: true },
+        });
+        gsap.from("[data-rule]", {
+          scaleX: 0,
+          transformOrigin: "left center",
+          ease: "none",
+          scrollTrigger: { trigger: "[data-closing]", start: "center 55%", end: "center 35%", scrub: true },
+        });
+      });
       ScrollTrigger.refresh();
     }, root);
     return () => ctx.revert();
@@ -102,76 +211,9 @@ export function Ch06Recap({ content }: { content: RecapContent }) {
     <section ref={root} aria-label="Tổng kết" className="container-cinema">
       {/* Vòng đời */}
       <div className="pb-24 lg:pb-32">
-        <p className="eyebrow mb-10 text-bronze">Vòng đời của một chiếc áo</p>
-
-        {/* Ngang — desktop */}
-        <div data-life-h className="hidden md:block">
-          <div className="relative h-[120px]">
-            <svg
-              viewBox={`0 0 ${VB_W} ${VB_H}`}
-              preserveAspectRatio="none"
-              role="img"
-              aria-label="Đường vòng đời nối các chương từ bông đến thị trường"
-              className="absolute inset-0 h-full w-full overflow-visible text-bronze"
-            >
-              <path
-                d={d}
-                pathLength={1}
-                data-path-h
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeDasharray="1"
-                vectorEffect="non-scaling-stroke"
-              />
-            </svg>
-            {pts.map((p, i) => (
-              <span
-                key={i}
-                aria-hidden
-                className="absolute h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-bronze"
-                style={{ left: `${(p.x / VB_W) * 100}%`, top: `${(p.y / VB_H) * 100}%` }}
-              />
-            ))}
-          </div>
-          <ol className="mt-6 grid gap-6" style={{ gridTemplateColumns: `repeat(${n}, minmax(0, 1fr))` }}>
-            {nodes.map((node, i) => (
-              <li key={node.id}>
-                <NodeLink node={node} i={i} />
-              </li>
-            ))}
-          </ol>
-        </div>
-
-        {/* Dọc — mobile */}
-        <div data-life-v className="relative md:hidden">
-          <svg
-            viewBox="0 0 24 1000"
-            preserveAspectRatio="none"
-            role="img"
-            aria-label="Đường vòng đời nối các chương từ bông đến thị trường"
-            className="absolute bottom-0 left-0 top-0 h-full w-6 text-bronze"
-          >
-            <path
-              d="M12 0 L12 1000"
-              pathLength={1}
-              data-path-v
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeDasharray="1"
-              vectorEffect="non-scaling-stroke"
-            />
-          </svg>
-          <ol className="flex flex-col gap-8 pl-10">
-            {nodes.map((node, i) => (
-              <li key={node.id} className="relative">
-                <span aria-hidden className="absolute -left-[34px] top-[1.15rem] h-3 w-3 rounded-full bg-bronze" />
-                <NodeLink node={node} i={i} />
-              </li>
-            ))}
-          </ol>
-        </div>
+        <p className="eyebrow mb-4 text-bronze">Vòng đời của một chiếc áo</p>
+        <p className="mb-14 max-w-xl text-sm text-ivory/55">Chạm vào từng mắt xích để xem lại, hoặc quay về chương tương ứng.</p>
+        <LifecycleRing nodes={content.lifecycle} />
       </div>
 
       {/* Bài kiểm tra tổng hợp */}
@@ -197,7 +239,7 @@ export function Ch06Recap({ content }: { content: RecapContent }) {
         <h3 className="sr-only">{content.closing}</h3>
         <p
           aria-hidden
-          className="font-display text-[clamp(2.4rem,8.5vw,8rem)] font-800 leading-[0.98] tracking-[-0.03em]"
+          className="font-display text-[clamp(2.4rem,8.5vw,8rem)] font-800 leading-[1.06] tracking-[-0.03em]"
         >
           {content.closing
             .split(/\s+/)

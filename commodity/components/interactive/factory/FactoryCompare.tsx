@@ -5,6 +5,7 @@ import type { Factory, ShareScenario } from "@/content/schema";
 import { computeSnlt, fmt } from "@/lib/economics";
 import { gsap, prefersReducedMotion } from "@/lib/motion";
 import { ChipGroup } from "@/components/ui/ChipGroup";
+import { FactoryArt } from "./FactoryArt";
 
 const SCALE_MAX = 12;
 const TICKS = [0, 3, 6, 9, 12];
@@ -98,11 +99,13 @@ function FactoryCompareInner({
           const r = res.rows.find((x) => x.id === f.id)!;
           const ir = initial.rows.find((x) => x.id === f.id)!;
           return (
-            <div key={f.id} className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 py-4 md:grid-cols-[8rem_1fr]">
-              <div>
+            <div key={f.id} className="py-4">
+              <div className="mb-2 flex items-end gap-4">
+                <FactoryArt id={f.id as "A" | "B" | "C"} className="w-24 shrink-0 text-ink md:w-32" />
                 <p className="font-display text-sm font-600 md:text-base">{f.name}</p>
-                <p className={`text-xs tabular-nums ${muted}`}>{fmt(f.hoursPerShirt)} giờ/áo</p>
               </div>
+              <div className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 md:grid-cols-[8rem_1fr]">
+              <p className={`text-xs tabular-nums ${muted}`}>{fmt(f.hoursPerShirt)} giờ/áo</p>
               <div>
                 <div className={`relative h-3.5 border-b ${rule}`}>
                   <div className={`h-full ${barBg}`} style={{ width: `${pct(f.hoursPerShirt)}%` }} />
@@ -121,6 +124,7 @@ function FactoryCompareInner({
                     Thị phần {fmt(r.share * 100, 0)}%
                   </span>
                 </div>
+              </div>
               </div>
             </div>
           );

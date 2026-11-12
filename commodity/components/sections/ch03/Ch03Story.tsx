@@ -4,6 +4,8 @@ import { useEffect, useMemo, useRef } from "react";
 import type { Factory, ShareScenario, StoryBeat } from "@/content/schema";
 import { computeSnlt, fmt } from "@/lib/economics";
 import { gsap } from "@/lib/motion";
+import { FactoryArt } from "@/components/interactive/factory/FactoryArt";
+import { RichText } from "@/components/ui/RichText";
 
 const SCALE_MAX = 12;
 const pct = (h: number) => Math.max(0, Math.min(100, (h / SCALE_MAX) * 100));
@@ -90,7 +92,9 @@ export function Ch03Story({
               <h3 className="font-display text-[clamp(2rem,4.4vw,3.6rem)] font-700 leading-[1.02] tracking-[-0.025em]">
                 {s.heading}
               </h3>
-              <p className="mt-5 max-w-md text-[1rem] leading-relaxed text-ink/70">{s.body}</p>
+              <p className="mt-5 max-w-md text-[1rem] leading-relaxed text-ink/70">
+                <RichText text={s.body} />
+              </p>
             </div>
           ))}
         </div>
@@ -101,13 +105,16 @@ export function Ch03Story({
           aria-label={`Thời gian lao động cá biệt của các xưởng và thời gian lao động xã hội cần thiết khoảng ${fmt(res.snlt)} giờ mỗi áo`}
         >
           {factories.map((f) => (
-            <div key={f.id} data-row className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 py-5 md:grid-cols-[7rem_1fr]">
-              <div>
+            <div key={f.id} data-row className="py-4">
+              <div className="mb-2 flex items-end gap-4">
+                <FactoryArt id={f.id as "A" | "B" | "C"} className="w-24 shrink-0 text-ink md:w-28" />
                 <p className="font-display text-sm font-600 md:text-base">{f.name}</p>
-                <p className="text-xs tabular-nums text-ink/60">{fmt(f.hoursPerShirt)} giờ/áo</p>
               </div>
-              <div className="border-b border-ink/15">
-                <div data-bar className="h-5 bg-ink md:h-7" style={{ width: `${pct(f.hoursPerShirt)}%` }} />
+              <div className="grid grid-cols-[4.5rem_1fr] items-center gap-x-4 md:grid-cols-[7rem_1fr]">
+                <p className="text-xs tabular-nums text-ink/60">{fmt(f.hoursPerShirt)} giờ/áo</p>
+                <div className="border-b border-ink/15">
+                  <div data-bar className="h-5 bg-ink md:h-7" style={{ width: `${pct(f.hoursPerShirt)}%` }} />
+                </div>
               </div>
             </div>
           ))}

@@ -7,16 +7,27 @@ import { ChapterShell } from "@/components/ui/ChapterShell";
 import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { RichText } from "@/components/ui/RichText";
+import { ChipGroup } from "@/components/ui/ChipGroup";
 import { TShirt } from "@/components/ui/TShirt";
 import { SourceNote } from "@/components/ui/SourceNote";
+
+const COLORS = [
+  { id: "ngà", label: "Trắng ngà", tint: undefined },
+  { id: "than", label: "Đen than", tint: "#1E1D1B" },
+  { id: "đồng", label: "Vàng đồng", tint: "#B59A73" },
+  { id: "chàm", label: "Xanh chàm", tint: "#2F3F5C" },
+] as const;
+type ColorId = (typeof COLORS)[number]["id"];
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
 export function Ch01Commodity({ content }: { content: CommodityContent }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  const [color, setColor] = useState<ColorId>("ngà");
   const { visual, academic, hotspots, check } = content;
   const current = hotspots[Math.min(active, hotspots.length - 1)];
+  const dark = color === "than" || color === "chàm";
   const linked = current ? academic.concepts.find((c) => c.id === current.conceptId) : undefined;
 
   useEffect(() => {
@@ -82,7 +93,24 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                   data-shirt
                   className="absolute inset-0 [filter:drop-shadow(0_0_0.6px_rgba(16,16,16,0.55))_drop-shadow(0_0_0.6px_rgba(16,16,16,0.35))]"
                 >
-                  <TShirt className="h-full w-full" label="Chiếc áo thun cotton trắng nhìn từ phía trước, với các điểm đánh số để khám phá" />
+                  {COLORS.map((c) => (
+                    <div
+                      key={c.id}
+                      aria-hidden={c.id !== color}
+                      className="absolute inset-0 transition-opacity duration-500 ease-cinema motion-reduce:transition-none"
+                      style={{ opacity: c.id === color ? 1 : 0 }}
+                    >
+                      <TShirt
+                        className="h-full w-full"
+                        tint={c.tint}
+                                                label={
+                          c.id === "ngà"
+                            ? "Chiếc áo thun cotton nhìn từ phía trước, với các điểm đánh số để khám phá"
+                            : `Chiếc áo thun cotton màu ${c.label.toLowerCase()}`
+                        }
+                      />
+                    </div>
+                  ))}
                 </div>
                 {hotspots.map((h, i) => {
                   const on = i === active;
@@ -104,7 +132,7 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                       />
                       <span
                         className={`relative flex size-7 items-center justify-center rounded-full text-[0.7rem] tabular-nums transition-colors duration-500 ease-cinema sm:size-8 sm:text-xs ${
-                          on ? "bg-ink text-ivory" : "border border-ink bg-ivory text-ink"
+                          on ? `bg-ink text-ivory${dark ? " ring-2 ring-ivory" : ""}` : "border border-ink bg-ivory text-ink"
                         }`}
                       >
                         {i + 1}
@@ -112,6 +140,18 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                     </button>
                   );
                 })}
+              </div>
+              <div className="mx-auto mt-6 flex max-w-[620px] flex-col items-center gap-3 text-center">
+                <ChipGroup
+                  label="Màu áo"
+                  tone="light"
+                  options={COLORS.map((c) => ({ id: c.id, label: c.label }))}
+                  value={color}
+                  onChange={setColor}
+                />
+                <p className="text-[0.85rem] leading-snug text-ink/60">
+                  Đổi màu không đổi công dụng của chiếc áo — giá trị sử dụng nằm ở thuộc tính có ích của nó.
+                </p>
               </div>
             </div>
 
