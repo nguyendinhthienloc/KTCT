@@ -80,7 +80,7 @@
  */
 @keyframes rise {
   from {
-    transform: translateY(110%);
+    transform: translateY(150%);
   }
   to {
     transform: translateY(0);

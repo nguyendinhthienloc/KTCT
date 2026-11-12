@@ -39,9 +39,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="vi"
+      suppressHydrationWarning
       className={`${beVietnam.variable} ${inter.variable} ${cormorant.variable} antialiased`}
     >
-      <body className="min-h-dvh bg-ink text-ivory">
+      <body className="min-h-dvh bg-ink text-ivory" suppressHydrationWarning>
         <a
           href="#noi-dung"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-ivory focus:px-4 focus:py-2 focus:text-ink"

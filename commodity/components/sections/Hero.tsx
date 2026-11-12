@@ -24,7 +24,8 @@ export function Hero({ content }: { content: IntroContent }) {
         });
         tl.to("[data-hero-shirt]", { scale: 0.78, yPercent: -8, opacity: 0.15, ease: "none" }, 0)
           .to("[data-hero-title]", { yPercent: -35, opacity: 0, ease: "none" }, 0)
-          .to("[data-hero-light]", { opacity: 0, ease: "none" }, 0);
+          .to("[data-hero-light]", { opacity: 0, ease: "none" }, 0)
+          .to("[data-hero-cue]", { opacity: 0, duration: 0.15, ease: "none" }, 0);
 
         gsap.from("[data-intro-line]", {
           yPercent: 40,
@@ -77,7 +78,11 @@ export function Hero({ content }: { content: IntroContent }) {
                 className="font-display text-[clamp(2.4rem,7.2vw,7rem)] font-800 leading-[0.92] tracking-[-0.035em]"
               >
                 {lines.map((line, i) => (
-                  <span key={i} aria-hidden className="block overflow-hidden pb-[0.06em]">
+                  <span
+                    key={i}
+                    aria-hidden
+                    className="-mb-[0.14em] -mt-[0.2em] block overflow-hidden pb-[0.14em] pt-[0.2em]"
+                  >
                     <span className="anim-rise block" style={{ animationDelay: `${0.55 + i * 0.12}s` }}>
                       {line}
                     </span>
@@ -99,7 +104,11 @@ export function Hero({ content }: { content: IntroContent }) {
           </div>
         </div>
 
-        <div aria-hidden className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex">
+        <div
+          data-hero-cue
+          aria-hidden
+          className="absolute right-[clamp(1.25rem,4vw,4rem)] top-1/2 hidden -translate-y-1/2 flex-col items-center gap-3 md:flex"
+        >
           <span className="text-[0.62rem] tracking-[0.3em] text-ivory/40 uppercase">Cuộn</span>
           <span className="anim-scroll-cue block h-10 w-px bg-ivory/40" />
         </div>
