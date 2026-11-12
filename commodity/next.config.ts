@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
+// Bản build tĩnh chạy offline (REQUIREMENTS C-02, NFR-10).
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
   turbopack: {
     rules: {
       "*.css": {
