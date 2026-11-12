@@ -129,4 +129,8 @@ KTCT/
 
 ---
 
+## Thực hiện
+
+**Nguyễn Đình Thiên Lộc** — MSSV 24125093 — APCS, Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS).
+
 *Môn Kinh tế chính trị Mác – Lênin. Mọi số liệu trong các mô phỏng là đơn vị minh họa.*

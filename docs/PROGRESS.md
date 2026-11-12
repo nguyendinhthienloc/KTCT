@@ -38,6 +38,16 @@ Ký hiệu: ⏳ chưa làm · 🔨 đang làm · ✅ xong · ⛔ bị chặn · 
 
 ## Nhật ký
 
+### 2026-11-13 — kết thúc session build
+- Đối chiếu nội dung với slide bài giảng (~90 mục có trích dẫn); bỏ "cường độ lao động" khỏi nhân tố lượng giá trị.
+- Thêm "Hỏi chiếc áo" (Gemini, fallback ngoại tuyến 25 Q&A), trang /ai, Tầng 2 thu gọn, kịch bản thuyết trình.
+- Engine hạt mới cho hero (bông có đài–cuống–lá, sợi xe đôi, ghép Hilbert); tiêu đề đủ dấu.
+- Chương 06 vòng đời dạng vòng tròn; hình nhà máy Ch.03; đổi màu áo Ch.01; điểm chạm hiện tóm tắt + link Thuật ngữ; nút "Làm lại" cho quiz.
+- Sửa: trùng id làm nav nhảy sai, ChapterShell lồng nhau, nút chat che nội dung, lỗi hydration.
+- Deploy: https://commodity-ktct.vercel.app (`npm run deploy`).
+- Credit: Nguyễn Đình Thiên Lộc — 24125093 — APCS, HCMUS.
+- **Còn lại:** thêm `GEMINI_API_KEY` và thử chat thật; tập dượt thuyết trình; (tùy chọn) luồng cà phê.
+
 ### 2026-11-12
 - Phỏng vấn yêu cầu, chốt 18 quyết định (D01–D18). Viết REQUIREMENTS / PLAN / PROGRESS. Khởi tạo git.
 - Nền tảng + schema + công thức kinh tế dùng chung.

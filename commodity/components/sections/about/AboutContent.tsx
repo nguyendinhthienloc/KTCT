@@ -20,7 +20,6 @@ function Section({ label, children }: SectionProps) {
   );
 }
 
-const TEAM_PLACEHOLDERS = [1, 2, 3, 4];
 
 export function AboutContent() {
   return (
@@ -48,15 +47,9 @@ export function AboutContent() {
           </p>
         </Section>
 
-        <Section label="Thành viên nhóm">
-          <ul className="font-display space-y-2 text-sm text-ink/70">
-            {TEAM_PLACEHOLDERS.map((n) => (
-              <li key={n} className="border-b border-ink/10 pb-2">
-                Họ và tên — MSSV — Vai trò
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-ink/50">(Nhóm điền thông tin trước khi nộp)</p>
+        <Section label="Thực hiện">
+          <p className="font-display text-2xl font-700 text-ink">Nguyễn Đình Thiên Lộc</p>
+          <p className="text-sm text-ink/70">MSSV 24125093 · Chương trình Cử nhân Tài năng (APCS) · Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS)</p>
         </Section>
 
         <Section label="Môn học">
