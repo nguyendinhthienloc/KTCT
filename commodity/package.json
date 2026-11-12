@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "serve": "node serve.mjs",
+    "deploy": "npm run build && cd out && npx vercel link --yes --project commodity-ktct && npx vercel deploy --prod --yes",
     "knowledge": "node scripts/build-knowledge.mjs",
     "content:export": "node scripts/export-content.mjs"
   },

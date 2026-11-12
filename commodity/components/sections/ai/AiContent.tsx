@@ -29,7 +29,7 @@ const STAGES: Stage[] = [
   { who: "Phỏng vấn yêu cầu", what: "18 quyết định", sub: "D01 – D18" },
   { who: "REQUIREMENTS.md", what: "Đặc tả", sub: "FR, NFR, tiêu chí" },
   { who: "Lead · Claude Opus", what: "Nền tảng, Hero", sub: "Schema, công thức" },
-  { who: "5 sub-agent song song", what: "4 Sonnet · 1 Haiku", sub: "Nội dung, chương, offline" },
+  { who: "5 sub-agents", what: "4 Sonnet · 1 Haiku", sub: "Nội dung, chương, offline" },
   { who: "Verifier · Sonnet", what: "Đối chiếu slide", sub: "Gắn cờ cần đối chiếu" },
   { who: "Nhóm duyệt", what: "Con người quyết định", sub: "Chịu trách nhiệm" },
 ];

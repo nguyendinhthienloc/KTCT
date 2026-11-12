@@ -79,14 +79,10 @@ Khi phát triển (`npm run dev`), chạy thêm `serve.mjs` ở cổng 3001 và 
 ### 6. Cập nhật bản online (Vercel)
 
 ```bash
-npm run build
+npm run deploy
 ```
 
-```bash
-npx vercel deploy out --prod --yes
-```
-
-Lần đầu cần chạy `npx vercel login`. Trên Vercel, chat chạy chế độ ngoại tuyến.
+Lệnh này build rồi đưa thư mục `out/` lên project Vercel `commodity-ktct`. Lần đầu cần chạy `npx vercel login`. Trên Vercel, chat chạy chế độ ngoại tuyến.
 
 ### 7. Nén để nộp bài
 Chạy trong thư mục `commodity/` (PowerShell):
