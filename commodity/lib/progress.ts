@@ -84,6 +84,16 @@ export function recordQuizScore(quizId: string, correct: number, total: number) 
   emit({ ...state, quiz: { ...state.quiz, [quizId]: { correct, total } } });
 }
 
+/** Xóa câu trả lời của một bộ câu hỏi để làm lại */
+export function clearAnswers(quizId: string, questionIds: string[]) {
+  load();
+  const answers = { ...state.answers };
+  questionIds.forEach((id) => delete answers[id]);
+  const quiz = { ...state.quiz };
+  delete quiz[quizId];
+  emit({ ...state, answers, quiz });
+}
+
 export function resetProgress() {
   emit({ visited: [], quiz: {}, answers: {} });
 }

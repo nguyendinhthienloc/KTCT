@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo } from "react";
 import type { QuizQuestion } from "@/content/schema";
-import { recordAnswer, recordQuizScore, useProgress } from "@/lib/progress";
+import { clearAnswers, recordAnswer, recordQuizScore, useProgress } from "@/lib/progress";
 import { RichText } from "./RichText";
 import { SourceNote } from "./SourceNote";
 
@@ -39,10 +39,19 @@ export function QuizBlock({
     <div className={`border-t ${border} pt-10`}>
       <div className="mb-8 flex items-baseline justify-between gap-4">
         <h3 className="eyebrow text-bronze">{title}</h3>
-        <span className={`text-xs tabular-nums ${muted}`}>
+        <span className={`flex items-baseline gap-4 text-xs tabular-nums ${muted}`}>
           {answered.length === questions.length && questions.length > 0
             ? `Đúng ${correct}/${questions.length}`
             : `${answered.length}/${questions.length} câu`}
+          {answered.length > 0 && (
+            <button
+              type="button"
+              onClick={() => clearAnswers(quizId, questions.map((q) => q.id))}
+              className="underline decoration-bronze underline-offset-4 transition-colors hover:text-bronze"
+            >
+              Làm lại
+            </button>
+          )}
         </span>
       </div>
       <ol className="flex flex-col gap-12">
