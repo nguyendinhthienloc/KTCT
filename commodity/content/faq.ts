@@ -85,8 +85,8 @@ export const faq: FaqEntry[] = [
   {
     id: "yeu-to-luong-gia-tri",
     q: "Điều gì làm lượng giá trị thay đổi?",
-    keywords: ["năng suất", "cường độ", "phức tạp", "giản đơn", "nhân tố", "ảnh hưởng"],
-    a: "Giáo trình nêu ba nhân tố: năng suất lao động, cường độ lao động và tính chất phức tạp của lao động. Lao động giản đơn thì ai cũng làm được không cần đào tạo; lao động phức tạp đòi hỏi được huấn luyện thành lao động lành nghề.",
+    keywords: ["năng suất", "phức tạp", "giản đơn", "nhân tố", "ảnh hưởng"],
+    a: "Bài giảng nêu hai nhân tố: **năng suất lao động** (tăng thì giá trị mỗi chiếc áo như tôi giảm) và **mức độ phức tạp của lao động** (lao động phức tạp là bội số của lao động giản đơn, nên tạo ra nhiều giá trị hơn trong cùng thời gian).",
     chapters: ["gia-tri"],
   },
   {

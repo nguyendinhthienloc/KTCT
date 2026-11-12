@@ -24,12 +24,9 @@ export default function Home() {
       <ChapterShell chapterId="khoi-dau" hideHeader>
         <Hero content={intro} />
       </ChapterShell>
-      <ChapterShell chapterId="hang-hoa">
-        <Ch01Commodity content={commodity} />
-      </ChapterShell>
-      <ChapterShell chapterId="san-xuat">
-        <Ch02Production content={production} />
-      </ChapterShell>
+      {/* Ch.01 và Ch.02 tự bọc ChapterShell bên trong component */}
+      <Ch01Commodity content={commodity} />
+      <Ch02Production content={production} />
       <ChapterShell chapterId="gia-tri">
         <Ch03Value content={value} />
       </ChapterShell>

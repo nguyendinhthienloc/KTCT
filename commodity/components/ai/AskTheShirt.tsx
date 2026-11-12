@@ -10,6 +10,21 @@ export function AskTheShirt() {
   const [open, setOpen] = useState(false);
   const launcherRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
+  // Ẩn nút khi đang cuộn để không che nội dung; hiện lại sau khi dừng 0,9s.
+  const [idle, setIdle] = useState(true);
+  useEffect(() => {
+    let timer: number | undefined;
+    const onScroll = () => {
+      setIdle(false);
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => setIdle(true), 900);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.clearTimeout(timer);
+    };
+  }, []);
 
   const close = useCallback(() => {
     setOpen(false);
@@ -66,9 +81,13 @@ export function AskTheShirt() {
           type="button"
           onClick={() => setOpen(true)}
           aria-haspopup="dialog"
-          className="fixed bottom-5 right-5 z-[60] border border-bronze bg-ink px-5 py-3 text-[0.8rem] tracking-[0.08em] text-bronze-soft shadow-none transition-colors duration-300 hover:bg-bronze hover:text-ink motion-reduce:transition-none"
+          aria-label="Hỏi chiếc áo"
+          className={`fixed bottom-4 right-4 z-[60] border border-bronze bg-ink/90 px-3.5 py-2.5 text-[0.75rem] tracking-[0.08em] text-bronze-soft backdrop-blur transition-[transform,opacity,background-color,color] duration-500 ease-cinema hover:bg-bronze hover:text-ink motion-reduce:transition-none sm:bottom-5 sm:right-5 sm:px-5 sm:py-3 sm:text-[0.8rem] ${
+            idle ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"
+          }`}
         >
-          Hỏi chiếc áo
+          <span aria-hidden className="sm:hidden">Hỏi áo</span>
+          <span aria-hidden className="hidden sm:inline">Hỏi chiếc áo</span>
         </button>
       )}
       {open && (

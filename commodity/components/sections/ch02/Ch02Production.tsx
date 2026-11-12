@@ -200,7 +200,7 @@ export function Ch02Production({ content }: { content: ProductionContent }) {
             <p className="eyebrow mb-14 text-bronze">Giải thích học thuật</p>
             <div className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">
               {academic.concepts.map((c, i) => (
-                <article key={c.id} id={c.id} className="scroll-mt-24 border-t border-ivory/15 pt-8">
+                <article key={c.id} id={`kn-${c.id}`} className="scroll-mt-24 border-t border-ivory/15 pt-8">
                   <p className="mb-6 font-display text-sm tabular-nums text-bronze">{pad(i + 1)}</p>
                   <h3 className="font-display text-[clamp(1.9rem,3.4vw,3.2rem)] font-700 leading-[0.98] tracking-[-0.03em]">
                     {c.term}

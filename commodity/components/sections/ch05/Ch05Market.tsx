@@ -145,7 +145,7 @@ export function Ch05Market({
         <p className="eyebrow mb-12 text-bronze">Khái niệm</p>
         <div className="flex flex-col">
           {academic.concepts.map((c) => (
-            <article key={c.id} id={c.id} className="grid gap-4 border-t border-ink/15 py-10 lg:grid-cols-12 lg:gap-12">
+            <article key={c.id} id={`kn-${c.id}`} className="grid gap-4 border-t border-ink/15 py-10 lg:grid-cols-12 lg:gap-12">
               <h3 className="font-display text-3xl font-700 leading-tight tracking-tight lg:col-span-4">{c.term}</h3>
               <div className="lg:col-span-8">
                 <p className="text-lg leading-relaxed">

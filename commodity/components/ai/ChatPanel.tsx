@@ -59,15 +59,17 @@ export function ChatPanel({ onClose }: { onClose: () => void }) {
   const endRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const messagesRef = useRef<Message[]>([]);
-  messagesRef.current = messages;
+  useEffect(() => {
+    messagesRef.current = messages;
+  }, [messages]);
 
   useEffect(() => () => abortRef.current?.abort(), []);
 
   // Đưa câu hỏi mới nhất lên đầu vùng đọc để người đọc đọc từ đầu câu trả lời.
+  const lastId = messages[messages.length - 1]?.id;
   useEffect(() => {
-    const last = messages[messages.length - 1];
-    if (last) document.getElementById(`ai-msg-${last.id}`)?.scrollIntoView({ block: "start" });
-  }, [messages.length]);
+    if (lastId !== undefined) document.getElementById(`ai-msg-${lastId}`)?.scrollIntoView({ block: "start" });
+  }, [lastId]);
 
   const submit = useCallback(
     async (raw: string) => {

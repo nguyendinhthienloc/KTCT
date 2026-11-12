@@ -111,20 +111,6 @@ export const value: ValueContent = {
       source: ok("Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa; Năng suất lao động", "34–37"),
     },
     {
-      id: "cuong-do-lao-dong",
-      term: "Cường độ lao động",
-      definition:
-        "Cường độ lao động là mức độ khẩn trương, nặng nhọc của lao động trong một đơn vị thời gian.",
-      explanation:
-        "Cường độ lao động tăng nghĩa là cùng một thời gian, người lao động hao phí nhiều sức hơn và làm ra nhiều sản phẩm hơn. Tổng giá trị tăng, nhưng giá trị của một đơn vị hàng hóa không đổi.",
-      tshirtExample:
-        "Công nhân may làm việc dồn dập hơn, hoàn thành 10 áo thay vì 8 áo trong một ca. Mỗi áo vẫn chứa lượng lao động như cũ.",
-      source: chk(
-        "Thước đo của lượng giá trị hàng hóa (cường độ lao động trung bình)",
-        NOT_FOUND + ". Bài giảng chỉ nêu cường độ lao động trung bình là một điều kiện của thời gian lao động xã hội cần thiết (tr.29); các nhân tố ảnh hưởng đến lượng giá trị chỉ gồm năng suất lao động và mức độ phức tạp của lao động (tr.34, 37). Nhóm cần quyết định giữ hay bỏ mục này."
-      ),
-    },
-    {
       id: "tinh-chat-phuc-tap",
       term: "Mức độ phức tạp của lao động (lao động giản đơn và lao động phức tạp)",
       definition:

@@ -131,7 +131,7 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                     <p className="mt-6 text-sm text-ink/60">
                       Khái niệm:{" "}
                       <a
-                        href={`#${linked.id}`}
+                        href={`#kn-${linked.id}`}
                         className="font-serif text-lg italic text-ink underline decoration-bronze decoration-1 underline-offset-4"
                       >
                         {linked.term}
@@ -181,7 +181,7 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
               {academic.concepts.map((c, i) => (
                 <article
                   key={c.id}
-                  id={c.id}
+                  id={`kn-${c.id}`}
                   className="grid scroll-mt-24 grid-cols-1 gap-6 border-t border-ink/10 py-12 first:border-t-0 first:pt-0 lg:grid-cols-12 lg:gap-8 lg:py-16"
                 >
                   <div className="lg:col-span-5">
