@@ -47,6 +47,10 @@ Website giáo dục tương tác kể câu chuyện kinh tế đằng sau một 
 | D16 | Cảm giác cuộn | Cuộn gốc của trình duyệt + ghim cảnh; không Lenis, không snap |
 | D17 | Dữ liệu & tài khoản | Không database, không đăng nhập |
 | D18 | Mô hình tương tác | Người dùng **chỉ cuộn và click**, phong cách scrollytelling của Apple |
+| D19 | Chuyên ngành | Nhóm thuộc CNTT / Khoa học máy tính: nhấn mạnh kiến trúc phần mềm, mô phỏng mô hình kinh tế, quy trình AI nhiều agent, triển khai tĩnh/offline |
+| D20 | Tính năng AI "Hỏi chiếc áo" | Chat dùng Gemini, chỉ dựa trên nội dung website; khóa API chỉ nằm trên máy demo, không commit |
+| D21 | Tầng 2 học thuật | Thu gọn thành mục "Tìm hiểu thêm" để giảm độ dài trang |
+| D22 | Trang `/ai` | Trang riêng "AI trong dự án": quy trình, phân vai, lỗi AI đã bắt, cơ chế kiểm soát, góc nhìn CNTT, rào chắn của chat |
 
 ---
 
@@ -131,6 +135,18 @@ Mức ưu tiên theo MoSCoW: **M** = Must, **S** = Should, **C** = Could.
 | FR-83 | Xuất bản `.md` để cả nhóm dò học thuật | M | `docs/noi-dung-hoc-thuat.md` sinh từ cùng dữ liệu |
 | FR-84 | Hướng dẫn sửa nội dung cho người không biết code | S | `docs/HUONG-DAN-SUA-NOI-DUNG.md` |
 
+
+### 3.10. Hỏi chiếc áo (AI) và trang AI
+| Mã | Yêu cầu | Ưu tiên | Tiêu chí chấp nhận |
+|---|---|---|---|
+| FR-90 | Trợ lý chỉ trả lời dựa trên nội dung của website (grounding) | M | Câu trả lời bám dữ liệu `content/*`; không bổ sung kiến thức ngoài |
+| FR-91 | Từ chối câu hỏi ngoài chủ đề | M | Hỏi chủ đề không liên quan → từ chối lịch sự, gợi ý hỏi về nội dung website |
+| FR-92 | Mỗi câu trả lời kèm liên kết tới chương liên quan | M | Click liên kết cuộn/chuyển tới đúng chương |
+| FR-93 | Nhãn "AI-generated" và nút "Báo sai" trên mỗi câu trả lời | M | Nhãn luôn hiển thị; "Báo sai" ghi nhận phản hồi cục bộ, không gửi dữ liệu cá nhân |
+| FR-94 | Dự phòng ngoại tuyến bằng FAQ | M | Khi không có mạng/khóa hoặc lỗi API, chat chuyển sang FAQ soạn sẵn, trang vẫn chạy |
+| FR-95 | Khóa API không nằm trong mã nguồn hay git | M | Không có khóa trong repo, bản build và zip nộp; khóa chỉ nạp trên máy demo |
+| FR-96 | Trang `/ai` "AI trong dự án" | S | Có sơ đồ quy trình, bảng "AI làm / Con người kiểm soát", lỗi AI đã bắt, cơ chế kiểm soát, góc nhìn CNTT, rào chắn của chat; hiển thị tốt ở 375px |
+
 ---
 
 ## 4. Yêu cầu phi chức năng (Non-functional Requirements)
@@ -192,6 +208,9 @@ Mức ưu tiên theo MoSCoW: **M** = Must, **S** = Should, **C** = Could.
 | §2 Ch.06 | FR-70…73 | GĐ3 | `components/sections/Recap`, `components/interactive/Quiz` | ⏳ |
 | §7 Học thuật | FR-80…84 | GĐ2–3 | `content/*`, `docs/noi-dung-hoc-thuat.md` | ⏳ |
 | §3 Thiết kế, §4.5 | NFR-01…13 | Xuyên suốt | `app/globals.css`, `lib/motion.ts` | ⏳ |
+| D19–D20 | FR-90…95 | Bổ sung 2026-11-13 | Chat "Hỏi chiếc áo", FAQ ngoại tuyến | ⏳ |
+| D19, D22 | FR-96 | Bổ sung 2026-11-13 | `app/ai/page.tsx`, `components/sections/ai/AiContent.tsx` | 🔨 |
+| D19–D22 | Kịch bản thuyết trình | Bổ sung 2026-11-13 | `docs/KICH-BAN-THUYET-TRINH.md` | ✅ |
 
 Ký hiệu: ⏳ chưa làm · 🔨 đang làm · ✅ đạt tiêu chí · ⚠️ đạt một phần
 
@@ -202,3 +221,4 @@ Ký hiệu: ⏳ chưa làm · 🔨 đang làm · ✅ đạt tiêu chí · ⚠️
 | Ngày | Thay đổi | Lý do |
 |---|---|---|
 | 2026-11-12 | Baseline 1.0 | Chốt sau phỏng vấn yêu cầu (D01–D18) |
+| 2026-11-13 | Thêm D19–D22, FR-90…96 (Hỏi chiếc áo, trang /ai, chuyên ngành CNTT/KHMT, Tầng 2 thu gọn) và kịch bản thuyết trình | Bám barem chấm điểm: ứng dụng AI, liên hệ chuyên ngành, trải nghiệm người dùng khi thuyết trình |

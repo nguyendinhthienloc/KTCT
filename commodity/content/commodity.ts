@@ -1,14 +1,13 @@
 import type { CommodityContent, Source } from "./schema";
 
-const src = (section: string, note?: string): Source => ({
-  chapter: "Chương 2",
+const CH = "Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường";
+
+const ok = (section: string, page: string, note?: string): Source => ({
+  chapter: CH,
   section,
-  page: "?",
-  needsCheck: true,
+  page,
   ...(note ? { note } : {}),
 });
-
-const S212 = "2.1.2. Hàng hóa";
 
 export const commodity: CommodityContent = {
   chapterId: "hang-hoa",
@@ -91,43 +90,43 @@ export const commodity: CommodityContent = {
         definition:
           "Hàng hóa là sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán.",
         explanation:
-          "Hàng hóa có thể ở dạng vật thể hoặc phi vật thể. Một sản phẩm chỉ là hàng hóa khi nó được làm ra để trao đổi, mua bán. Hàng hóa có hai thuộc tính: giá trị sử dụng và giá trị.",
+          "Mọi hàng hóa đều là sản phẩm, nhưng không phải mọi sản phẩm đều là hàng hóa: muốn thành hàng hóa, sản phẩm phải được làm ra không phải để làm tư liệu sinh hoạt trực tiếp cho chính người sản xuất. Hàng hóa có thể hữu hình hoặc vô hình, và có hai thuộc tính là giá trị sử dụng và giá trị.",
         tshirtExample:
           "Chiếc áo may sẵn để bán trong cửa hàng là hàng hóa. Chiếc áo bạn tự may để mặc, không đem trao đổi, thì chưa phải hàng hóa.",
-        source: src(S212),
+        source: ok("1.2. Hàng hóa; So sánh giữa sản phẩm và hàng hóa; 1.4. Phân loại hàng hóa", "12–13, 73"),
       },
       {
         id: "gia-tri-su-dung",
         term: "Giá trị sử dụng",
         definition:
-          "Giá trị sử dụng của hàng hóa là công dụng của vật, có thể thỏa mãn nhu cầu nào đó của con người.",
+          "Giá trị sử dụng của hàng hóa là công dụng của vật phẩm, có thể thỏa mãn nhu cầu nào đó của con người.",
         explanation:
-          "Công dụng này do thuộc tính tự nhiên của vật quyết định. Giá trị sử dụng được thể hiện khi sử dụng hay tiêu dùng, và là nội dung vật chất của của cải.",
+          "Giá trị sử dụng là tính có ích của sản phẩm, do thuộc tính tự nhiên của vật quyết định, được thể hiện ra trong tiêu dùng. Đó là phạm trù vĩnh viễn, gắn với nội dung vật chất cấu thành của hàng hóa.",
         tshirtExample:
           "Áo cotton thấm hút mồ hôi, che nắng, giữ ấm. Đó là giá trị sử dụng của chiếc áo.",
-        source: src(S212),
+        source: ok("Hai thuộc tính của hàng hóa — Giá trị sử dụng", "15–17, 39"),
       },
       {
         id: "gia-tri",
         term: "Giá trị (của hàng hóa)",
         definition:
-          "Giá trị của hàng hóa là lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa.",
+          "Giá trị của hàng hóa là lượng lao động xã hội của người sản xuất hàng hóa “kết tinh” trong hàng hóa đó. Giá trị là phạm trù lịch sử.",
         explanation:
-          "Giá trị là thuộc tính xã hội của hàng hóa. Ta không nhìn, sờ được giá trị. Nó biểu hiện ra ngoài qua giá trị trao đổi.",
+          "Giá trị là thuộc tính xã hội của hàng hóa. Giá trị là khái niệm trừu tượng, người ta không nắm được nó ở chỗ nào, nên muốn xác định giá trị phải thông qua giá trị trao đổi.",
         tshirtExample:
           "Trong chiếc áo kết tinh lao động của người trồng bông, kéo sợi, dệt vải và may. Đó là cơ sở để chiếc áo có giá trị.",
-        source: src(S212),
+        source: ok("Giá trị hàng hóa", "18, 21, 24, 39"),
       },
       {
         id: "gia-tri-trao-doi",
         term: "Giá trị trao đổi",
         definition:
-          "Giá trị trao đổi là quan hệ về số lượng, hay tỷ lệ trao đổi giữa những giá trị sử dụng khác nhau. Nó là hình thức biểu hiện ra bên ngoài của giá trị.",
+          "Giá trị trao đổi là một quan hệ về số lượng, là một tỷ lệ theo đó những giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác.",
         explanation:
-          "Giá trị là nội dung, là cơ sở của giá trị trao đổi. Giá trị trao đổi là hình thức biểu hiện của giá trị trong quan hệ trao đổi.",
+          "Giá trị trao đổi phụ thuộc vào giá trị hàng hóa. Giá trị được biểu hiện qua trao đổi bằng hiện vật (hàng đổi hàng) hoặc bằng tiền (giá cả). Ví dụ trong bài giảng: 10 kg gạo = 2 m vải = 8 giờ lao động xã hội.",
         tshirtExample:
           "Một chiếc áo trao đổi được với một lượng gạo hay một số tiền nhất định. Tỷ lệ ấy là giá trị trao đổi của chiếc áo.",
-        source: src(S212),
+        source: ok("Giá trị hàng hóa (mặt lượng) — giá trị trao đổi", "18–19, 45"),
       },
     ],
     distinctions: [
@@ -137,25 +136,22 @@ export const commodity: CommodityContent = {
         left: {
           term: "Giá trị sử dụng",
           points: [
-            "Là công dụng của vật, do thuộc tính tự nhiên quyết định.",
+            "Là công dụng của vật phẩm, thuộc tính tự nhiên của hàng hóa; là phạm trù vĩnh viễn.",
             "Khác nhau giữa các hàng hóa: áo để mặc, gạo để ăn.",
-            "Được thực hiện khi sử dụng, tiêu dùng.",
+            "Được thực hiện sau, thể hiện ra trong sử dụng, tiêu dùng.",
           ],
         },
         right: {
           term: "Giá trị",
           points: [
-            "Là lao động xã hội của người sản xuất kết tinh trong hàng hóa.",
-            "Là thuộc tính chung của mọi hàng hóa, nên các hàng hóa so sánh và trao đổi được với nhau.",
-            "Chỉ biểu hiện ra ngoài qua giá trị trao đổi.",
+            "Là lượng lao động xã hội của người sản xuất kết tinh trong hàng hóa; là thuộc tính xã hội, phạm trù lịch sử.",
+            "Là cái chung của mọi hàng hóa, nên các hàng hóa so sánh và trao đổi được với nhau.",
+            "Được thực hiện trước; muốn xác định phải thông qua giá trị trao đổi.",
           ],
         },
         takeaway:
-          "Giá trị sử dụng trả lời câu hỏi “dùng để làm gì”. Giá trị trả lời câu hỏi “vì sao trao đổi được với nhau”. Hàng hóa phải có cả hai thuộc tính.",
-        source: src(
-          S212,
-          "Ý nghĩa kinh tế: người mua quan tâm giá trị sử dụng, người bán quan tâm giá trị. Cần đối chiếu cách giáo trình diễn đạt."
-        ),
+          "Giá trị và giá trị sử dụng là hai mặt đối lập của hàng hóa, và bất kỳ hàng hóa nào cũng chứa đựng cả hai. Người tiêu dùng quan tâm giá trị sử dụng tốt nhất trong tầm giá; người sản xuất quan tâm giá trị. Có giá trị sử dụng nhưng không có giá trị thì là sản phẩm, không phải hàng hóa.",
+        source: ok("Mối quan hệ giữa giá trị sử dụng và giá trị hàng hóa", "39–40"),
       },
     ],
   },
@@ -172,8 +168,8 @@ export const commodity: CommodityContent = {
       ],
       correct: "b",
       explanation:
-        "Đúng là b. Hàng hóa là sản phẩm của lao động thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán. Các phương án a, c, d chỉ nêu công dụng hoặc việc có lao động. Đó là điều kiện cần, nhưng chưa đủ nếu sản phẩm không đi vào trao đổi.",
-      source: src(S212),
+        "Đúng là b. Hàng hóa là sản phẩm của lao động, thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán. Mọi hàng hóa đều là sản phẩm nhưng chưa phải mọi sản phẩm là hàng hóa: sản phẩm có giá trị sử dụng nhưng không có giá trị, tức không được làm ra để trao đổi, thì chưa phải hàng hóa. Các phương án a, c, d chỉ nêu công dụng hoặc việc có lao động, là điều kiện cần nhưng chưa đủ.",
+      source: ok("So sánh giữa sản phẩm và hàng hóa; Mối quan hệ giữa giá trị sử dụng và giá trị hàng hóa", "13, 40"),
     },
     {
       id: "hh-q2",
@@ -187,8 +183,8 @@ export const commodity: CommodityContent = {
       ],
       correct: "c",
       explanation:
-        "Đúng là c. Cơ sở chung là giá trị. Phương án a nói về giá trị sử dụng, vốn khác nhau giữa áo và gạo nên không làm cơ sở so sánh. Phương án d nhầm hình thức biểu hiện (giá cả) với cơ sở bên trong của trao đổi.",
-      source: src(S212),
+        "Đúng là c. Cơ sở chung là giá trị. Phương án a nói về giá trị sử dụng, vốn khác nhau giữa áo và gạo nên không làm cơ sở so sánh. Phương án d nhầm hình thức biểu hiện (giá cả) với cơ sở bên trong của trao đổi. Ví dụ bài giảng: 10 kg gạo = 2 m vải = 8 giờ lao động xã hội.",
+      source: ok("Giá trị hàng hóa; Giá trị trao đổi", "18–19, 21"),
     },
   ],
 };

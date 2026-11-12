@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { CommodityContent } from "@/content/schema";
 import { gsap } from "@/lib/motion";
 import { ChapterShell } from "@/components/ui/ChapterShell";
+import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { RichText } from "@/components/ui/RichText";
 import { TShirt } from "@/components/ui/TShirt";
@@ -173,15 +174,14 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
         </div>
 
         {/* Tầng 2 — học thuật */}
-        <div className="border-t border-ink/10 py-24 md:py-40">
-          <div className="container-cinema">
+        <LearnMore tone="light">
+          <div>
             <p className="eyebrow mb-14 text-bronze">Giải thích học thuật</p>
             <div className="flex flex-col">
               {academic.concepts.map((c, i) => (
                 <article
                   key={c.id}
                   id={c.id}
-                  data-reveal
                   className="grid scroll-mt-24 grid-cols-1 gap-6 border-t border-ink/10 py-12 first:border-t-0 first:pt-0 lg:grid-cols-12 lg:gap-8 lg:py-16"
                 >
                   <div className="lg:col-span-5">
@@ -207,7 +207,7 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
             </div>
 
             {academic.distinctions?.map((d) => (
-              <div key={d.id} data-reveal className="mt-16 border-t border-ink/10 pt-14 md:mt-24">
+              <div key={d.id} className="mt-16 border-t border-ink/10 pt-14 md:mt-24">
                 <p className="eyebrow mb-4 text-bronze">So sánh</p>
                 <h3 className="mb-12 max-w-3xl font-display text-[clamp(1.8rem,3.4vw,3rem)] font-700 leading-[1] tracking-[-0.025em]">
                   {d.title}
@@ -240,7 +240,7 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
               </div>
             ))}
           </div>
-        </div>
+        </LearnMore>
 
         {/* Tầng 3 — kiểm tra */}
         <div className="container-cinema pb-24 md:pb-36">

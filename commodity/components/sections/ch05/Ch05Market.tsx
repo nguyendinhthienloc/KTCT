@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import type { Factory, MarketContent, ShareScenario } from "@/content/schema";
 import { gsap, ScrollTrigger } from "@/lib/motion";
 import { MarketSim } from "@/components/interactive/market/MarketSim";
+import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { RichText } from "@/components/ui/RichText";
 import { SourceNote } from "@/components/ui/SourceNote";
@@ -139,7 +140,8 @@ export function Ch05Market({
       </div>
 
       {/* Tầng 2 — học thuật */}
-      <div className="container-cinema border-t border-ink/15 pb-24 pt-16 lg:pb-32 lg:pt-24">
+      <LearnMore tone="light">
+      <div>
         <p className="eyebrow mb-12 text-bronze">Khái niệm</p>
         <div className="flex flex-col">
           {academic.concepts.map((c) => (
@@ -199,6 +201,7 @@ export function Ch05Market({
           </ul>
         </div>
       </div>
+      </LearnMore>
 
       {/* Tầng 3 — kiểm tra */}
       <div className="container-cinema pb-24 lg:pb-32">

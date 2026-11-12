@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-knowledge.mjs && next build",
     "start": "next start",
     "lint": "eslint",
     "serve": "node serve.mjs",
+    "knowledge": "node scripts/build-knowledge.mjs",
     "content:export": "node scripts/export-content.mjs"
   },
   "dependencies": {

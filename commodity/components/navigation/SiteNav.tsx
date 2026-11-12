@@ -86,6 +86,9 @@ export function SiteNav() {
           <Link href="/thuat-ngu/" className="hidden text-[0.78rem] opacity-70 transition-opacity hover:opacity-100 sm:block">
             Thuật ngữ
           </Link>
+          <Link href="/ai/" className="hidden text-[0.78rem] opacity-70 transition-opacity hover:opacity-100 md:block">
+            AI
+          </Link>
           <Link href="/gioi-thieu/" className="hidden text-[0.78rem] opacity-70 transition-opacity hover:opacity-100 xl:block">
             Giới thiệu
           </Link>
@@ -136,6 +139,9 @@ export function SiteNav() {
           <div className="container-cinema flex flex-wrap items-center justify-between gap-4 pb-12 text-sm text-stone-light">
             <Link href="/thuat-ngu/" onClick={() => setOpen(false)}>
               Xem thuật ngữ
+            </Link>
+            <Link href="/ai/" onClick={() => setOpen(false)}>
+              AI trong dự án
             </Link>
             <Link href="/gioi-thieu/" onClick={() => setOpen(false)}>
               Giới thiệu dự án

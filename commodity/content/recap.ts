@@ -1,15 +1,9 @@
 import type { RecapContent, Source } from "./schema";
 
-const src = (chapter: string, section: string, note?: string): Source => ({
-  chapter,
-  section,
-  page: "?",
-  needsCheck: true,
-  ...(note ? { note } : {}),
-});
+const D2 = "Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường";
+const D3 = "Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường";
 
-const C2 = "Chương 2";
-const C3 = "Chương 3";
+const ok = (chapter: string, section: string, page: string): Source => ({ chapter, section, page });
 
 export const recap: RecapContent = {
   lifecycle: [
@@ -68,8 +62,8 @@ export const recap: RecapContent = {
       ],
       correct: "b",
       explanation:
-        "Đúng là b. Giá cả là hình thức biểu hiện bằng tiền của giá trị. Phương án a đánh đồng hai khái niệm. Phương án c và d đảo ngược hoặc lẫn lộn vai trò: cung – cầu làm giá cả lệch khỏi giá trị, không quyết định giá trị.",
-      source: src(C2, "2.1.3. Tiền; 2.2. Thị trường"),
+        "Đúng là b. Giá cả là giá trị biểu hiện bằng tiền, là chỉ số tỷ lệ trao đổi giữa hàng hóa và tiền, và xoay quanh giá trị theo cung – cầu. Phương án a đánh đồng hai khái niệm. Phương án c và d đảo ngược hoặc lẫn lộn vai trò: cung – cầu làm giá cả lệch khỏi giá trị, không quyết định giá trị.",
+      source: ok(D2, "Giá trị và giá cả; Giá trị hàng hóa (biểu hiện bằng tiền)", "20, 45"),
     },
     {
       id: "fq-2",
@@ -82,8 +76,8 @@ export const recap: RecapContent = {
       ],
       correct: "d",
       explanation:
-        "Đúng là d. Hàng hóa bán trên thị trường là sức lao động. Phương án a hấp dẫn nhưng sai: lao động là việc sử dụng sức lao động, chỉ xảy ra sau khi mua. Phương án b sai vì người lao động tự do về thân thể, không bị mua như tài sản.",
-      source: src(C3, "3.1. Hàng hóa sức lao động"),
+        "Đúng là d. Cái người công nhân bán cho nhà tư bản là sức lao động, không phải lao động. Phương án a hấp dẫn nhưng sai: lao động là việc sử dụng sức lao động, chỉ xảy ra sau khi mua. Phương án b sai vì người lao động tự do về thân thể, không bị mua như tài sản.",
+      source: ok(D3, "Hàng hóa sức lao động", "43–44"),
     },
     {
       id: "fq-3",
@@ -96,8 +90,8 @@ export const recap: RecapContent = {
       ],
       correct: "a",
       explanation:
-        "Đúng là a. Lợi nhuận là hình thái chuyển hóa của giá trị thặng dư, nhưng bị coi như do cả c và v tạo ra, nên che giấu nguồn gốc thật. Phương án b đánh đồng hai khái niệm. Phương án c đảo ngược quan hệ.",
-      source: src(C3, "3.3. Các hình thức biểu hiện của giá trị thặng dư"),
+        "Đúng là a. Về chất, lợi nhuận và giá trị thặng dư là một, nhưng lợi nhuận là hình thái thần bí của giá trị thặng dư: nó làm ta tưởng giá trị thặng dư do cả c và v tạo ra, nên che giấu nguồn gốc thật. Phương án b bỏ qua sự khác biệt về hình thức biểu hiện và về lượng. Phương án c đảo ngược quan hệ: nguồn gốc duy nhất của giá trị thặng dư là lao động làm thuê.",
+      source: ok(D3, "3.1. Lợi nhuận — chi phí sản xuất TBCN; Bản chất lợi nhuận", "72, 75"),
     },
     {
       id: "fq-4",
@@ -111,7 +105,7 @@ export const recap: RecapContent = {
       correct: "c",
       explanation:
         "Đúng là c. Máy móc, nguyên liệu chỉ chuyển giá trị cũ vào sản phẩm (c). Phương án a là nhầm lẫn thường gặp: máy móc giúp tăng năng suất, nhưng không tự tạo ra giá trị mới.",
-      source: src(C3, "3.1. Tư bản bất biến và tư bản khả biến"),
+      source: ok(D3, "Vai trò của tư bản bất biến và tư bản khả biến; Máy móc có tạo ra giá trị thặng dư hay không?", "30, 62"),
     },
     {
       id: "fq-5",
@@ -125,11 +119,11 @@ export const recap: RecapContent = {
       correct: "b",
       explanation:
         "Đúng là b. Lượng giá trị do thời gian lao động xã hội cần thiết quyết định. Phương án a nhầm thời gian cá biệt với xã hội. Phương án d nhầm giá cả với giá trị. Xưởng A không được thừa nhận 3 giờ hao phí thừa.",
-      source: src(C2, "2.1.2. Lượng giá trị hàng hóa"),
+      source: ok(D2, "Lượng giá trị hàng hóa; Thước đo của lượng giá trị hàng hóa", "26–30"),
     },
     {
       id: "fq-6",
-      prompt: "Ngày lao động giữ nguyên 8 giờ, nhưng năng suất lao động xã hội tăng khiến giá trị sức lao động giảm, thời gian lao động tất yếu giảm. Đây là phương pháp nào?",
+      prompt: "Ngày lao động giữ nguyên 8 giờ, nhưng năng suất lao động xã hội tăng khiến giá trị sức lao động giảm, thời gian lao động cần thiết (tất yếu) giảm. Đây là phương pháp nào?",
       options: [
         { id: "a", text: "Sản xuất giá trị thặng dư tuyệt đối." },
         { id: "b", text: "Tích lũy tư bản." },
@@ -138,8 +132,8 @@ export const recap: RecapContent = {
       ],
       correct: "d",
       explanation:
-        "Đúng là d. Rút ngắn thời gian lao động tất yếu trong khi ngày lao động không đổi là giá trị thặng dư tương đối. Phương án a là kéo dài ngày lao động trong khi thời gian tất yếu không đổi. Phương án b là chuyển giá trị thặng dư thành tư bản.",
-      source: src(C3, "3.1. Các phương pháp sản xuất giá trị thặng dư"),
+        "Đúng là d. Rút ngắn thời gian lao động cần thiết trên cơ sở tăng năng suất lao động xã hội, trong khi ngày lao động không đổi, là giá trị thặng dư tương đối. Phương án a là kéo dài tuyệt đối ngày lao động trong khi thời gian cần thiết không đổi. Phương án b là chuyển giá trị thặng dư thành tư bản.",
+      source: ok(D3, "1.3. Các phương pháp sản xuất giá trị thặng dư", "61"),
     },
     {
       id: "fq-7",
@@ -153,7 +147,7 @@ export const recap: RecapContent = {
       correct: "a",
       explanation:
         "Đúng là a. Phương án b là giá trị sử dụng. Phương án c nhầm lao động cá biệt với giá trị. Phương án d chỉ là một phần chi phí, không phải tỷ lệ trao đổi.",
-      source: src(C2, "2.1.2. Hàng hóa"),
+      source: ok(D2, "Giá trị hàng hóa (mặt lượng) — giá trị trao đổi", "18–19"),
     },
     {
       id: "fq-8",
@@ -161,17 +155,17 @@ export const recap: RecapContent = {
       options: [
         { id: "a", text: "Lao động cụ thể, vì thợ may làm ra chiếc áo cụ thể." },
         { id: "b", text: "Lao động giản đơn, không cần đào tạo." },
-        { id: "c", text: "Lao động trừu tượng, tức hao phí sức lao động nói chung của người sản xuất." },
+        { id: "c", text: "Lao động trừu tượng, tức hao phí sức lực, thần kinh của người sản xuất khi gạt bỏ hình thức cụ thể." },
         { id: "d", text: "Sức lao động, vì đây là năng lực của thợ may." },
       ],
       correct: "c",
       explanation:
-        "Đúng là c. Lao động trừu tượng tạo ra giá trị. Phương án a hấp dẫn nhưng sai: lao động cụ thể tạo ra giá trị sử dụng. Phương án d nhầm sức lao động (năng lực) với lao động (việc sử dụng năng lực).",
-      source: src(C2, "2.1.2. Tính hai mặt của lao động sản xuất hàng hóa"),
+        "Đúng là c. Lao động trừu tượng tạo ra giá trị. Phương án a hấp dẫn nhưng sai: lao động cụ thể tạo ra giá trị sử dụng. Phương án d nhầm sức lao động (năng lực) với lao động (việc tiêu dùng năng lực).",
+      source: ok(D2, "2.2. Tính hai mặt của lao động sản xuất hàng hóa", "41–44"),
     },
     {
       id: "fq-9",
-      prompt: "Với c = 60, v = 20, m = 20, thời gian lao động tất yếu 4 giờ. Kéo dài ngày lao động từ 8 lên 10 giờ, thời gian tất yếu giữ nguyên. Tỷ suất giá trị thặng dư m' là bao nhiêu?",
+      prompt: "Với c = 60, v = 20, m = 20, thời gian lao động cần thiết (tất yếu) 4 giờ. Kéo dài ngày lao động từ 8 lên 10 giờ, thời gian cần thiết giữ nguyên. Tỷ suất giá trị thặng dư m' là bao nhiêu?",
       options: [
         { id: "a", text: "100%" },
         { id: "b", text: "150%" },
@@ -180,8 +174,8 @@ export const recap: RecapContent = {
       ],
       correct: "b",
       explanation:
-        "Đúng là b. Thời gian thặng dư 6 giờ, thời gian tất yếu 4 giờ. m = 30, v = 20 nên m' = 30 / 20 × 100% = 150%. Phương án a là mức gốc. Phương án d là mức khi ngày lao động 12 giờ.",
-      source: src(C3, "3.1. Tỷ suất giá trị thặng dư"),
+        "Đúng là b. Thời gian thặng dư 6 giờ, thời gian cần thiết 4 giờ. m = 30, v = 20 nên m' = 30 / 20 × 100% = 150%. Phương án a là mức gốc. Phương án d là mức khi ngày lao động 12 giờ.",
+      source: ok(D3, "Tỷ suất giá trị thặng dư; Phương pháp sản xuất giá trị thặng dư tuyệt đối", "57, 60"),
     },
     {
       id: "fq-10",
@@ -195,19 +189,44 @@ export const recap: RecapContent = {
       correct: "d",
       explanation:
         "Đúng là d. Cung – cầu làm giá cả lệch khỏi giá trị. Giá trị do thời gian lao động xã hội cần thiết quyết định. Phương án a nhầm giá cả với giá trị. Phương án c sai vì giá cả thường dao động quanh giá trị.",
-      source: src(C2, "2.2. Quy luật cung – cầu"),
+      source: ok(D2, "Quy luật cung – cầu", "88"),
     },
   ],
   references: [
     {
       id: "ref-giao-trinh",
       citation:
-        "Bộ Giáo dục và Đào tạo (2021), Giáo trình Kinh tế chính trị Mác – Lênin (Dành cho bậc đại học hệ không chuyên lý luận chính trị), Nxb Chính trị quốc gia Sự thật, Hà Nội.",
+        "Bộ Giáo dục và Đào tạo (2026), Kinh tế chính trị Mác – Lênin, Nxb Chính trị quốc gia Sự thật, Hà Nội. (Giáo trình chính, theo Đề cương chi tiết học phần BAA00102 – Kinh tế chính trị Mác – Lênin, ĐHQG-HCM.)",
+    },
+    {
+      id: "ref-lenin",
+      citation:
+        "V.I. Lênin (2005), Toàn tập, tập 27, Nxb Chính trị quốc gia Sự thật, Hà Nội. (Tài liệu tham khảo theo Đề cương chi tiết học phần BAA00102.)",
     },
     {
       id: "ref-tu-ban",
       citation:
-        "C. Mác và Ph. Ăngghen (1993), Toàn tập, t.23 (Tư bản, quyển I), Nxb Chính trị quốc gia, Hà Nội.",
+        "Karl Marx, Tư bản, Tập thứ nhất, Quyển 1, phần 1 và phần 2, Nxb Sự Thật, Hà Nội, 1984. (Các đoạn trích Marx được dẫn trong bài giảng.)",
+    },
+    {
+      id: "ref-tap-huan",
+      citation:
+        "Giáo trình “Kinh tế chính trị Mác – Lênin”, Tài liệu tập huấn 2019. (Được liệt kê là tài liệu tham khảo trong bài giảng Chương 2 và Chương 1.)",
+    },
+    {
+      id: "ref-bg-ch1",
+      citation:
+        "ThS. Lê Văn Thông, Đề cương bài giảng môn học Kinh tế chính trị Mác – Lênin, Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của Kinh tế chính trị Mác – Lênin (tài liệu gửi sinh viên).",
+    },
+    {
+      id: "ref-bg-ch2",
+      citation:
+        "ThS. Lê Văn Thông, Đề cương bài giảng môn học Kinh tế chính trị Mác – Lênin, Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường (tài liệu gửi sinh viên).",
+    },
+    {
+      id: "ref-bg-ch3",
+      citation:
+        "ThS. Lê Văn Thông, Đề cương bài giảng môn học Kinh tế chính trị Mác – Lênin, Chương 3: Giá trị thặng dư trong nền kinh tế thị trường (tài liệu gửi sinh viên).",
     },
   ],
   closing: "GIỜ ĐÂY, HÃY NHÌN MỘT CHIẾC ÁO THUN THEO MỘT CÁCH KHÁC.",

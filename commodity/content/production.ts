@@ -1,17 +1,25 @@
 import type { ProductionContent, Source } from "./schema";
 
-const src = (chapter: string, section: string, note?: string): Source => ({
+const D1 = "Bài giảng Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của KTCT Mác – Lênin";
+const D2 = "Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường";
+const D3 = "Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường";
+
+const ok = (chapter: string, section: string, page: string, note?: string): Source => ({
   chapter,
   section,
-  page: "?",
-  needsCheck: true,
+  page,
   ...(note ? { note } : {}),
 });
 
-const S_SX = (note?: string) =>
-  src("Chương 1", "Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục)", note ?? "Cần đối chiếu: khái niệm sản xuất, tư liệu sản xuất có thể nằm ở Chương 1 hoặc Chương 2 của giáo trình.");
-const S_LDCT = src("Chương 2", "2.1.2. Hàng hóa — tính hai mặt của lao động sản xuất hàng hóa");
-const S_SLD = src("Chương 3", "3.1. Lý luận của C.Mác về giá trị thặng dư — hàng hóa sức lao động");
+const S_SX = ok(D3, "Quá trình sản xuất hàng hóa (tiêu dùng tư liệu sản xuất và sức lao động)", "23");
+const S_TLSX = ok(
+  D1,
+  "Đối tượng và phương pháp nghiên cứu — lực lượng sản xuất: người lao động và tư liệu sản xuất",
+  "23–24",
+  "Bài giảng chỉ nêu cấu trúc (tư liệu sản xuất gồm tư liệu lao động và đối tượng lao động; tư liệu lao động gồm công cụ lao động, hệ thống bình chứa, kết cấu hạ tầng của sản xuất), không định nghĩa riêng bằng lời hai khái niệm đối tượng lao động và tư liệu lao động."
+);
+const S_LDCT = ok(D2, "2.2. Tính hai mặt của lao động sản xuất hàng hóa", "41–44, 46");
+const S_SLD = ok(D3, "Hàng hóa sức lao động", "14–19, 43–44");
 
 export const production: ProductionContent = {
   chapterId: "san-xuat",
@@ -141,44 +149,44 @@ export const production: ProductionContent = {
     concepts: [
       {
         id: "san-xuat",
-        term: "Sản xuất của cải vật chất",
+        term: "Quá trình sản xuất",
         definition:
-          "Sản xuất của cải vật chất là quá trình con người sử dụng tư liệu lao động tác động vào đối tượng lao động để tạo ra những sản phẩm cần thiết cho đời sống và phát triển xã hội.",
+          "Quá trình sản xuất là quá trình tiêu dùng tư liệu sản xuất và sức lao động. Giá trị sử dụng cũ được tiêu dùng, chuyển sang giá trị sử dụng mới, tạo thành sản phẩm mới.",
         explanation:
-          "Đây là hoạt động cơ bản nhất của con người, làm cơ sở cho sự tồn tại của xã hội. Ba yếu tố của quá trình sản xuất là sức lao động, đối tượng lao động và tư liệu lao động.",
+          "Quá trình này cần hai yếu tố: người lao động (có sức lao động) và tư liệu sản xuất như máy móc thiết bị, nhà xưởng, nguyên vật liệu. Người lao động và tư liệu sản xuất hợp thành lực lượng sản xuất của xã hội.",
         tshirtExample:
-          "Từ trồng bông đến may áo, con người dùng công cụ, máy móc tác động vào bông, sợi, vải để tạo ra chiếc áo.",
-        source: S_SX("Diễn đạt lại theo ý giáo trình. Cần đối chiếu định nghĩa nguyên văn."),
+          "Từ trồng bông đến may áo, người lao động dùng máy móc, công cụ tác động vào bông, sợi, vải để tạo ra chiếc áo là sản phẩm mới.",
+        source: S_SX,
       },
       {
         id: "tu-lieu-san-xuat",
         term: "Tư liệu sản xuất",
         definition:
-          "Tư liệu sản xuất gồm đối tượng lao động và tư liệu lao động. Đối tượng lao động là những vật mà lao động của con người tác động vào. Tư liệu lao động là những vật hay hệ thống vật dùng để truyền dẫn sự tác động của con người lên đối tượng lao động.",
+          "Tư liệu sản xuất gồm tư liệu lao động và đối tượng lao động. Tư liệu lao động gồm công cụ lao động, hệ thống bình chứa của sản xuất và kết cấu hạ tầng của sản xuất.",
         explanation:
-          "Đối tượng lao động có thể có sẵn trong tự nhiên (như đất đai) hoặc đã qua lao động, khi đó gọi là nguyên liệu. Trong tư liệu lao động, công cụ lao động giữ vai trò quyết định. Sản phẩm của công đoạn trước thường là đối tượng lao động của công đoạn sau.",
+          "Trong quá trình sản xuất, tư liệu sản xuất gồm máy móc thiết bị, nhà xưởng, nguyên vật liệu. Sản phẩm của công đoạn trước thường trở thành nguyên vật liệu, tức đối tượng lao động, của công đoạn sau.",
         tshirtExample:
-          "Đất trồng bông là đối tượng lao động có sẵn trong tự nhiên. Bông đã thu hoạch, sợi, vải là đối tượng lao động đã qua lao động, tức nguyên liệu. Máy kéo sợi, máy dệt, máy may là tư liệu lao động.",
-        source: S_SX(),
+          "Bông, sợi, vải là nguyên vật liệu (đối tượng lao động). Máy kéo sợi, máy dệt, máy may là công cụ lao động, thuộc tư liệu lao động.",
+        source: S_TLSX,
       },
       {
         id: "suc-lao-dong",
         term: "Sức lao động",
         definition:
-          "Sức lao động là toàn bộ những năng lực thể chất và tinh thần tồn tại trong cơ thể, trong một con người, và được người đó vận dụng vào quá trình sản xuất.",
+          "Sức lao động hay năng lực lao động là toàn bộ những năng lực thể chất và tinh thần tồn tại trong một cơ thể, trong một con người đang sống, và được người đó đem ra vận dụng mỗi khi sản xuất ra một giá trị sử dụng nào đó.",
         explanation:
-          "Sức lao động là khả năng, còn lao động là việc sử dụng khả năng đó. Sức lao động chỉ trở thành hiện thực khi người ta làm việc.",
+          "Sức lao động là khả năng, còn lao động là việc tiêu dùng sức lao động. Người công nhân bán sức lao động, không bán lao động.",
         tshirtExample:
-          "Một công nhân may có sức khỏe và tay nghề. Đó là sức lao động của người ấy. Khi ngồi vào máy may và làm việc, sức lao động được sử dụng thành lao động.",
+          "Một công nhân may có sức khỏe và tay nghề. Đó là sức lao động của người ấy. Khi ngồi vào máy may và làm việc, sức lao động được tiêu dùng thành lao động.",
         source: S_SLD,
       },
       {
         id: "lao-dong-cu-the",
         term: "Lao động cụ thể",
         definition:
-          "Lao động cụ thể là lao động có ích dưới một hình thức cụ thể của những nghề nghiệp chuyên môn nhất định. Mỗi lao động cụ thể có mục đích, đối tượng, công cụ, phương pháp và kết quả riêng.",
+          "Lao động cụ thể là lao động có ích dưới hình thức cụ thể của nghề nghiệp, chuyên môn nhất định. Mỗi lao động cụ thể có đối tượng, mục đích, phương tiện, phương pháp và kết quả riêng.",
         explanation:
-          "Lao động cụ thể tạo ra giá trị sử dụng của hàng hóa. Các lao động cụ thể khác nhau tạo ra những giá trị sử dụng khác nhau.",
+          "Lao động cụ thể, cùng với nội dung vật chất cấu thành của sản phẩm, là một trong hai yếu tố tạo ra giá trị sử dụng của hàng hóa. Nó cho biết lao động được tiến hành như thế nào.",
         tshirtExample:
           "Người kéo sợi tạo ra sợi, người dệt tạo ra vải, người may tạo ra chiếc áo. Mỗi người làm một việc khác nhau.",
         source: S_LDCT,
@@ -187,27 +195,23 @@ export const production: ProductionContent = {
         id: "lao-dong-truu-tuong",
         term: "Lao động trừu tượng",
         definition:
-          "Lao động trừu tượng là lao động của người sản xuất hàng hóa khi đã gạt bỏ những hình thức cụ thể của nó. Đó là sự hao phí sức lao động nói chung của người sản xuất hàng hóa (hao phí sức bắp thịt, thần kinh, trí óc).",
+          "Lao động trừu tượng là lao động của người sản xuất hàng hóa khi đã gạt bỏ những hình thức cụ thể của nó. Đó là sự hao phí sức lực và thần kinh của người sản xuất hàng hóa.",
         explanation:
-          "Lao động trừu tượng tạo ra giá trị của hàng hóa. Giá trị là lao động trừu tượng của người sản xuất kết tinh trong hàng hóa.",
+          "Lao động trừu tượng tạo nên giá trị hàng hóa. Nó có ý nghĩa về mặt lượng: cho biết đã tiêu phí lao động trong bao lâu.",
         tshirtExample:
-          "Dù là kéo sợi, dệt hay may, người lao động đều hao phí sức lực và thời gian. Phần hao phí chung ấy là lao động trừu tượng.",
+          "Dù là kéo sợi, dệt hay may, người lao động đều hao phí sức lực và thần kinh trong một khoảng thời gian. Phần hao phí chung ấy là lao động trừu tượng.",
         source: S_LDCT,
       },
       {
         id: "tgldxhct",
         term: "Thời gian lao động xã hội cần thiết",
         definition:
-          "Thời gian lao động xã hội cần thiết là thời gian đòi hỏi để sản xuất ra một giá trị sử dụng nào đó trong những điều kiện bình thường của xã hội, với trình độ thành thạo trung bình, cường độ lao động trung bình. Trên thực tế, nó thường đồng nhất với thời gian lao động cá biệt của người sản xuất cung cấp đại bộ phận hàng hóa đó trên thị trường.",
+          "Thời gian lao động xã hội cần thiết là thời gian cần thiết để sản xuất ra một đơn vị hàng hóa, trong hoàn cảnh xã hội nhất định, trong điều kiện bình thường của xã hội, với trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình.",
         explanation:
-          "Lượng giá trị của hàng hóa do thời gian lao động xã hội cần thiết quyết định, không phải do thời gian lao động cá biệt của từng người. Chương 03 sẽ cho bạn thử tính.",
+          "Thời gian lao động xã hội cần thiết là thước đo lượng giá trị của hàng hóa, không phải thời gian lao động cá biệt của từng người. Chương 03 sẽ cho bạn thử tính.",
         tshirtExample:
           "Nếu điều kiện bình thường của xã hội là 7 giờ để làm một chiếc áo, thì chiếc áo chứa lượng giá trị tương ứng 7 giờ lao động xã hội, dù một xưởng cụ thể mất 10 giờ.",
-        source: src(
-          "Chương 2",
-          "2.1.2. Hàng hóa — lượng giá trị hàng hóa",
-          "Giáo trình dùng cụm “thời gian lao động xã hội cần thiết”. Cần đối chiếu câu chữ định nghĩa."
-        ),
+        source: ok(D2, "Thước đo của lượng giá trị hàng hóa", "28–30"),
       },
     ],
     distinctions: [
@@ -217,21 +221,21 @@ export const production: ProductionContent = {
         left: {
           term: "Lao động cụ thể",
           points: [
-            "Là lao động có ích dưới một hình thức nghề nghiệp nhất định.",
-            "Có mục đích, công cụ, phương pháp riêng.",
-            "Tạo ra giá trị sử dụng.",
+            "Là lao động có ích dưới hình thức nghề nghiệp, chuyên môn nhất định.",
+            "Có đối tượng, mục đích, phương tiện, phương pháp, kết quả riêng.",
+            "Tạo ra giá trị sử dụng; có ý nghĩa về mặt chất.",
           ],
         },
         right: {
           term: "Lao động trừu tượng",
           points: [
-            "Là hao phí sức lao động nói chung, gạt bỏ hình thức cụ thể.",
-            "Giống nhau ở mọi người sản xuất hàng hóa.",
-            "Tạo ra giá trị.",
+            "Là lao động đã gạt bỏ hình thức cụ thể, chỉ còn hao phí sức lực, thần kinh.",
+            "Cho biết đã tiêu phí lao động trong bao lâu; có ý nghĩa về mặt lượng.",
+            "Tạo nên giá trị hàng hóa.",
           ],
         },
         takeaway:
-          "Đây là hai mặt của cùng một lao động sản xuất hàng hóa. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra giá trị.",
+          "Đây là hai mặt của cùng một lao động sản xuất hàng hóa. Lao động cụ thể gắn với giá trị sử dụng, lao động trừu tượng gắn với giá trị.",
         source: S_LDCT,
       },
       {
@@ -240,21 +244,21 @@ export const production: ProductionContent = {
         left: {
           term: "Sức lao động",
           points: [
-            "Là năng lực thể chất và tinh thần của con người.",
-            "Là khả năng làm việc, tồn tại trước khi làm việc.",
-            "Có thể được đem ra mua bán trong những điều kiện nhất định.",
+            "Là toàn bộ năng lực thể chất và tinh thần tồn tại trong cơ thể một con người đang sống.",
+            "Là hàng hóa đặc biệt: bán trong một thời gian nhất định, bán rồi người bán vẫn không từ bỏ quyền sở hữu sức lao động ấy.",
+            "Trở thành hàng hóa khi người lao động tự do về thân thể và buộc phải bán sức lao động.",
           ],
         },
         right: {
           term: "Lao động",
           points: [
-            "Là hoạt động có mục đích của con người, tức là sự sử dụng sức lao động.",
-            "Chỉ diễn ra khi người lao động thực sự làm việc.",
-            "Là quá trình tạo ra sản phẩm và giá trị.",
+            "Là quá trình tiêu dùng sức lao động.",
+            "Không phải là hàng hóa. Cái người công nhân bán cho nhà tư bản là sức lao động.",
+            "Khi sức lao động được tiêu dùng, nó tạo ra giá trị mới lớn hơn giá trị bản thân nó.",
           ],
         },
         takeaway:
-          "Sức lao động là khả năng làm việc. Lao động là việc sử dụng khả năng đó. Hai khái niệm này không đồng nhất.",
+          "Sức lao động là khả năng làm việc. Lao động là việc tiêu dùng khả năng đó. Hai khái niệm này không đồng nhất.",
         source: S_SLD,
       },
     ],
@@ -272,8 +276,8 @@ export const production: ProductionContent = {
       ],
       correct: "c",
       explanation:
-        "Đúng là c. Sức lao động là năng lực. Phương án a là lao động, tức là việc sử dụng sức lao động. Phương án b là sản phẩm. Phương án d là tư liệu lao động, thuộc tư liệu sản xuất.",
-      source: S_SLD,
+        "Đúng là c. Sức lao động là toàn bộ năng lực thể chất và tinh thần tồn tại trong con người, được đem ra vận dụng khi sản xuất. Phương án a là lao động, tức việc tiêu dùng sức lao động. Phương án b là sản phẩm. Phương án d là tư liệu lao động, thuộc tư liệu sản xuất.",
+      source: ok(D3, "Hàng hóa sức lao động", "14, 44"),
     },
     {
       id: "sx-q2",
@@ -287,8 +291,8 @@ export const production: ProductionContent = {
       ],
       correct: "b",
       explanation:
-        "Đúng là b. Đối tượng lao động là vật mà lao động tác động vào, ở đây là sợi. Tư liệu lao động truyền dẫn sự tác động của con người, ở đây là máy dệt. Phương án d sai vì người thợ là người lao động, có sức lao động, không phải đối tượng lao động.",
-      source: S_SX(),
+        "Đúng là b. Sợi là nguyên vật liệu mà lao động tác động vào, tức đối tượng lao động. Máy dệt là công cụ lao động, thuộc tư liệu lao động. Phương án d sai vì người thợ là người lao động, có sức lao động, không thuộc tư liệu sản xuất.",
+      source: S_TLSX,
     },
   ],
 };

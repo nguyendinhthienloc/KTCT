@@ -2,6 +2,7 @@
 
 import type { CapitalContent, Distinction } from "@/content/schema";
 import { SurplusValue } from "@/components/interactive/surplus/SurplusValue";
+import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { RichText } from "@/components/ui/RichText";
 import { SourceNote } from "@/components/ui/SourceNote";
@@ -15,7 +16,9 @@ const isProfit = (d: Distinction) => /lợi nhuận|loi-nhuan|profit/i.test(`${d
  */
 export function Ch04Capital({ content }: { content: CapitalContent }) {
   const { visual, academic, baseline, scenarios } = content;
-  const distinctions = academic.distinctions ?? [];
+  const allDistinctions = academic.distinctions ?? [];
+  const profitDistinctions = allDistinctions.filter(isProfit);
+  const distinctions = allDistinctions.filter((d) => !isProfit(d));
 
   return (
     <div className="pb-24 md:pb-32">
@@ -55,7 +58,16 @@ export function Ch04Capital({ content }: { content: CapitalContent }) {
       </section>
 
       {/* ───── Tầng 2 ───── */}
-      <section aria-labelledby="ch04-academic" className="container-cinema border-t border-ivory/10 pt-20 md:pt-28">
+      {profitDistinctions.length > 0 && (
+        <section aria-label="Giá trị thặng dư và lợi nhuận" className="container-cinema border-t border-ivory/10 pt-20 pb-20 md:pt-28 md:pb-28">
+          {profitDistinctions.map((d) => (
+            <DistinctionBlock key={d.id} d={d} prominent />
+          ))}
+        </section>
+      )}
+
+      <LearnMore tone="dark">
+      <section aria-labelledby="ch04-academic">
         <p id="ch04-academic" className="eyebrow mb-12 text-bronze">
           Giải thích học thuật
         </p>
@@ -106,10 +118,10 @@ export function Ch04Capital({ content }: { content: CapitalContent }) {
         {/* Ba cặp phân biệt */}
         {distinctions.length > 0 && (
           <div className="mt-24">
-            <p className="eyebrow mb-4 text-bronze">Ba cặp khái niệm dễ nhầm</p>
+            <p className="eyebrow mb-4 text-bronze">Các cặp khái niệm dễ nhầm khác</p>
             <div className="flex flex-col gap-24 md:gap-32">
               {distinctions.map((d) => (
-                <DistinctionBlock key={d.id} d={d} prominent={isProfit(d)} />
+                <DistinctionBlock key={d.id} d={d} prominent={false} />
               ))}
             </div>
           </div>
@@ -130,6 +142,7 @@ export function Ch04Capital({ content }: { content: CapitalContent }) {
           </ol>
         </div>
       </section>
+      </LearnMore>
 
       {/* ───── Tầng 3 ───── */}
       <section className="container-cinema mt-24 md:mt-32">

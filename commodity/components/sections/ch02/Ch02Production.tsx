@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef } from "react";
 import type { ProductionContent } from "@/content/schema";
 import { gsap } from "@/lib/motion";
 import { ChapterShell } from "@/components/ui/ChapterShell";
+import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { RichText } from "@/components/ui/RichText";
 import { SourceNote } from "@/components/ui/SourceNote";
@@ -194,8 +195,8 @@ export function Ch02Production({ content }: { content: ProductionContent }) {
         </p>
 
         {/* Tầng 2 — học thuật */}
-        <div className="py-24 md:py-40">
-          <div className="container-cinema">
+        <LearnMore tone="dark">
+          <div>
             <p className="eyebrow mb-14 text-bronze">Giải thích học thuật</p>
             <div className="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2">
               {academic.concepts.map((c, i) => (
@@ -252,7 +253,7 @@ export function Ch02Production({ content }: { content: ProductionContent }) {
               </div>
             ))}
           </div>
-        </div>
+        </LearnMore>
 
         {/* Tầng 3 — kiểm tra */}
         <div className="container-cinema pb-24 md:pb-36">

@@ -1,14 +1,22 @@
 import type { Source, ValueContent } from "./schema";
 
-const src = (section: string, note?: string): Source => ({
-  chapter: "Chương 2",
+const CH = "Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường";
+
+const ok = (section: string, page: string, note?: string): Source => ({
+  chapter: CH,
   section,
-  page: "?",
-  needsCheck: true,
+  page,
   ...(note ? { note } : {}),
 });
 
-const S_LGT = "2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng";
+const NOT_FOUND = "Không tìm thấy trong bài giảng";
+const chk = (section: string, note: string): Source => ({
+  chapter: CH,
+  section,
+  page: "?",
+  needsCheck: true,
+  note,
+});
 
 export const value: ValueContent = {
   chapterId: "gia-tri",
@@ -36,7 +44,7 @@ export const value: ValueContent = {
       {
         id: "gt-beat-4",
         heading: "Giá trị không đứng yên",
-        body: "Lượng giá trị còn thay đổi theo năng suất lao động, cường độ lao động và mức độ phức tạp của lao động.",
+        body: "Lượng giá trị hàng hóa luôn thay đổi, chịu ảnh hưởng của năng suất lao động và mức độ phức tạp của lao động.",
         conceptId: "luong-gia-tri",
       },
     ],
@@ -67,7 +75,7 @@ export const value: ValueContent = {
     },
   ],
   method:
-    "Mô hình xấp xỉ thời gian lao động xã hội cần thiết bằng bình quân gia quyền của thời gian lao động cá biệt, lấy sản lượng của mỗi nơi làm trọng số: cộng (giờ mỗi áo nhân số áo) của từng nơi rồi chia cho tổng số áo. Cách tính này tiến gần thời gian lao động cá biệt của nhà sản xuất cung cấp đại bộ phận hàng hóa. Điều đó phù hợp với nhận định của giáo trình. Đây là mô hình minh họa, không phải công thức do giáo trình đưa ra.",
+    "Mô hình xấp xỉ thời gian lao động xã hội cần thiết bằng bình quân gia quyền của thời gian lao động cá biệt, lấy sản lượng của mỗi nơi làm trọng số: cộng (giờ mỗi áo nhân số áo) của từng nơi rồi chia cho tổng số áo. Cách tính này tiến gần thời gian lao động cá biệt của nhà sản xuất cung cấp đại bộ phận hàng hóa. Đây là cách mô hình hóa của đề án để minh họa; bài giảng chỉ mô tả thời gian lao động xã hội cần thiết là thời gian trong điều kiện bình thường của xã hội, không đưa công thức bình quân gia quyền này.",
   assumptions: [
     {
       id: "gt-as-1",
@@ -87,7 +95,7 @@ export const value: ValueContent = {
     },
     {
       id: "gt-as-5",
-      text: "Bình quân gia quyền theo sản lượng chỉ là cách xấp xỉ. Giáo trình mô tả thời gian lao động xã hội cần thiết bằng lời, không đưa công thức này.",
+      text: "Bình quân gia quyền theo sản lượng chỉ là cách xấp xỉ của đề án. Bài giảng mô tả thời gian lao động xã hội cần thiết bằng lời (điều kiện bình thường, trình độ kỹ thuật, khéo léo và cường độ lao động trung bình), không đưa công thức này.",
     },
   ],
   factors: [
@@ -95,12 +103,12 @@ export const value: ValueContent = {
       id: "nang-suat-lao-dong",
       term: "Năng suất lao động",
       definition:
-        "Năng suất lao động là năng lực sản xuất của người lao động, được tính bằng số lượng sản phẩm làm ra trong một đơn vị thời gian, hoặc bằng lượng thời gian lao động hao phí để làm ra một đơn vị sản phẩm.",
+        "Năng suất lao động là năng lực sản xuất của lao động, được tính bằng số lượng sản phẩm sản xuất ra trong một đơn vị thời gian, hoặc số lượng thời gian cần thiết để sản xuất ra một đơn vị sản phẩm.",
       explanation:
-        "Năng suất lao động tăng thì thời gian lao động cần thiết cho mỗi sản phẩm giảm. Lượng giá trị của một đơn vị hàng hóa giảm, còn tổng giá trị tạo ra trong cùng một thời gian lao động thì không đổi.",
+        "Năng suất lao động tăng thì lượng lao động kết tinh trong một đơn vị hàng hóa giảm, nên giá trị hàng hóa giảm: năng suất lao động tỷ lệ nghịch với giá trị (và giá cả) hàng hóa. Năng suất lao động cá biệt tăng thì giá cả cá biệt giảm, nhà sản xuất đạt lợi nhuận cao.",
       tshirtExample:
         "Máy dệt mới giúp nhà máy B làm một chiếc áo trong 5 giờ thay vì 10 giờ. Mỗi chiếc áo chứa ít lao động hơn, nên giá trị mỗi chiếc giảm khi mức này trở thành phổ biến.",
-      source: src(S_LGT),
+      source: ok("Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa; Năng suất lao động", "34–37"),
     },
     {
       id: "cuong-do-lao-dong",
@@ -111,18 +119,21 @@ export const value: ValueContent = {
         "Cường độ lao động tăng nghĩa là cùng một thời gian, người lao động hao phí nhiều sức hơn và làm ra nhiều sản phẩm hơn. Tổng giá trị tăng, nhưng giá trị của một đơn vị hàng hóa không đổi.",
       tshirtExample:
         "Công nhân may làm việc dồn dập hơn, hoàn thành 10 áo thay vì 8 áo trong một ca. Mỗi áo vẫn chứa lượng lao động như cũ.",
-      source: src(S_LGT, "Cần đối chiếu cách giáo trình diễn đạt về tác động của cường độ lao động."),
+      source: chk(
+        "Thước đo của lượng giá trị hàng hóa (cường độ lao động trung bình)",
+        NOT_FOUND + ". Bài giảng chỉ nêu cường độ lao động trung bình là một điều kiện của thời gian lao động xã hội cần thiết (tr.29); các nhân tố ảnh hưởng đến lượng giá trị chỉ gồm năng suất lao động và mức độ phức tạp của lao động (tr.34, 37). Nhóm cần quyết định giữ hay bỏ mục này."
+      ),
     },
     {
       id: "tinh-chat-phuc-tap",
-      term: "Tính chất phức tạp của lao động (lao động giản đơn và lao động phức tạp)",
+      term: "Mức độ phức tạp của lao động (lao động giản đơn và lao động phức tạp)",
       definition:
-        "Lao động giản đơn là lao động mà bất kỳ người lao động bình thường nào, không cần phải trải qua đào tạo cũng có thể thực hiện được. Lao động phức tạp là lao động đòi hỏi phải được đào tạo, huấn luyện thành lao động chuyên môn, lành nghề.",
+        "Lao động phức tạp quy đổi thành n lần lao động giản đơn. Mức độ phức tạp của lao động tăng thì lượng lao động kết tinh trong hàng hóa tăng, nên giá trị hàng hóa tăng.",
       explanation:
-        "Trong cùng một thời gian, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn. Lao động phức tạp được coi là lao động giản đơn nhân bội lên.",
+        "Mức độ phức tạp của lao động tỷ lệ thuận với giá trị (và giá cả) hàng hóa. Trong cùng một thời gian, lao động phức tạp, chuyên môn, lành nghề tạo ra nhiều giá trị hơn lao động giản đơn.",
       tshirtExample:
         "Một giờ lao động của thợ cắt may lành nghề, thiết kế rập mẫu, tạo ra nhiều giá trị hơn một giờ của người làm công việc đóng gói đơn giản.",
-      source: src(S_LGT),
+      source: ok("Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa; Mức độ phức tạp của lao động", "27–28, 34, 37"),
     },
   ],
   academic: {
@@ -131,23 +142,23 @@ export const value: ValueContent = {
         id: "gia-tri-hang-hoa",
         term: "Giá trị hàng hóa (chất của giá trị)",
         definition:
-          "Chất của giá trị hàng hóa là lao động trừu tượng của người sản xuất hàng hóa kết tinh trong hàng hóa. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra giá trị.",
+          "Chất của giá trị hàng hóa là lao động xã hội của người làm ra hàng hóa, kết tinh trong hàng hóa. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo nên giá trị.",
         explanation:
-          "Vì giá trị là lao động xã hội kết tinh, những vật hoàn toàn khác nhau về công dụng vẫn so sánh và trao đổi được với nhau.",
+          "Lao động xã hội là mức trung bình của các lao động tư nhân. Vì giá trị là lao động xã hội kết tinh, những vật hoàn toàn khác nhau về công dụng vẫn so sánh và trao đổi được với nhau.",
         tshirtExample:
-          "Chiếc áo thun chứa lao động trừu tượng của người trồng bông, kéo sợi, dệt và may. Tổng hao phí ấy tạo nên giá trị của chiếc áo.",
-        source: src(S_LGT),
+          "Chiếc áo thun chứa lao động của người trồng bông, kéo sợi, dệt và may. Tổng hao phí lao động xã hội ấy tạo nên giá trị của chiếc áo.",
+        source: ok("Giá trị hàng hóa — chất của giá trị; Tại sao phải là lao động xã hội?", "24–25, 43–46"),
       },
       {
         id: "luong-gia-tri",
         term: "Lượng giá trị hàng hóa",
         definition:
-          "Lượng giá trị hàng hóa là lượng lao động xã hội của người sản xuất kết tinh trong hàng hóa, được đo bằng thời gian lao động xã hội cần thiết để sản xuất ra hàng hóa đó.",
+          "Lượng giá trị hàng hóa là lượng lao động hao phí để sản xuất ra hàng hóa đó. Thước đo của nó là thời gian lao động xã hội cần thiết.",
         explanation:
-          "Lượng giá trị không do thời gian lao động cá biệt của từng người quyết định. Nó chịu ảnh hưởng của năng suất lao động, cường độ lao động và tính chất phức tạp của lao động.",
+          "Lượng giá trị không do thời gian lao động cá biệt của từng người quyết định. Nó luôn thay đổi, chịu ảnh hưởng của năng suất lao động và mức độ phức tạp của lao động.",
         tshirtExample:
           "Dù xưởng A mất 10 giờ cho một chiếc áo, chiếc áo ấy vẫn chỉ có lượng giá trị tương ứng với thời gian lao động xã hội cần thiết.",
-        source: src(S_LGT),
+        source: ok("Lượng giá trị hàng hóa; Thước đo của lượng giá trị hàng hóa", "26, 28–30, 34"),
       },
       {
         id: "tgld-ca-biet",
@@ -158,9 +169,9 @@ export const value: ValueContent = {
           "Mỗi nhà sản xuất có trình độ công nghệ và tay nghề khác nhau, nên thời gian lao động cá biệt khác nhau. Thị trường thừa nhận mức xã hội, không thừa nhận mức cá biệt.",
         tshirtExample:
           "Xưởng thủ công A mất 10 giờ, nhà máy hiện đại B mất 5 giờ, xưởng trung bình C mất 7 giờ. Đó là ba thời gian lao động cá biệt.",
-        source: src(
-          S_LGT,
-          "Cần đối chiếu: giáo trình có thể không định nghĩa riêng khái niệm này mà chỉ đối lập với thời gian lao động xã hội cần thiết."
+        source: chk(
+          "Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa (năng suất lao động cá biệt)",
+          NOT_FOUND + ". Bài giảng chỉ nói về “năng suất lao động cá biệt” và “giá trị cá biệt” của hàng hóa (tr.34, 91), không định nghĩa riêng “thời gian lao động cá biệt”. Khái niệm này là cách diễn đạt của đề án, đối lập với thời gian lao động xã hội cần thiết."
         ),
       },
     ],
@@ -172,21 +183,21 @@ export const value: ValueContent = {
           term: "Thời gian lao động cá biệt",
           points: [
             "Là thời gian hao phí của từng người sản xuất.",
-            "Khác nhau giữa các nhà sản xuất, tùy công nghệ và tay nghề.",
+            "Khác nhau giữa các nhà sản xuất, tùy năng suất lao động cá biệt.",
             "Quyết định giá trị cá biệt của hàng hóa.",
           ],
         },
         right: {
           term: "Thời gian lao động xã hội cần thiết",
           points: [
-            "Là thời gian cần để sản xuất một giá trị sử dụng trong điều kiện bình thường của xã hội, với trình độ thành thạo và cường độ trung bình.",
-            "Thường đồng nhất với thời gian cá biệt của người cung cấp đại bộ phận hàng hóa.",
-            "Quyết định lượng giá trị xã hội của hàng hóa.",
+            "Là thời gian cần thiết để sản xuất một đơn vị hàng hóa trong điều kiện bình thường của xã hội, với trình độ kỹ thuật, độ khéo léo và cường độ lao động trung bình.",
+            "Là thước đo lượng giá trị hàng hóa.",
+            "Điều kiện sản xuất tốt hơn mức này thì lợi nhuận cao; kém hơn thì thất bại, bị đào thải.",
           ],
         },
         takeaway:
           "Lượng giá trị của hàng hóa do thời gian lao động xã hội cần thiết quyết định, không phải do thời gian lao động cá biệt.",
-        source: src(S_LGT),
+        source: ok("Thước đo của lượng giá trị hàng hóa; Cạnh tranh trong nội bộ ngành", "28–30, 34, 91"),
       },
     ],
   },
@@ -203,8 +214,11 @@ export const value: ValueContent = {
       ],
       correct: "d",
       explanation:
-        "Đúng là d. Mô hình lấy bình quân theo sản lượng: (10 × 100 + 5 × 800 + 7 × 100) / 1.000 = 5,7 giờ. Phương án a quá tuyệt đối vì mô hình chỉ xấp xỉ. Phương án b bỏ qua thị phần. Phương án c sai vì người làm chậm nhất không quyết định.",
-      source: src(S_LGT),
+        "Đúng là d, theo cách tính của mô hình: (10 × 100 + 5 × 800 + 7 × 100) / 1.000 = 5,7 giờ. Phương án a quá tuyệt đối vì mô hình chỉ xấp xỉ. Phương án b bỏ qua thị phần. Phương án c sai vì người làm chậm nhất không quyết định: thước đo là thời gian trong điều kiện bình thường của xã hội. Lưu ý: bình quân gia quyền là cách mô hình hóa của đề án, không phải công thức trong bài giảng.",
+      source: chk(
+        "Thước đo của lượng giá trị hàng hóa",
+        NOT_FOUND + " cho cách tính bình quân gia quyền theo thị phần (đây là mô hình của đề án). Phần đúng theo bài giảng: thời gian lao động xã hội cần thiết là thời gian trong điều kiện bình thường của xã hội, không phải của người làm chậm nhất (tr.28–30)."
+      ),
     },
     {
       id: "gt-q2",
@@ -218,8 +232,8 @@ export const value: ValueContent = {
       ],
       correct: "c",
       explanation:
-        "Đúng là c. Năng suất lao động tăng thì thời gian lao động xã hội cần thiết cho một sản phẩm giảm, nên lượng giá trị một đơn vị hàng hóa giảm. Phương án a nhầm công dụng với giá trị. Phương án d nhầm giá cả với giá trị.",
-      source: src(S_LGT),
+        "Đúng là c. Năng suất lao động tăng thì lượng lao động kết tinh trong hàng hóa giảm, nên lượng giá trị một đơn vị hàng hóa giảm (năng suất lao động tỷ lệ nghịch với giá trị hàng hóa). Phương án a nhầm công dụng với giá trị. Phương án d nhầm giá cả với giá trị.",
+      source: ok("Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa", "34, 37"),
     },
   ],
 };

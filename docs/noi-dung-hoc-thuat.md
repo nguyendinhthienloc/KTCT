@@ -24,7 +24,7 @@ Hành trình này đi theo một chiếc áo thun trắng, từ cánh đồng b�
 **Chú thích bốn pha biến đổi**
 
 - **cotton** — Bông — đối tượng lao động: Mọi thứ bắt đầu từ bông — **đối tượng lao động** mà con người tác động vào. Bông đã trồng và thu hoạch là loại đã qua lao động, tức **nguyên liệu**. _(khái niệm: san-xuat)_
-- **thread** — Sợi — lao động cụ thể: Bông được kéo thành sợi. Công việc kéo sợi có mục đích, công cụ và kỹ năng riêng: đó là **lao động cụ thể**. _(khái niệm: lao-dong-cu-the)_
+- **thread** — Sợi — lao động cụ thể: Bông được kéo thành sợi. Công việc kéo sợi có mục đích, phương tiện và phương pháp riêng: đó là **lao động cụ thể**. _(khái niệm: lao-dong-cu-the)_
 - **fabric** — Vải — tư liệu sản xuất: Sợi được dệt thành vải. Vải là sản phẩm của công đoạn này, rồi trở thành **tư liệu sản xuất** của công đoạn kế tiếp. _(khái niệm: tu-lieu-san-xuat)_
 - **shirt** — Áo thun — hàng hóa: Tấm vải được cắt và may thành áo. Khi được đem trao đổi, mua bán, chiếc áo trở thành **hàng hóa**. _(khái niệm: hang-hoa)_
 
@@ -52,47 +52,46 @@ Chiếc áo trắng nằm trước mặt bạn. Hãy chạm vào từng điểm 
 #### Hàng hóa  `hang-hoa`
 
 - **Định nghĩa:** Hàng hóa là sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán.
-- **Giải thích:** Hàng hóa có thể ở dạng vật thể hoặc phi vật thể. Một sản phẩm chỉ là hàng hóa khi nó được làm ra để trao đổi, mua bán. Hàng hóa có hai thuộc tính: giá trị sử dụng và giá trị.
+- **Giải thích:** Mọi hàng hóa đều là sản phẩm, nhưng không phải mọi sản phẩm đều là hàng hóa: muốn thành hàng hóa, sản phẩm phải được làm ra không phải để làm tư liệu sinh hoạt trực tiếp cho chính người sản xuất. Hàng hóa có thể hữu hình hoặc vô hình, và có hai thuộc tính là giá trị sử dụng và giá trị.
 - **Ví dụ áo thun:** Chiếc áo may sẵn để bán trong cửa hàng là hàng hóa. Chiếc áo bạn tự may để mặc, không đem trao đổi, thì chưa phải hàng hóa.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 1.2. Hàng hóa; So sánh giữa sản phẩm và hàng hóa; 1.4. Phân loại hàng hóa, trang 12–13, 73
 
 #### Giá trị sử dụng  `gia-tri-su-dung`
 
-- **Định nghĩa:** Giá trị sử dụng của hàng hóa là công dụng của vật, có thể thỏa mãn nhu cầu nào đó của con người.
-- **Giải thích:** Công dụng này do thuộc tính tự nhiên của vật quyết định. Giá trị sử dụng được thể hiện khi sử dụng hay tiêu dùng, và là nội dung vật chất của của cải.
+- **Định nghĩa:** Giá trị sử dụng của hàng hóa là công dụng của vật phẩm, có thể thỏa mãn nhu cầu nào đó của con người.
+- **Giải thích:** Giá trị sử dụng là tính có ích của sản phẩm, do thuộc tính tự nhiên của vật quyết định, được thể hiện ra trong tiêu dùng. Đó là phạm trù vĩnh viễn, gắn với nội dung vật chất cấu thành của hàng hóa.
 - **Ví dụ áo thun:** Áo cotton thấm hút mồ hôi, che nắng, giữ ấm. Đó là giá trị sử dụng của chiếc áo.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Hai thuộc tính của hàng hóa — Giá trị sử dụng, trang 15–17, 39
 
 #### Giá trị (của hàng hóa)  `gia-tri`
 
-- **Định nghĩa:** Giá trị của hàng hóa là lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa.
-- **Giải thích:** Giá trị là thuộc tính xã hội của hàng hóa. Ta không nhìn, sờ được giá trị. Nó biểu hiện ra ngoài qua giá trị trao đổi.
+- **Định nghĩa:** Giá trị của hàng hóa là lượng lao động xã hội của người sản xuất hàng hóa “kết tinh” trong hàng hóa đó. Giá trị là phạm trù lịch sử.
+- **Giải thích:** Giá trị là thuộc tính xã hội của hàng hóa. Giá trị là khái niệm trừu tượng, người ta không nắm được nó ở chỗ nào, nên muốn xác định giá trị phải thông qua giá trị trao đổi.
 - **Ví dụ áo thun:** Trong chiếc áo kết tinh lao động của người trồng bông, kéo sợi, dệt vải và may. Đó là cơ sở để chiếc áo có giá trị.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa, trang 18, 21, 24, 39
 
 #### Giá trị trao đổi  `gia-tri-trao-doi`
 
-- **Định nghĩa:** Giá trị trao đổi là quan hệ về số lượng, hay tỷ lệ trao đổi giữa những giá trị sử dụng khác nhau. Nó là hình thức biểu hiện ra bên ngoài của giá trị.
-- **Giải thích:** Giá trị là nội dung, là cơ sở của giá trị trao đổi. Giá trị trao đổi là hình thức biểu hiện của giá trị trong quan hệ trao đổi.
+- **Định nghĩa:** Giá trị trao đổi là một quan hệ về số lượng, là một tỷ lệ theo đó những giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác.
+- **Giải thích:** Giá trị trao đổi phụ thuộc vào giá trị hàng hóa. Giá trị được biểu hiện qua trao đổi bằng hiện vật (hàng đổi hàng) hoặc bằng tiền (giá cả). Ví dụ trong bài giảng: 10 kg gạo = 2 m vải = 8 giờ lao động xã hội.
 - **Ví dụ áo thun:** Một chiếc áo trao đổi được với một lượng gạo hay một số tiền nhất định. Tỷ lệ ấy là giá trị trao đổi của chiếc áo.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa (mặt lượng) — giá trị trao đổi, trang 18–19, 45
 
 #### So sánh: Giá trị sử dụng và giá trị  `dist-gtsd-gt`
 
 **Giá trị sử dụng**
-- Là công dụng của vật, do thuộc tính tự nhiên quyết định.
+- Là công dụng của vật phẩm, thuộc tính tự nhiên của hàng hóa; là phạm trù vĩnh viễn.
 - Khác nhau giữa các hàng hóa: áo để mặc, gạo để ăn.
-- Được thực hiện khi sử dụng, tiêu dùng.
+- Được thực hiện sau, thể hiện ra trong sử dụng, tiêu dùng.
 
 **Giá trị**
-- Là lao động xã hội của người sản xuất kết tinh trong hàng hóa.
-- Là thuộc tính chung của mọi hàng hóa, nên các hàng hóa so sánh và trao đổi được với nhau.
-- Chỉ biểu hiện ra ngoài qua giá trị trao đổi.
+- Là lượng lao động xã hội của người sản xuất kết tinh trong hàng hóa; là thuộc tính xã hội, phạm trù lịch sử.
+- Là cái chung của mọi hàng hóa, nên các hàng hóa so sánh và trao đổi được với nhau.
+- Được thực hiện trước; muốn xác định phải thông qua giá trị trao đổi.
 
-> Chốt: Giá trị sử dụng trả lời câu hỏi “dùng để làm gì”. Giá trị trả lời câu hỏi “vì sao trao đổi được với nhau”. Hàng hóa phải có cả hai thuộc tính.
+> Chốt: Giá trị và giá trị sử dụng là hai mặt đối lập của hàng hóa, và bất kỳ hàng hóa nào cũng chứa đựng cả hai. Người tiêu dùng quan tâm giá trị sử dụng tốt nhất trong tầm giá; người sản xuất quan tâm giá trị. Có giá trị sử dụng nhưng không có giá trị thì là sản phẩm, không phải hàng hóa.
 
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
-  - Ghi chú: Ý nghĩa kinh tế: người mua quan tâm giá trị sử dụng, người bán quan tâm giá trị. Cần đối chiếu cách giáo trình diễn đạt.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Mối quan hệ giữa giá trị sử dụng và giá trị hàng hóa, trang 39–40
 
 ### Tầng 3 — Kiểm tra nhanh
 
@@ -104,8 +103,8 @@ Chiếc áo trắng nằm trước mặt bạn. Hãy chạm vào từng điểm 
 - [ ] D. Chiếc áo là hàng hóa, vì nó thỏa mãn nhu cầu của người mặc.
 
 Đáp án đúng: **B**
-Giải thích: Đúng là b. Hàng hóa là sản phẩm của lao động thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán. Các phương án a, c, d chỉ nêu công dụng hoặc việc có lao động. Đó là điều kiện cần, nhưng chưa đủ nếu sản phẩm không đi vào trao đổi.
-Nguồn: Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là b. Hàng hóa là sản phẩm của lao động, thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán. Mọi hàng hóa đều là sản phẩm nhưng chưa phải mọi sản phẩm là hàng hóa: sản phẩm có giá trị sử dụng nhưng không có giá trị, tức không được làm ra để trao đổi, thì chưa phải hàng hóa. Các phương án a, c, d chỉ nêu công dụng hoặc việc có lao động, là điều kiện cần nhưng chưa đủ.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, So sánh giữa sản phẩm và hàng hóa; Mối quan hệ giữa giá trị sử dụng và giá trị hàng hóa, trang 13, 40
 
 **Câu 2.** Chiếc áo và một lượng gạo có công dụng hoàn toàn khác nhau nhưng vẫn trao đổi được với nhau theo một tỷ lệ nhất định. Điều gì là cơ sở chung của việc trao đổi?
 
@@ -115,8 +114,8 @@ Nguồn: Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
 - [ ] D. Cả hai đều có giá bán bằng tiền.
 
 Đáp án đúng: **C**
-Giải thích: Đúng là c. Cơ sở chung là giá trị. Phương án a nói về giá trị sử dụng, vốn khác nhau giữa áo và gạo nên không làm cơ sở so sánh. Phương án d nhầm hình thức biểu hiện (giá cả) với cơ sở bên trong của trao đổi.
-Nguồn: Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là c. Cơ sở chung là giá trị. Phương án a nói về giá trị sử dụng, vốn khác nhau giữa áo và gạo nên không làm cơ sở so sánh. Phương án d nhầm hình thức biểu hiện (giá cả) với cơ sở bên trong của trao đổi. Ví dụ bài giảng: 10 kg gạo = 2 m vải = 8 giờ lao động xã hội.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa; Giá trị trao đổi, trang 18–19, 21
 
 ## Chương 02 — Sản xuất  `san-xuat`
 
@@ -169,82 +168,80 @@ Chiếc áo không tự xuất hiện. Hãy đi qua bảy công đoạn, và đ�
 
 ### Tầng 2 — Giải thích học thuật
 
-#### Sản xuất của cải vật chất  `san-xuat`
+#### Quá trình sản xuất  `san-xuat`
 
-- **Định nghĩa:** Sản xuất của cải vật chất là quá trình con người sử dụng tư liệu lao động tác động vào đối tượng lao động để tạo ra những sản phẩm cần thiết cho đời sống và phát triển xã hội.
-- **Giải thích:** Đây là hoạt động cơ bản nhất của con người, làm cơ sở cho sự tồn tại của xã hội. Ba yếu tố của quá trình sản xuất là sức lao động, đối tượng lao động và tư liệu lao động.
-- **Ví dụ áo thun:** Từ trồng bông đến may áo, con người dùng công cụ, máy móc tác động vào bông, sợi, vải để tạo ra chiếc áo.
-- **Nguồn:** Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)**
-  - Ghi chú: Diễn đạt lại theo ý giáo trình. Cần đối chiếu định nghĩa nguyên văn.
+- **Định nghĩa:** Quá trình sản xuất là quá trình tiêu dùng tư liệu sản xuất và sức lao động. Giá trị sử dụng cũ được tiêu dùng, chuyển sang giá trị sử dụng mới, tạo thành sản phẩm mới.
+- **Giải thích:** Quá trình này cần hai yếu tố: người lao động (có sức lao động) và tư liệu sản xuất như máy móc thiết bị, nhà xưởng, nguyên vật liệu. Người lao động và tư liệu sản xuất hợp thành lực lượng sản xuất của xã hội.
+- **Ví dụ áo thun:** Từ trồng bông đến may áo, người lao động dùng máy móc, công cụ tác động vào bông, sợi, vải để tạo ra chiếc áo là sản phẩm mới.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Quá trình sản xuất hàng hóa (tiêu dùng tư liệu sản xuất và sức lao động), trang 23
 
 #### Tư liệu sản xuất  `tu-lieu-san-xuat`
 
-- **Định nghĩa:** Tư liệu sản xuất gồm đối tượng lao động và tư liệu lao động. Đối tượng lao động là những vật mà lao động của con người tác động vào. Tư liệu lao động là những vật hay hệ thống vật dùng để truyền dẫn sự tác động của con người lên đối tượng lao động.
-- **Giải thích:** Đối tượng lao động có thể có sẵn trong tự nhiên (như đất đai) hoặc đã qua lao động, khi đó gọi là nguyên liệu. Trong tư liệu lao động, công cụ lao động giữ vai trò quyết định. Sản phẩm của công đoạn trước thường là đối tượng lao động của công đoạn sau.
-- **Ví dụ áo thun:** Đất trồng bông là đối tượng lao động có sẵn trong tự nhiên. Bông đã thu hoạch, sợi, vải là đối tượng lao động đã qua lao động, tức nguyên liệu. Máy kéo sợi, máy dệt, máy may là tư liệu lao động.
-- **Nguồn:** Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu: khái niệm sản xuất, tư liệu sản xuất có thể nằm ở Chương 1 hoặc Chương 2 của giáo trình.
+- **Định nghĩa:** Tư liệu sản xuất gồm tư liệu lao động và đối tượng lao động. Tư liệu lao động gồm công cụ lao động, hệ thống bình chứa của sản xuất và kết cấu hạ tầng của sản xuất.
+- **Giải thích:** Trong quá trình sản xuất, tư liệu sản xuất gồm máy móc thiết bị, nhà xưởng, nguyên vật liệu. Sản phẩm của công đoạn trước thường trở thành nguyên vật liệu, tức đối tượng lao động, của công đoạn sau.
+- **Ví dụ áo thun:** Bông, sợi, vải là nguyên vật liệu (đối tượng lao động). Máy kéo sợi, máy dệt, máy may là công cụ lao động, thuộc tư liệu lao động.
+- **Nguồn:** Bài giảng Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của KTCT Mác – Lênin, Đối tượng và phương pháp nghiên cứu — lực lượng sản xuất: người lao động và tư liệu sản xuất, trang 23–24
+  - Ghi chú: Bài giảng chỉ nêu cấu trúc (tư liệu sản xuất gồm tư liệu lao động và đối tượng lao động; tư liệu lao động gồm công cụ lao động, hệ thống bình chứa, kết cấu hạ tầng của sản xuất), không định nghĩa riêng bằng lời hai khái niệm đối tượng lao động và tư liệu lao động.
 
 #### Sức lao động  `suc-lao-dong`
 
-- **Định nghĩa:** Sức lao động là toàn bộ những năng lực thể chất và tinh thần tồn tại trong cơ thể, trong một con người, và được người đó vận dụng vào quá trình sản xuất.
-- **Giải thích:** Sức lao động là khả năng, còn lao động là việc sử dụng khả năng đó. Sức lao động chỉ trở thành hiện thực khi người ta làm việc.
-- **Ví dụ áo thun:** Một công nhân may có sức khỏe và tay nghề. Đó là sức lao động của người ấy. Khi ngồi vào máy may và làm việc, sức lao động được sử dụng thành lao động.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — hàng hóa sức lao động, trang ? **(cần đối chiếu)**
+- **Định nghĩa:** Sức lao động hay năng lực lao động là toàn bộ những năng lực thể chất và tinh thần tồn tại trong một cơ thể, trong một con người đang sống, và được người đó đem ra vận dụng mỗi khi sản xuất ra một giá trị sử dụng nào đó.
+- **Giải thích:** Sức lao động là khả năng, còn lao động là việc tiêu dùng sức lao động. Người công nhân bán sức lao động, không bán lao động.
+- **Ví dụ áo thun:** Một công nhân may có sức khỏe và tay nghề. Đó là sức lao động của người ấy. Khi ngồi vào máy may và làm việc, sức lao động được tiêu dùng thành lao động.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 14–19, 43–44
 
 #### Lao động cụ thể  `lao-dong-cu-the`
 
-- **Định nghĩa:** Lao động cụ thể là lao động có ích dưới một hình thức cụ thể của những nghề nghiệp chuyên môn nhất định. Mỗi lao động cụ thể có mục đích, đối tượng, công cụ, phương pháp và kết quả riêng.
-- **Giải thích:** Lao động cụ thể tạo ra giá trị sử dụng của hàng hóa. Các lao động cụ thể khác nhau tạo ra những giá trị sử dụng khác nhau.
+- **Định nghĩa:** Lao động cụ thể là lao động có ích dưới hình thức cụ thể của nghề nghiệp, chuyên môn nhất định. Mỗi lao động cụ thể có đối tượng, mục đích, phương tiện, phương pháp và kết quả riêng.
+- **Giải thích:** Lao động cụ thể, cùng với nội dung vật chất cấu thành của sản phẩm, là một trong hai yếu tố tạo ra giá trị sử dụng của hàng hóa. Nó cho biết lao động được tiến hành như thế nào.
 - **Ví dụ áo thun:** Người kéo sợi tạo ra sợi, người dệt tạo ra vải, người may tạo ra chiếc áo. Mỗi người làm một việc khác nhau.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — tính hai mặt của lao động sản xuất hàng hóa, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.2. Tính hai mặt của lao động sản xuất hàng hóa, trang 41–44, 46
 
 #### Lao động trừu tượng  `lao-dong-truu-tuong`
 
-- **Định nghĩa:** Lao động trừu tượng là lao động của người sản xuất hàng hóa khi đã gạt bỏ những hình thức cụ thể của nó. Đó là sự hao phí sức lao động nói chung của người sản xuất hàng hóa (hao phí sức bắp thịt, thần kinh, trí óc).
-- **Giải thích:** Lao động trừu tượng tạo ra giá trị của hàng hóa. Giá trị là lao động trừu tượng của người sản xuất kết tinh trong hàng hóa.
-- **Ví dụ áo thun:** Dù là kéo sợi, dệt hay may, người lao động đều hao phí sức lực và thời gian. Phần hao phí chung ấy là lao động trừu tượng.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — tính hai mặt của lao động sản xuất hàng hóa, trang ? **(cần đối chiếu)**
+- **Định nghĩa:** Lao động trừu tượng là lao động của người sản xuất hàng hóa khi đã gạt bỏ những hình thức cụ thể của nó. Đó là sự hao phí sức lực và thần kinh của người sản xuất hàng hóa.
+- **Giải thích:** Lao động trừu tượng tạo nên giá trị hàng hóa. Nó có ý nghĩa về mặt lượng: cho biết đã tiêu phí lao động trong bao lâu.
+- **Ví dụ áo thun:** Dù là kéo sợi, dệt hay may, người lao động đều hao phí sức lực và thần kinh trong một khoảng thời gian. Phần hao phí chung ấy là lao động trừu tượng.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.2. Tính hai mặt của lao động sản xuất hàng hóa, trang 41–44, 46
 
 #### Thời gian lao động xã hội cần thiết  `tgldxhct`
 
-- **Định nghĩa:** Thời gian lao động xã hội cần thiết là thời gian đòi hỏi để sản xuất ra một giá trị sử dụng nào đó trong những điều kiện bình thường của xã hội, với trình độ thành thạo trung bình, cường độ lao động trung bình. Trên thực tế, nó thường đồng nhất với thời gian lao động cá biệt của người sản xuất cung cấp đại bộ phận hàng hóa đó trên thị trường.
-- **Giải thích:** Lượng giá trị của hàng hóa do thời gian lao động xã hội cần thiết quyết định, không phải do thời gian lao động cá biệt của từng người. Chương 03 sẽ cho bạn thử tính.
+- **Định nghĩa:** Thời gian lao động xã hội cần thiết là thời gian cần thiết để sản xuất ra một đơn vị hàng hóa, trong hoàn cảnh xã hội nhất định, trong điều kiện bình thường của xã hội, với trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình.
+- **Giải thích:** Thời gian lao động xã hội cần thiết là thước đo lượng giá trị của hàng hóa, không phải thời gian lao động cá biệt của từng người. Chương 03 sẽ cho bạn thử tính.
 - **Ví dụ áo thun:** Nếu điều kiện bình thường của xã hội là 7 giờ để làm một chiếc áo, thì chiếc áo chứa lượng giá trị tương ứng 7 giờ lao động xã hội, dù một xưởng cụ thể mất 10 giờ.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa, trang ? **(cần đối chiếu)**
-  - Ghi chú: Giáo trình dùng cụm “thời gian lao động xã hội cần thiết”. Cần đối chiếu câu chữ định nghĩa.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa, trang 28–30
 
 #### So sánh: Lao động cụ thể và lao động trừu tượng  `dist-ldct-ldtt`
 
 **Lao động cụ thể**
-- Là lao động có ích dưới một hình thức nghề nghiệp nhất định.
-- Có mục đích, công cụ, phương pháp riêng.
-- Tạo ra giá trị sử dụng.
+- Là lao động có ích dưới hình thức nghề nghiệp, chuyên môn nhất định.
+- Có đối tượng, mục đích, phương tiện, phương pháp, kết quả riêng.
+- Tạo ra giá trị sử dụng; có ý nghĩa về mặt chất.
 
 **Lao động trừu tượng**
-- Là hao phí sức lao động nói chung, gạt bỏ hình thức cụ thể.
-- Giống nhau ở mọi người sản xuất hàng hóa.
-- Tạo ra giá trị.
+- Là lao động đã gạt bỏ hình thức cụ thể, chỉ còn hao phí sức lực, thần kinh.
+- Cho biết đã tiêu phí lao động trong bao lâu; có ý nghĩa về mặt lượng.
+- Tạo nên giá trị hàng hóa.
 
-> Chốt: Đây là hai mặt của cùng một lao động sản xuất hàng hóa. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra giá trị.
+> Chốt: Đây là hai mặt của cùng một lao động sản xuất hàng hóa. Lao động cụ thể gắn với giá trị sử dụng, lao động trừu tượng gắn với giá trị.
 
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — tính hai mặt của lao động sản xuất hàng hóa, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.2. Tính hai mặt của lao động sản xuất hàng hóa, trang 41–44, 46
 
 #### So sánh: Lao động và sức lao động  `dist-ld-sld-sx`
 
 **Sức lao động**
-- Là năng lực thể chất và tinh thần của con người.
-- Là khả năng làm việc, tồn tại trước khi làm việc.
-- Có thể được đem ra mua bán trong những điều kiện nhất định.
+- Là toàn bộ năng lực thể chất và tinh thần tồn tại trong cơ thể một con người đang sống.
+- Là hàng hóa đặc biệt: bán trong một thời gian nhất định, bán rồi người bán vẫn không từ bỏ quyền sở hữu sức lao động ấy.
+- Trở thành hàng hóa khi người lao động tự do về thân thể và buộc phải bán sức lao động.
 
 **Lao động**
-- Là hoạt động có mục đích của con người, tức là sự sử dụng sức lao động.
-- Chỉ diễn ra khi người lao động thực sự làm việc.
-- Là quá trình tạo ra sản phẩm và giá trị.
+- Là quá trình tiêu dùng sức lao động.
+- Không phải là hàng hóa. Cái người công nhân bán cho nhà tư bản là sức lao động.
+- Khi sức lao động được tiêu dùng, nó tạo ra giá trị mới lớn hơn giá trị bản thân nó.
 
-> Chốt: Sức lao động là khả năng làm việc. Lao động là việc sử dụng khả năng đó. Hai khái niệm này không đồng nhất.
+> Chốt: Sức lao động là khả năng làm việc. Lao động là việc tiêu dùng khả năng đó. Hai khái niệm này không đồng nhất.
 
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — hàng hóa sức lao động, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 14–19, 43–44
 
 ### Tầng 3 — Kiểm tra nhanh
 
@@ -256,8 +253,8 @@ Chiếc áo không tự xuất hiện. Hãy đi qua bảy công đoạn, và đ�
 - [ ] D. Chiếc máy may mà anh ta sử dụng.
 
 Đáp án đúng: **C**
-Giải thích: Đúng là c. Sức lao động là năng lực. Phương án a là lao động, tức là việc sử dụng sức lao động. Phương án b là sản phẩm. Phương án d là tư liệu lao động, thuộc tư liệu sản xuất.
-Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — hàng hóa sức lao động, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là c. Sức lao động là toàn bộ năng lực thể chất và tinh thần tồn tại trong con người, được đem ra vận dụng khi sản xuất. Phương án a là lao động, tức việc tiêu dùng sức lao động. Phương án b là sản phẩm. Phương án d là tư liệu lao động, thuộc tư liệu sản xuất.
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 14, 44
 
 **Câu 2.** Trong công đoạn dệt vải, thành phần nào dưới đây là đối tượng lao động, thành phần nào là tư liệu lao động?
 
@@ -267,9 +264,9 @@ Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư �
 - [ ] D. Người thợ dệt là đối tượng lao động; máy dệt là tư liệu lao động.
 
 Đáp án đúng: **B**
-Giải thích: Đúng là b. Đối tượng lao động là vật mà lao động tác động vào, ở đây là sợi. Tư liệu lao động truyền dẫn sự tác động của con người, ở đây là máy dệt. Phương án d sai vì người thợ là người lao động, có sức lao động, không phải đối tượng lao động.
-Nguồn: Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu: khái niệm sản xuất, tư liệu sản xuất có thể nằm ở Chương 1 hoặc Chương 2 của giáo trình.
+Giải thích: Đúng là b. Sợi là nguyên vật liệu mà lao động tác động vào, tức đối tượng lao động. Máy dệt là công cụ lao động, thuộc tư liệu lao động. Phương án d sai vì người thợ là người lao động, có sức lao động, không thuộc tư liệu sản xuất.
+Nguồn: Bài giảng Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của KTCT Mác – Lênin, Đối tượng và phương pháp nghiên cứu — lực lượng sản xuất: người lao động và tư liệu sản xuất, trang 23–24
+  - Ghi chú: Bài giảng chỉ nêu cấu trúc (tư liệu sản xuất gồm tư liệu lao động và đối tượng lao động; tư liệu lao động gồm công cụ lao động, hệ thống bình chứa, kết cấu hạ tầng của sản xuất), không định nghĩa riêng bằng lời hai khái niệm đối tượng lao động và tư liệu lao động.
 
 ## Chương 03 — Giá trị  `gia-tri`
 
@@ -280,7 +277,7 @@ Ba nhà sản xuất cùng làm ra một loại áo, nhưng mỗi nơi mất m�
 - **Ba nơi, ba tốc độ**: Xưởng thủ công mất 10 giờ cho một chiếc áo. Nhà máy hiện đại mất 5 giờ. Xưởng trung bình mất 7 giờ. Đó là thời gian lao động **cá biệt** của từng nơi. _(khái niệm: tgld-ca-biet)_
 - **Thị trường chỉ thấy một chiếc áo**: Trên thị trường, các chiếc áo cùng loại là như nhau. Người mua không hỏi nơi nào làm chậm hơn. Giá trị của áo phải dựa trên thời gian lao động **xã hội cần thiết**. _(khái niệm: tgldxhct)_
 - **Ai cung cấp nhiều hơn?**: Hãy đổi thị phần giữa ba nơi. Khi một nơi cung cấp đại bộ phận số áo, thời gian lao động xã hội cần thiết tiến gần thời gian cá biệt của nơi đó. _(khái niệm: tgldxhct)_
-- **Giá trị không đứng yên**: Lượng giá trị còn thay đổi theo năng suất lao động, cường độ lao động và mức độ phức tạp của lao động. _(khái niệm: luong-gia-tri)_
+- **Giá trị không đứng yên**: Lượng giá trị hàng hóa luôn thay đổi, chịu ảnh hưởng của năng suất lao động và mức độ phức tạp của lao động. _(khái niệm: luong-gia-tri)_
 
 #### Ba nhà sản xuất
 
@@ -299,7 +296,7 @@ Ba nhà sản xuất cùng làm ra một loại áo, nhưng mỗi nơi mất m�
 - **Ba nơi ngang nhau** `ngang-nhau` — sản lượng A=300, B=300, C=300; thời gian lao động xã hội cần thiết (tính lại) = 7,33 giờ.
   - Mỗi nơi cung cấp 300 chiếc. Thời gian lao động xã hội cần thiết trong mô hình xấp xỉ 7,3 giờ, là trung bình của 10, 5 và 7. B hao phí ít hơn 2,3 giờ, C ít hơn 0,3 giờ, còn A nhiều hơn 2,7 giờ.
 
-**Cách tính:** Mô hình xấp xỉ thời gian lao động xã hội cần thiết bằng bình quân gia quyền của thời gian lao động cá biệt, lấy sản lượng của mỗi nơi làm trọng số: cộng (giờ mỗi áo nhân số áo) của từng nơi rồi chia cho tổng số áo. Cách tính này tiến gần thời gian lao động cá biệt của nhà sản xuất cung cấp đại bộ phận hàng hóa. Điều đó phù hợp với nhận định của giáo trình. Đây là mô hình minh họa, không phải công thức do giáo trình đưa ra.
+**Cách tính:** Mô hình xấp xỉ thời gian lao động xã hội cần thiết bằng bình quân gia quyền của thời gian lao động cá biệt, lấy sản lượng của mỗi nơi làm trọng số: cộng (giờ mỗi áo nhân số áo) của từng nơi rồi chia cho tổng số áo. Cách tính này tiến gần thời gian lao động cá biệt của nhà sản xuất cung cấp đại bộ phận hàng hóa. Đây là cách mô hình hóa của đề án để minh họa; bài giảng chỉ mô tả thời gian lao động xã hội cần thiết là thời gian trong điều kiện bình thường của xã hội, không đưa công thức bình quân gia quyền này.
 
 #### Giả định của mô hình
 
@@ -307,71 +304,71 @@ Ba nhà sản xuất cùng làm ra một loại áo, nhưng mỗi nơi mất m�
 - Cùng một loại lao động giản đơn trung bình, cùng cường độ lao động trung bình ở cả ba nơi.
 - Thời gian lao động cá biệt (giờ mỗi áo) của mỗi nơi giữ cố định trong cả ba kịch bản. Chỉ có sản lượng thay đổi.
 - Toàn bộ số áo đều được đưa ra thị trường và bán hết. Điều kiện sản xuất của xã hội chỉ gồm ba nơi này.
-- Bình quân gia quyền theo sản lượng chỉ là cách xấp xỉ. Giáo trình mô tả thời gian lao động xã hội cần thiết bằng lời, không đưa công thức này.
+- Bình quân gia quyền theo sản lượng chỉ là cách xấp xỉ của đề án. Bài giảng mô tả thời gian lao động xã hội cần thiết bằng lời (điều kiện bình thường, trình độ kỹ thuật, khéo léo và cường độ lao động trung bình), không đưa công thức này.
 
 #### Các nhân tố ảnh hưởng lượng giá trị
 
 #### Năng suất lao động  `nang-suat-lao-dong`
 
-- **Định nghĩa:** Năng suất lao động là năng lực sản xuất của người lao động, được tính bằng số lượng sản phẩm làm ra trong một đơn vị thời gian, hoặc bằng lượng thời gian lao động hao phí để làm ra một đơn vị sản phẩm.
-- **Giải thích:** Năng suất lao động tăng thì thời gian lao động cần thiết cho mỗi sản phẩm giảm. Lượng giá trị của một đơn vị hàng hóa giảm, còn tổng giá trị tạo ra trong cùng một thời gian lao động thì không đổi.
+- **Định nghĩa:** Năng suất lao động là năng lực sản xuất của lao động, được tính bằng số lượng sản phẩm sản xuất ra trong một đơn vị thời gian, hoặc số lượng thời gian cần thiết để sản xuất ra một đơn vị sản phẩm.
+- **Giải thích:** Năng suất lao động tăng thì lượng lao động kết tinh trong một đơn vị hàng hóa giảm, nên giá trị hàng hóa giảm: năng suất lao động tỷ lệ nghịch với giá trị (và giá cả) hàng hóa. Năng suất lao động cá biệt tăng thì giá cả cá biệt giảm, nhà sản xuất đạt lợi nhuận cao.
 - **Ví dụ áo thun:** Máy dệt mới giúp nhà máy B làm một chiếc áo trong 5 giờ thay vì 10 giờ. Mỗi chiếc áo chứa ít lao động hơn, nên giá trị mỗi chiếc giảm khi mức này trở thành phổ biến.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa; Năng suất lao động, trang 34–37
 
 #### Cường độ lao động  `cuong-do-lao-dong`
 
 - **Định nghĩa:** Cường độ lao động là mức độ khẩn trương, nặng nhọc của lao động trong một đơn vị thời gian.
 - **Giải thích:** Cường độ lao động tăng nghĩa là cùng một thời gian, người lao động hao phí nhiều sức hơn và làm ra nhiều sản phẩm hơn. Tổng giá trị tăng, nhưng giá trị của một đơn vị hàng hóa không đổi.
 - **Ví dụ áo thun:** Công nhân may làm việc dồn dập hơn, hoàn thành 10 áo thay vì 8 áo trong một ca. Mỗi áo vẫn chứa lượng lao động như cũ.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu cách giáo trình diễn đạt về tác động của cường độ lao động.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa (cường độ lao động trung bình), trang ? **(cần đối chiếu)**
+  - Ghi chú: Không tìm thấy trong bài giảng. Bài giảng chỉ nêu cường độ lao động trung bình là một điều kiện của thời gian lao động xã hội cần thiết (tr.29); các nhân tố ảnh hưởng đến lượng giá trị chỉ gồm năng suất lao động và mức độ phức tạp của lao động (tr.34, 37). Nhóm cần quyết định giữ hay bỏ mục này.
 
-#### Tính chất phức tạp của lao động (lao động giản đơn và lao động phức tạp)  `tinh-chat-phuc-tap`
+#### Mức độ phức tạp của lao động (lao động giản đơn và lao động phức tạp)  `tinh-chat-phuc-tap`
 
-- **Định nghĩa:** Lao động giản đơn là lao động mà bất kỳ người lao động bình thường nào, không cần phải trải qua đào tạo cũng có thể thực hiện được. Lao động phức tạp là lao động đòi hỏi phải được đào tạo, huấn luyện thành lao động chuyên môn, lành nghề.
-- **Giải thích:** Trong cùng một thời gian, lao động phức tạp tạo ra nhiều giá trị hơn lao động giản đơn. Lao động phức tạp được coi là lao động giản đơn nhân bội lên.
+- **Định nghĩa:** Lao động phức tạp quy đổi thành n lần lao động giản đơn. Mức độ phức tạp của lao động tăng thì lượng lao động kết tinh trong hàng hóa tăng, nên giá trị hàng hóa tăng.
+- **Giải thích:** Mức độ phức tạp của lao động tỷ lệ thuận với giá trị (và giá cả) hàng hóa. Trong cùng một thời gian, lao động phức tạp, chuyên môn, lành nghề tạo ra nhiều giá trị hơn lao động giản đơn.
 - **Ví dụ áo thun:** Một giờ lao động của thợ cắt may lành nghề, thiết kế rập mẫu, tạo ra nhiều giá trị hơn một giờ của người làm công việc đóng gói đơn giản.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa; Mức độ phức tạp của lao động, trang 27–28, 34, 37
 
 ### Tầng 2 — Giải thích học thuật
 
 #### Giá trị hàng hóa (chất của giá trị)  `gia-tri-hang-hoa`
 
-- **Định nghĩa:** Chất của giá trị hàng hóa là lao động trừu tượng của người sản xuất hàng hóa kết tinh trong hàng hóa. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo ra giá trị.
-- **Giải thích:** Vì giá trị là lao động xã hội kết tinh, những vật hoàn toàn khác nhau về công dụng vẫn so sánh và trao đổi được với nhau.
-- **Ví dụ áo thun:** Chiếc áo thun chứa lao động trừu tượng của người trồng bông, kéo sợi, dệt và may. Tổng hao phí ấy tạo nên giá trị của chiếc áo.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+- **Định nghĩa:** Chất của giá trị hàng hóa là lao động xã hội của người làm ra hàng hóa, kết tinh trong hàng hóa. Lao động cụ thể tạo ra giá trị sử dụng, lao động trừu tượng tạo nên giá trị.
+- **Giải thích:** Lao động xã hội là mức trung bình của các lao động tư nhân. Vì giá trị là lao động xã hội kết tinh, những vật hoàn toàn khác nhau về công dụng vẫn so sánh và trao đổi được với nhau.
+- **Ví dụ áo thun:** Chiếc áo thun chứa lao động của người trồng bông, kéo sợi, dệt và may. Tổng hao phí lao động xã hội ấy tạo nên giá trị của chiếc áo.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa — chất của giá trị; Tại sao phải là lao động xã hội?, trang 24–25, 43–46
 
 #### Lượng giá trị hàng hóa  `luong-gia-tri`
 
-- **Định nghĩa:** Lượng giá trị hàng hóa là lượng lao động xã hội của người sản xuất kết tinh trong hàng hóa, được đo bằng thời gian lao động xã hội cần thiết để sản xuất ra hàng hóa đó.
-- **Giải thích:** Lượng giá trị không do thời gian lao động cá biệt của từng người quyết định. Nó chịu ảnh hưởng của năng suất lao động, cường độ lao động và tính chất phức tạp của lao động.
+- **Định nghĩa:** Lượng giá trị hàng hóa là lượng lao động hao phí để sản xuất ra hàng hóa đó. Thước đo của nó là thời gian lao động xã hội cần thiết.
+- **Giải thích:** Lượng giá trị không do thời gian lao động cá biệt của từng người quyết định. Nó luôn thay đổi, chịu ảnh hưởng của năng suất lao động và mức độ phức tạp của lao động.
 - **Ví dụ áo thun:** Dù xưởng A mất 10 giờ cho một chiếc áo, chiếc áo ấy vẫn chỉ có lượng giá trị tương ứng với thời gian lao động xã hội cần thiết.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Lượng giá trị hàng hóa; Thước đo của lượng giá trị hàng hóa, trang 26, 28–30, 34
 
 #### Thời gian lao động cá biệt  `tgld-ca-biet`
 
 - **Định nghĩa:** Thời gian lao động cá biệt là thời gian lao động hao phí của từng người sản xuất để sản xuất ra một hàng hóa. Nó quyết định lượng giá trị cá biệt của hàng hóa của người đó.
 - **Giải thích:** Mỗi nhà sản xuất có trình độ công nghệ và tay nghề khác nhau, nên thời gian lao động cá biệt khác nhau. Thị trường thừa nhận mức xã hội, không thừa nhận mức cá biệt.
 - **Ví dụ áo thun:** Xưởng thủ công A mất 10 giờ, nhà máy hiện đại B mất 5 giờ, xưởng trung bình C mất 7 giờ. Đó là ba thời gian lao động cá biệt.
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu: giáo trình có thể không định nghĩa riêng khái niệm này mà chỉ đối lập với thời gian lao động xã hội cần thiết.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa (năng suất lao động cá biệt), trang ? **(cần đối chiếu)**
+  - Ghi chú: Không tìm thấy trong bài giảng. Bài giảng chỉ nói về “năng suất lao động cá biệt” và “giá trị cá biệt” của hàng hóa (tr.34, 91), không định nghĩa riêng “thời gian lao động cá biệt”. Khái niệm này là cách diễn đạt của đề án, đối lập với thời gian lao động xã hội cần thiết.
 
 #### So sánh: Thời gian lao động cá biệt và thời gian lao động xã hội cần thiết  `dist-ca-biet-xhct`
 
 **Thời gian lao động cá biệt**
 - Là thời gian hao phí của từng người sản xuất.
-- Khác nhau giữa các nhà sản xuất, tùy công nghệ và tay nghề.
+- Khác nhau giữa các nhà sản xuất, tùy năng suất lao động cá biệt.
 - Quyết định giá trị cá biệt của hàng hóa.
 
 **Thời gian lao động xã hội cần thiết**
-- Là thời gian cần để sản xuất một giá trị sử dụng trong điều kiện bình thường của xã hội, với trình độ thành thạo và cường độ trung bình.
-- Thường đồng nhất với thời gian cá biệt của người cung cấp đại bộ phận hàng hóa.
-- Quyết định lượng giá trị xã hội của hàng hóa.
+- Là thời gian cần thiết để sản xuất một đơn vị hàng hóa trong điều kiện bình thường của xã hội, với trình độ kỹ thuật, độ khéo léo và cường độ lao động trung bình.
+- Là thước đo lượng giá trị hàng hóa.
+- Điều kiện sản xuất tốt hơn mức này thì lợi nhuận cao; kém hơn thì thất bại, bị đào thải.
 
 > Chốt: Lượng giá trị của hàng hóa do thời gian lao động xã hội cần thiết quyết định, không phải do thời gian lao động cá biệt.
 
-- **Nguồn:** Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa; Cạnh tranh trong nội bộ ngành, trang 28–30, 34, 91
 
 ### Tầng 3 — Kiểm tra nhanh
 
@@ -383,8 +380,9 @@ Ba nhà sản xuất cùng làm ra một loại áo, nhưng mỗi nơi mất m�
 - [x] D. Gần với 5 giờ của B (5,7 giờ trong mô hình).
 
 Đáp án đúng: **D**
-Giải thích: Đúng là d. Mô hình lấy bình quân theo sản lượng: (10 × 100 + 5 × 800 + 7 × 100) / 1.000 = 5,7 giờ. Phương án a quá tuyệt đối vì mô hình chỉ xấp xỉ. Phương án b bỏ qua thị phần. Phương án c sai vì người làm chậm nhất không quyết định.
-Nguồn: Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là d, theo cách tính của mô hình: (10 × 100 + 5 × 800 + 7 × 100) / 1.000 = 5,7 giờ. Phương án a quá tuyệt đối vì mô hình chỉ xấp xỉ. Phương án b bỏ qua thị phần. Phương án c sai vì người làm chậm nhất không quyết định: thước đo là thời gian trong điều kiện bình thường của xã hội. Lưu ý: bình quân gia quyền là cách mô hình hóa của đề án, không phải công thức trong bài giảng.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa, trang ? **(cần đối chiếu)**
+  - Ghi chú: Không tìm thấy trong bài giảng cho cách tính bình quân gia quyền theo thị phần (đây là mô hình của đề án). Phần đúng theo bài giảng: thời gian lao động xã hội cần thiết là thời gian trong điều kiện bình thường của xã hội, không phải của người làm chậm nhất (tr.28–30).
 
 **Câu 2.** Nhà máy B nhập máy mới làm một chiếc áo trong 5 giờ thay vì 10 giờ, và mức này lan rộng toàn xã hội. Điều gì xảy ra với lượng giá trị của một chiếc áo?
 
@@ -394,8 +392,8 @@ Nguồn: Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và c�
 - [ ] D. Không xác định được vì phụ thuộc vào giá bán.
 
 Đáp án đúng: **C**
-Giải thích: Đúng là c. Năng suất lao động tăng thì thời gian lao động xã hội cần thiết cho một sản phẩm giảm, nên lượng giá trị một đơn vị hàng hóa giảm. Phương án a nhầm công dụng với giá trị. Phương án d nhầm giá cả với giá trị.
-Nguồn: Chương 2, 2.1.2. Hàng hóa — lượng giá trị hàng hóa và các nhân tố ảnh hưởng, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là c. Năng suất lao động tăng thì lượng lao động kết tinh trong hàng hóa giảm, nên lượng giá trị một đơn vị hàng hóa giảm (năng suất lao động tỷ lệ nghịch với giá trị hàng hóa). Phương án a nhầm công dụng với giá trị. Phương án d nhầm giá cả với giá trị.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa, trang 34, 37
 
 ## Chương 04 — Tư bản  `tu-ban`
 
@@ -440,129 +438,122 @@ c = 60, v = 20, m = 20, W = 100; ngày lao động 8 giờ, thời gian tất y�
 
 #### Công thức
 
-- `W = c + v + m` — Giá trị hàng hóa gồm giá trị tư liệu sản xuất chuyển vào (c), giá trị sức lao động (v) và giá trị thặng dư (m).
-  - Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-- `Giá trị mới = v + m` — Giá trị mới là phần giá trị do lao động trừu tượng của công nhân tạo ra trong quá trình sản xuất. Phần c không phải giá trị mới, vì nó chỉ được chuyển vào sản phẩm.
-  - Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — tư bản bất biến và tư bản khả biến, trang ? **(cần đối chiếu)**
-- `m' = m / v × 100%` — Tỷ suất giá trị thặng dư là tỷ lệ phần trăm giữa m và v. Nó cho biết trình độ bóc lột sức lao động của tư bản. Ví dụ gốc: 20 / 20 × 100% = 100%.
-  - Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-  - Ghi chú: Giáo trình còn ghi m' bằng tỷ số giữa thời gian lao động thặng dư và thời gian lao động tất yếu. Cần đối chiếu ký hiệu.
-- `Ngày lao động = thời gian lao động tất yếu + thời gian lao động thặng dư` — Thời gian lao động tất yếu là phần ngày lao động tạo ra giá trị bằng giá trị sức lao động (v). Thời gian lao động thặng dư là phần còn lại, tạo ra m. Ví dụ gốc: 8 giờ = 4 giờ + 4 giờ.
-  - Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-- `m' = thời gian thặng dư / thời gian tất yếu × 100%` — Vì mỗi giờ tạo ra cùng lượng giá trị, m' cũng bằng tỷ số giữa hai phần thời gian. Ví dụ: 6 / 4 × 100% = 150%.
-  - Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-  - Ghi chú: Dạng này suy ra từ giả định mỗi giờ tạo ra cùng lượng giá trị. Cần đối chiếu.
+- `W = c + v + m` — Giá trị hàng hóa gồm giá trị tư liệu sản xuất chuyển vào (c), giá trị sức lao động (v) và giá trị thặng dư (m). Bài giảng ký hiệu giá trị hàng hóa là G (G = c + v + m); đề án dùng W.
+  - Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Chi phí sản xuất TBCN và lợi nhuận: G = c + v + m, trang 25, 71–72
+- `Giá trị mới = v + m` — Giá trị mới là phần giá trị do công nhân làm thuê tạo ra trong quá trình sản xuất, gồm phần bù lại giá trị sức lao động và phần dôi ra là giá trị thặng dư. Phần c không phải giá trị mới, vì nó chỉ được chuyển vào sản phẩm.
+  - Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Quá trình sản xuất giá trị thặng dư, trang 24–25
+- `m' = m / v × 100%` — Tỷ suất giá trị thặng dư là tỷ số tính theo phần trăm giữa giá trị thặng dư và tư bản khả biến tương ứng. Nó là biểu hiện chính xác của mức độ tư bản bóc lột sức lao động. Ví dụ gốc: 20 / 20 × 100% = 100%.
+  - Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tỷ suất và khối lượng giá trị thặng dư, trang 57
+- `Ngày lao động = thời gian lao động cần thiết (tất yếu) + thời gian lao động thặng dư` — Ngày lao động của công nhân chia làm hai phần: thời gian lao động cần thiết, tạo ra giá trị bằng giá trị sức lao động (v), và thời gian lao động thặng dư, tạo ra m. Ví dụ gốc: 8 giờ = 4 giờ + 4 giờ.
+  - Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Giá trị thặng dư TBCN — ngày lao động, trang 32, 35
+- `m' = thời gian thặng dư / thời gian tất yếu × 100%` — Bài giảng viết m' cũng bằng tỷ số giữa thời gian lao động thặng dư và thời gian lao động cần thiết. Ví dụ: 6 / 4 × 100% = 150%.
+  - Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tỷ suất và khối lượng giá trị thặng dư; Các phương pháp sản xuất giá trị thặng dư, trang 57, 60–61
 
 ### Tầng 2 — Giải thích học thuật
 
 #### Tư bản  `tu-ban`
 
-- **Định nghĩa:** Tư bản là giá trị mang lại giá trị thặng dư bằng cách bóc lột lao động không công của công nhân làm thuê. Nó phản ánh quan hệ sản xuất xã hội giữa giai cấp tư sản và giai cấp công nhân làm thuê.
-- **Giải thích:** Tư bản không chỉ là vật như máy móc hay tiền. Máy móc và tiền trở thành tư bản khi chúng được dùng để chiếm đoạt giá trị thặng dư.
+- **Định nghĩa:** Tư bản là sự vận động của giá trị nhằm mang lại giá trị thặng dư. Tư bản là tiền, tư bản là hàng hóa, vận động theo công thức T – H – T', trong đó T' lớn hơn T một lượng là giá trị thặng dư.
+- **Giải thích:** Tư bản không phải một vật mà là một quan hệ xã hội giữa người với người, do các vật làm trung gian. Nếu không mang hình thái hàng hóa, tiền không thể trở thành tư bản.
 - **Ví dụ áo thun:** Chủ xưởng dùng tiền mua bông, máy móc và thuê công nhân may, để bán áo thu về nhiều giá trị hơn số đã bỏ ra. Số tiền ấy vận động như tư bản.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu định nghĩa tư bản và công thức chung T – H – T'.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Công thức chung của tư bản; Định nghĩa tư bản của E.G. Wakefield, trang 5–7, 37
 
 #### Tư bản bất biến (c)  `tu-ban-bat-bien`
 
-- **Định nghĩa:** Tư bản bất biến là bộ phận tư bản tồn tại dưới hình thức tư liệu sản xuất mà giá trị được bảo tồn và chuyển vào sản phẩm, không thay đổi về lượng giá trị trong quá trình sản xuất.
-- **Giải thích:** Máy móc, nhà xưởng, nguyên liệu chỉ chuyển giá trị cũ của chúng vào sản phẩm. Chúng không tự tạo ra giá trị mới.
+- **Định nghĩa:** Tư bản bất biến là bộ phận tư bản biến thành tư liệu sản xuất, tức nguyên liệu, vật liệu phụ và tư liệu lao động, không thay đổi đại lượng giá trị của nó trong quá trình sản xuất. Ký hiệu là c.
+- **Giải thích:** Tư bản bất biến không đổi về giá trị nhưng đổi về giá trị sử dụng: giá trị sử dụng cũ biến đi rồi xuất hiện dưới hình thái giá trị sử dụng mới. Máy móc, như mọi bộ phận khác của tư bản bất biến, không tạo ra giá trị nào cả mà chỉ chuyển giá trị của bản thân nó vào sản phẩm.
 - **Ví dụ áo thun:** Giá trị bông, sợi, vải, khấu hao máy may chuyển vào chiếc áo. Đó là c = 60 trong ví dụ.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — tư bản bất biến và tư bản khả biến, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tư bản bất biến và tư bản khả biến; Máy móc có tạo ra giá trị thặng dư hay không?, trang 31, 41, 62
 
 #### Tư bản khả biến (v)  `tu-ban-kha-bien`
 
-- **Định nghĩa:** Tư bản khả biến là bộ phận tư bản dùng để mua sức lao động. Giá trị của nó chuyển hóa thành giá trị sức lao động và, trong quá trình sản xuất, được lao động của công nhân tái tạo ra, đồng thời tạo thêm một lượng giá trị mới lớn hơn.
-- **Giải thích:** Chỉ có lao động của công nhân làm thuê mới tạo ra giá trị mới. Vì vậy phần tư bản dùng để mua sức lao động là nguồn gốc của giá trị thặng dư.
+- **Định nghĩa:** Tư bản khả biến là bộ phận tư bản biến thành sức lao động, thay đổi giá trị của nó trong quá trình sản xuất: nó tái sản xuất ra vật ngang giá với bản thân nó và còn sản xuất ra một số dư, tức giá trị thặng dư. Ký hiệu là v.
+- **Giải thích:** Sức lao động (v) là nguồn gốc tạo ra giá trị thặng dư. Tư liệu sản xuất (c) chỉ tồn tại để tiêu dùng sức lao động nhằm tạo ra giá trị thặng dư.
 - **Ví dụ áo thun:** Tiền công trả cho công nhân may, v = 20 trong ví dụ. Họ tạo ra giá trị mới 40, gồm 20 thay cho tiền công và 20 là giá trị thặng dư.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — tư bản bất biến và tư bản khả biến, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tư bản bất biến và tư bản khả biến; Vai trò của tư bản bất biến và tư bản khả biến, trang 30, 42
 
 #### Hàng hóa sức lao động  `hang-hoa-suc-lao-dong`
 
-- **Định nghĩa:** Sức lao động trở thành hàng hóa khi có hai điều kiện: người lao động được tự do về thân thể, có quyền sở hữu sức lao động của mình; và người lao động không có đủ tư liệu sản xuất để tự thực hiện lao động, nên buộc phải bán sức lao động. Hàng hóa sức lao động có hai thuộc tính: giá trị và giá trị sử dụng.
-- **Giải thích:** Giá trị của hàng hóa sức lao động do giá trị các tư liệu sinh hoạt cần thiết để sản xuất và tái sản xuất sức lao động quyết định. Tiền công là biểu hiện bằng tiền của giá trị đó. Giá trị sử dụng của nó là công dụng trong lao động, và nó có đặc điểm riêng là tạo ra giá trị lớn hơn giá trị của bản thân nó.
+- **Định nghĩa:** Sức lao động trở thành hàng hóa khi có hai điều kiện: người lao động được tự do về thân thể, tự chi phối được sức lao động của mình như một hàng hóa; và họ không có hàng hóa nào khác (tư liệu sản xuất) để bán, nên buộc phải bán sức lao động. Hàng hóa sức lao động có hai thuộc tính: giá trị và giá trị sử dụng.
+- **Giải thích:** Giá trị hàng hóa sức lao động là thời gian lao động cần thiết để sản xuất và tái sản xuất ra nó, tức giá trị những tư liệu sinh hoạt vật chất và tinh thần cần thiết nuôi sống người lao động, phí tổn đào tạo và tư liệu sinh hoạt cho con cái họ; có yếu tố tinh thần và lịch sử. Tiền công là giá cả của sức lao động. Giá trị sử dụng của nó có đặc điểm riêng: khi sử dụng, nó tạo ra giá trị mới lớn hơn giá trị bản thân nó.
 - **Ví dụ áo thun:** Công nhân may bán sức lao động và nhận tiền công. Khi làm việc, họ tạo ra giá trị mới lớn hơn tiền công nhận được.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu: hai điều kiện, hai thuộc tính và các yếu tố cấu thành giá trị sức lao động.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 14–19, 43–44
 
-#### Thời gian lao động tất yếu  `thoi-gian-lao-dong-tat-yeu`
+#### Thời gian lao động cần thiết (tất yếu)  `thoi-gian-lao-dong-tat-yeu`
 
-- **Định nghĩa:** Thời gian lao động tất yếu là phần thời gian trong ngày lao động mà người công nhân tạo ra một lượng giá trị ngang bằng giá trị sức lao động của mình.
-- **Giải thích:** Trong thời gian này, lao động của công nhân thay thế giá trị sức lao động (v) mà nhà tư bản trả dưới hình thức tiền công.
-- **Ví dụ áo thun:** Trong ví dụ, 4 giờ đầu của ca 8 giờ là thời gian lao động tất yếu.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
+- **Định nghĩa:** Thời gian lao động cần thiết (còn gọi là thời gian lao động tất yếu) là phần thời gian trong ngày lao động mà công nhân tạo ra một lượng giá trị ngang bằng giá trị sức lao động mà nhà tư bản trả, tức giá trị sức lao động được hoàn lại bằng một vật ngang giá mới.
+- **Giải thích:** Trong thời gian này, lao động của công nhân thay thế giá trị sức lao động (v). Đừng nhầm với thời gian lao động xã hội cần thiết ở Chương 03: đó là thước đo lượng giá trị hàng hóa, còn đây là một phần của ngày lao động.
+- **Ví dụ áo thun:** Trong ví dụ, 4 giờ đầu của ca 8 giờ là thời gian lao động cần thiết.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Giá trị thặng dư TBCN — ngày lao động; Nguyên tắc thực hiện GTTD TBCN, trang 32, 35
 
 #### Thời gian lao động thặng dư  `thoi-gian-lao-dong-thang-du`
 
-- **Định nghĩa:** Thời gian lao động thặng dư là phần thời gian còn lại của ngày lao động, vượt quá thời gian lao động tất yếu. Trong thời gian đó người công nhân tạo ra giá trị thặng dư cho nhà tư bản.
-- **Giải thích:** Ngày lao động bằng thời gian lao động tất yếu cộng thời gian lao động thặng dư.
+- **Định nghĩa:** Thời gian lao động thặng dư là phần còn lại của ngày lao động, sau thời gian lao động cần thiết. Quá trình tạo ra giá trị kéo dài quá điểm bù lại giá trị sức lao động thì trở thành quá trình làm tăng giá trị, tức tạo ra giá trị thặng dư.
+- **Giải thích:** Ngày lao động của công nhân bằng thời gian lao động cần thiết cộng thời gian lao động thặng dư. Lao động thặng dư là nguồn của giá trị thặng dư.
 - **Ví dụ áo thun:** Trong ví dụ, 4 giờ sau của ca 8 giờ là thời gian lao động thặng dư. Nếu ca kéo dài thành 12 giờ, phần thặng dư là 8 giờ.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Giá trị thặng dư TBCN — ngày lao động; Nguyên tắc thực hiện GTTD TBCN, trang 32, 35, 71
 
 #### Giá trị thặng dư (m)  `gia-tri-thang-du`
 
-- **Định nghĩa:** Giá trị thặng dư là phần giá trị mới dôi ra ngoài giá trị sức lao động, do công nhân làm thuê tạo ra và bị nhà tư bản chiếm không.
-- **Giải thích:** Giá trị thặng dư xuất hiện trong quá trình sản xuất. Việc trao đổi giữa tiền công và sức lao động vẫn diễn ra theo nguyên tắc ngang giá.
+- **Định nghĩa:** Giá trị thặng dư TBCN (m) là một bộ phận của giá trị mới dôi ra ngoài giá trị sức lao động, do công nhân làm thuê tạo ra và thuộc về nhà tư bản.
+- **Giải thích:** Giá trị thặng dư xuất hiện trong quá trình sản xuất. Nhà tư bản mua sức lao động theo đúng giá trị, trao đổi vẫn theo nguyên tắc ngang giá; việc sức lao động tạo ra giá trị mới lớn hơn giá trị của nó là may mắn cho người mua, không phải bất công với người bán.
 - **Ví dụ áo thun:** Trong ví dụ gốc, công nhân tạo ra giá trị mới 40, nhận về giá trị sức lao động 20. Phần dôi ra m = 20 là giá trị thặng dư.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Quá trình sản xuất giá trị thặng dư; Nguyên tắc thực hiện GTTD TBCN, trang 24, 34–35
 
 #### Tỷ suất giá trị thặng dư (m')  `ty-suat-gia-tri-thang-du`
 
-- **Định nghĩa:** Tỷ suất giá trị thặng dư là tỷ lệ phần trăm giữa giá trị thặng dư và tư bản khả biến, m' = m / v × 100%. Nó phản ánh trình độ bóc lột sức lao động làm thuê của nhà tư bản.
-- **Giải thích:** Có hai phương pháp chính nâng m'. Giá trị thặng dư tuyệt đối: kéo dài ngày lao động vượt quá thời gian lao động tất yếu, trong khi thời gian lao động tất yếu không đổi. Giá trị thặng dư tương đối: rút ngắn thời gian lao động tất yếu bằng cách hạ thấp giá trị sức lao động nhờ tăng năng suất lao động xã hội, trước hết trong các ngành sản xuất tư liệu sinh hoạt, còn ngày lao động giữ nguyên.
-- **Ví dụ áo thun:** Ngày 8 giờ lên 10 giờ, thời gian tất yếu vẫn 4 giờ: m' tăng từ 100% lên 150%. Giữ 8 giờ nhưng thời gian tất yếu giảm xuống 2 giờ: m' lên 300%.
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — các phương pháp sản xuất giá trị thặng dư, trang ? **(cần đối chiếu)**
-  - Ghi chú: Giáo trình gọi các phương pháp theo thuật ngữ “giá trị thặng dư tuyệt đối” và “giá trị thặng dư tương đối”. Cần đối chiếu.
+- **Định nghĩa:** Tỷ suất giá trị thặng dư là tỷ số tính theo phần trăm giữa giá trị thặng dư và tư bản khả biến tương ứng để sản xuất ra giá trị thặng dư đó, m' = m / v × 100%. Nó là biểu hiện chính xác của mức độ tư bản bóc lột sức lao động.
+- **Giải thích:** Có hai phương pháp chính nâng m'. Giá trị thặng dư tuyệt đối: kéo dài tuyệt đối ngày lao động của công nhân trong điều kiện thời gian lao động cần thiết không đổi. Giá trị thặng dư tương đối: rút ngắn thời gian lao động cần thiết để kéo dài tương ứng thời gian lao động thặng dư, trên cơ sở tăng năng suất lao động xã hội, trong điều kiện độ dài ngày lao động không đổi.
+- **Ví dụ áo thun:** Ngày 8 giờ lên 10 giờ, thời gian cần thiết vẫn 4 giờ: m' tăng từ 100% lên 150%. Giữ 8 giờ nhưng thời gian cần thiết giảm xuống 2 giờ: m' lên 300%.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tỷ suất và khối lượng giá trị thặng dư; Các phương pháp sản xuất giá trị thặng dư, trang 57, 60–61
 
 #### So sánh: Tư bản bất biến và tư bản khả biến  `dist-c-v`
 
 **Tư bản bất biến (c)**
-- Tồn tại dưới hình thức tư liệu sản xuất: bông, máy móc, nhà xưởng.
-- Giá trị được bảo tồn và chuyển vào sản phẩm.
+- Biến thành tư liệu sản xuất: nguyên liệu, vật liệu phụ, tư liệu lao động như bông, máy móc, nhà xưởng.
+- Không thay đổi đại lượng giá trị; giá trị được chuyển vào sản phẩm.
 - Không tạo ra giá trị thặng dư.
 
 **Tư bản khả biến (v)**
-- Dùng để mua sức lao động, trả dưới dạng tiền công.
-- Giá trị được tái tạo và tạo thêm một lượng giá trị mới lớn hơn.
+- Biến thành sức lao động, trả dưới dạng tiền công.
+- Thay đổi giá trị trong quá trình sản xuất: tái sản xuất ra vật ngang giá và một số dư.
 - Là nguồn gốc của giá trị thặng dư.
 
 > Chốt: Dù máy móc có hiện đại đến đâu, giá trị mới vẫn chỉ do lao động của công nhân tạo ra. Vì thế chỉ phần v, không phải phần c, là nguồn gốc của m.
 
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư — tư bản bất biến và tư bản khả biến, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Vai trò của tư bản bất biến và tư bản khả biến; Máy móc có tạo ra giá trị thặng dư hay không?, trang 30–31, 41–42, 62
 
 #### So sánh: Lao động và sức lao động  `dist-ld-sld`
 
 **Sức lao động**
-- Là năng lực thể chất và tinh thần của người lao động.
-- Là hàng hóa được mua bán trên thị trường sức lao động.
-- Có giá trị (tiền công là biểu hiện bằng tiền) và giá trị sử dụng.
+- Là toàn bộ năng lực thể chất và tinh thần tồn tại trong cơ thể con người.
+- Là hàng hóa được mua bán trên thị trường; người công nhân bán sức lao động.
+- Có giá trị (tiền công là giá cả của nó) và giá trị sử dụng.
 
 **Lao động**
-- Là việc sử dụng sức lao động trong quá trình sản xuất.
+- Là quá trình tiêu dùng sức lao động.
 - Không phải là hàng hóa. Nhà tư bản mua sức lao động chứ không mua lao động.
-- Tạo ra giá trị mới, lớn hơn giá trị sức lao động.
+- Khi tiêu dùng sức lao động, tạo ra giá trị mới lớn hơn giá trị sức lao động.
 
-> Chốt: Nhà tư bản trả giá trị của sức lao động, nhưng được sử dụng lao động. Chính chênh lệch giữa giá trị lao động tạo ra và giá trị sức lao động là giá trị thặng dư.
+> Chốt: Nhà tư bản trả giá cả của sức lao động, nhưng được sử dụng lao động. Chính chênh lệch giữa giá trị mới lao động tạo ra và giá trị sức lao động là giá trị thặng dư.
 
-- **Nguồn:** Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu cách giáo trình nêu quan hệ giữa tiền công và giá trị sức lao động.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động; Tiền công, trang 19, 43–45
 
 #### So sánh: Giá trị thặng dư và lợi nhuận  `dist-m-loi-nhuan`
 
 **Giá trị thặng dư (m)**
 - Là phần giá trị mới dôi ra ngoài giá trị sức lao động.
-- Chỉ do lao động của công nhân làm thuê tạo ra, tức là do bộ phận v.
+- Do v (sức lao động trực tiếp của người sản xuất) sinh ra.
 - Là nội dung, là bản chất.
 
 **Lợi nhuận (p)**
-- Là hình thức biểu hiện, hình thái chuyển hóa của giá trị thặng dư.
-- Được quan niệm là con đẻ của toàn bộ tư bản ứng trước (c + v).
-- Là chênh lệch giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa.
+- Là số tiền lời nhà tư bản thu được sau khi bán hàng hóa, do chênh lệch giữa giá trị hàng hóa và chi phí sản xuất TBCN (k = c + v), G = k + p.
+- Là hình thái thần bí của m: làm ta tưởng m do toàn bộ (c + v) sinh ra.
+- Về lượng p và m thường không bằng nhau do cung cầu, nhưng xét toàn xã hội thì tổng m = tổng p.
 
-> Chốt: Lợi nhuận và giá trị thặng dư là hai đại lượng liên quan nhưng không đồng nhất. Lợi nhuận che giấu nguồn gốc thật của giá trị thặng dư.
+> Chốt: Về chất, lợi nhuận và giá trị thặng dư là một, cùng nguồn gốc là lao động. Nhưng lợi nhuận phản ánh sai lệch bản chất quan hệ sản xuất TBCN vì che giấu nguồn gốc thật của giá trị thặng dư.
 
-- **Nguồn:** Chương 3, 3.3. Các hình thức biểu hiện của giá trị thặng dư trong nền kinh tế thị trường (lợi nhuận), trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu cách giáo trình định nghĩa lợi nhuận và chi phí sản xuất. Phần này mô hình chưa tính toán.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 3.1. Lợi nhuận — chi phí sản xuất TBCN; Bản chất lợi nhuận, trang 72–73, 75
 
 ### Tầng 3 — Kiểm tra nhanh
 
@@ -575,18 +566,18 @@ c = 60, v = 20, m = 20, W = 100; ngày lao động 8 giờ, thời gian tất y�
 
 Đáp án đúng: **C**
 Giải thích: Đúng là c. m' = m / v × 100% = 25 / 15 × 100% ≈ 166,7%. Phương án b (150%) là giá trị khi kéo dài ngày lao động lên 10 giờ. Phương án d (300%) là khi thời gian tất yếu chỉ còn 2 giờ.
-Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tỷ suất và khối lượng giá trị thặng dư; Các phương pháp sản xuất giá trị thặng dư, trang 57, 60–61
 
 **Câu 2.** Điều kiện nào sau đây cần có để sức lao động trở thành hàng hóa?
 
 - [ ] A. Người lao động có đủ tư liệu sản xuất để tự sản xuất và bán sản phẩm.
-- [x] B. Người lao động có quyền sở hữu sức lao động của mình, và không có đủ tư liệu sản xuất để tự thực hiện lao động.
+- [x] B. Người lao động được tự do về thân thể, và không có hàng hóa (tư liệu sản xuất) nào khác để bán nên buộc phải bán sức lao động.
 - [ ] C. Người lao động bị ràng buộc thân thể với chủ để chủ có thể bán sức lao động của họ.
 - [ ] D. Người lao động có trình độ chuyên môn cao.
 
 Đáp án đúng: **B**
-Giải thích: Đúng là b: tự do về thân thể và không có tư liệu sản xuất nên buộc phải bán sức lao động. Phương án a sai vì người có đủ tư liệu sản xuất sẽ tự sản xuất. Phương án c sai vì không tự do thì không có quyền bán sức lao động của chính mình.
-Nguồn: Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là b: người lao động tự do về thân thể, chi phối được sức lao động của mình, đồng thời không có hàng hóa nào khác để bán nên buộc phải bán sức lao động. Phương án a sai vì người có đủ tư liệu sản xuất sẽ tự sản xuất. Phương án c sai vì không tự do thì không có quyền bán sức lao động của chính mình.
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động — hai điều kiện, trang 15–16, 98
 
 ## Chương 05 — Thị trường  `thi-truong`
 
@@ -597,7 +588,7 @@ Chiếc áo ra khỏi xưởng và đến thị trường. Ở đó, giá của 
 - **Chiếc áo có một con số**: Khi đem bán, giá trị của chiếc áo được biểu hiện bằng một số tiền nhất định. Đó là **giá cả**. _(khái niệm: gia-ca)_
 - **Giá lên, giá xuống**: Giá cả thị trường không đứng yên. Khi số áo nhiều hơn nhu cầu, giá giảm. Khi ít hơn nhu cầu, giá tăng. Đó là tác động của quan hệ **cung và cầu**. _(khái niệm: cung-cau)_
 - **Nhưng vẫn quanh một đường**: Giá cả lên xuống quanh giá trị. Giá trị là cơ sở của giá cả, nên mọi dao động cuối cùng vẫn gắn với **quy luật giá trị**. _(khái niệm: quy-luat-gia-tri)_
-- **Ai thắng, ai thua?**: Áo bán theo giá trị xã hội. Nhà sản xuất làm nhanh hơn mức xã hội có lãi, người làm chậm hơn bị thiệt. **Cạnh tranh** buộc mọi người phải cải tiến, và dẫn đến **tích lũy tư bản**. _(khái niệm: canh-tranh)_
+- **Ai thắng, ai thua?**: Áo bán theo giá trị xã hội. Nhà sản xuất làm nhanh hơn mức xã hội thì lợi nhuận cao, người làm chậm hơn thì thất bại. **Cạnh tranh** buộc mọi người phải cải tiến, hạ giá trị cá biệt; phần giá trị thặng dư thu được có thể dùng để **tích lũy tư bản**. _(khái niệm: canh-tranh)_
 
 #### Kịch bản giá (giá trị một áo = 100 đơn vị minh họa)
 
@@ -605,7 +596,7 @@ Chiếc áo ra khỏi xưởng và đến thị trường. Ở đó, giá của 
 - **Cung = Cầu** `cung-bang-cau`: độ lệch 0% → giá 100. Cung và cầu cân bằng, giá cả phù hợp với giá trị, tương ứng 100 đơn vị. Đây chỉ là mức giá mà các dao động quanh đó, không phải trạng thái đứng yên.
 - **Cung < Cầu** `cung-nho-hon-cau`: độ lệch +15% → giá 114.99999999999999. Áo ít hơn nhu cầu, người mua cạnh tranh nên giá cao hơn giá trị. Trong mô hình, giá cao hơn giá trị 15%, tương ứng 115 đơn vị. Giá trị của chiếc áo vẫn như cũ.
 
-**So sánh nhà sản xuất:** Áo thun bán theo giá trị xã hội, do thời gian lao động xã hội cần thiết quyết định (Chương 03). Với kịch bản ba nơi ngang nhau, thời gian ấy khoảng 7,3 giờ. Nhà máy B hao phí 5 giờ, ít hơn mức xã hội khoảng 2,3 giờ mỗi áo, nên thu về nhiều hơn mức hao phí của mình. Xưởng thủ công A hao phí 10 giờ, nhiều hơn mức xã hội khoảng 2,7 giờ mỗi áo, nên có phần lao động không được xã hội thừa nhận và có thể thua lỗ. Quy luật giá trị vì thế điều tiết sản xuất và lưu thông, kích thích cải tiến kỹ thuật, hợp lý hóa sản xuất, tăng năng suất lao động. Nó cũng làm phân hóa những người sản xuất: người có điều kiện tốt giàu lên, có thể tích lũy tư bản để mở rộng sản xuất, người yếu thế có nguy cơ phá sản.
+**So sánh nhà sản xuất:** Áo thun bán theo giá trị xã hội, do thời gian lao động xã hội cần thiết quyết định (Chương 03). Với kịch bản ba nơi ngang nhau, thời gian ấy khoảng 7,3 giờ. Nhà máy B hao phí 5 giờ, ít hơn mức xã hội khoảng 2,3 giờ mỗi áo, nên sản xuất trong điều kiện tốt và thu lợi nhuận cao. Xưởng thủ công A hao phí 10 giờ, nhiều hơn mức xã hội khoảng 2,7 giờ mỗi áo, tức điều kiện kém, có nguy cơ thất bại, bị đào thải. Để cạnh tranh, các doanh nghiệp cải tiến kỹ thuật, đổi mới công nghệ, hợp lý hóa sản xuất, tăng năng suất lao động, hạ thấp giá trị cá biệt của hàng hóa. Cạnh tranh làm phân hóa những người sản xuất, và phần giá trị thặng dư thu được có thể được tích lũy để mở rộng sản xuất.
 
 #### Giả định của mô hình
 
@@ -618,75 +609,69 @@ Chiếc áo ra khỏi xưởng và đến thị trường. Ở đó, giá của 
 
 #### Tiền tệ (tiền)  `tien-te`
 
-- **Định nghĩa:** Tiền là hàng hóa đặc biệt, được tách ra từ trong thế giới hàng hóa làm vật ngang giá chung thống nhất cho các hàng hóa khác. Nó thể hiện lao động xã hội và biểu hiện quan hệ giữa những người sản xuất hàng hóa.
-- **Giải thích:** Tiền có các chức năng: thước đo giá trị, phương tiện lưu thông, phương tiện cất trữ, phương tiện thanh toán và tiền tệ thế giới.
+- **Định nghĩa:** Tiền tệ là hàng hóa đặc biệt, được tách ra từ thế giới hàng hóa làm vật ngang giá chung trong tất cả các hàng hóa đem trao đổi.
+- **Giải thích:** Tiền là kết quả của quá trình phát triển sản xuất và trao đổi hàng hóa, là sản phẩm của sự phát triển các hình thái giá trị từ thấp đến cao. Lao động là bản chất của giá trị, tiền là biểu hiện của giá trị. Tiền có năm chức năng: thước đo giá trị, phương tiện lưu thông, phương tiện cất trữ, phương tiện thanh toán và tiền tệ thế giới.
 - **Ví dụ áo thun:** Thay vì đổi áo lấy gạo, người ta bán áo lấy tiền rồi dùng tiền mua gạo. Giá trị chiếc áo được đo bằng tiền.
-- **Nguồn:** Chương 2, 2.1.3. Tiền, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu định nghĩa nguyên văn và tên các chức năng của tiền.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 1.3. Tiền tệ — nguồn gốc, bản chất và chức năng của tiền, trang 47, 61–63
 
 #### Trao đổi hàng hóa  `trao-doi-hang-hoa`
 
-- **Định nghĩa:** Trao đổi hàng hóa là quan hệ mà những người sản xuất chuyển giao hàng hóa cho nhau theo nguyên tắc ngang giá, thông qua mua bán. Trong kinh tế hàng hóa phát triển, trao đổi diễn ra qua tiền (H – T – H).
-- **Giải thích:** Trao đổi theo nguyên tắc ngang giá nghĩa là trao đổi những lượng giá trị bằng nhau, dựa trên hao phí lao động xã hội cần thiết.
+- **Định nghĩa:** Trong lưu thông hàng hóa giản đơn, việc trao đổi hàng hóa thông qua tiền vận động theo công thức H – T – H (bán để mua). Việc sản xuất và trao đổi hàng hóa phải được tiến hành trên cơ sở hao phí lao động xã hội cần thiết.
+- **Giải thích:** Trao đổi hàng hóa theo quy luật giá trị là trao đổi ngang giá: vật ngang giá được trao đổi lấy vật ngang giá. Ví dụ trong bài giảng: 10 kg gạo = 2 m vải = 8 giờ lao động xã hội.
 - **Ví dụ áo thun:** Cửa hàng mua chiếc áo từ xưởng may và bán cho khách. Mỗi lần mua bán là một lần chuyển giao hàng hóa, đổi lấy tiền.
-- **Nguồn:** Chương 2, 2.1.3. Tiền, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu: mục giáo trình bàn về trao đổi hàng hóa và công thức H – T – H.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật giá trị (tr.85); Giá trị hàng hóa (tr.19); công thức H – T – H và nguyên tắc ngang giá: Bài giảng Chương 3, tr.5, 34, trang 85, 19
+  - Ghi chú: Bài giảng không có một định nghĩa riêng cho “trao đổi hàng hóa”; nội dung trên được ghép từ các trang nêu trong mục.
 
 #### Giá cả  `gia-ca`
 
-- **Định nghĩa:** Giá cả hàng hóa là giá trị của hàng hóa được biểu hiện bằng tiền.
-- **Giải thích:** Giá trị là cơ sở của giá cả. Giá cả thị trường lên xuống xung quanh giá trị do tác động của cung – cầu, cạnh tranh và các nhân tố khác. Giá cả không phải lúc nào cũng bằng giá trị.
+- **Định nghĩa:** Giá cả là chỉ số đại lượng giá trị hàng hóa, là chỉ số của tỷ lệ trao đổi giữa hàng hóa và tiền. Nói cách khác, giá cả là giá trị của hàng hóa được biểu hiện bằng tiền.
+- **Giải thích:** Giá cả ít khi thống nhất với giá trị mà xoay quanh giá trị theo quy luật cung – cầu. Giá trị là cơ sở của giá cả; hàng hóa có giá trị sử dụng và có giá trị mới có giá trị trao đổi.
 - **Ví dụ áo thun:** Chiếc áo có giá trị tương ứng 100 đơn vị. Khi áo khan hiếm, nó có thể bán với giá 115. Khi dư thừa, giá có thể chỉ còn 85.
-- **Nguồn:** Chương 2, 2.1.3. Tiền và 2.2. Thị trường (giá cả thị trường), trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu mục giáo trình nêu định nghĩa giá cả.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị và giá cả; Giá trị hàng hóa (biểu hiện bằng tiền), trang 20, 45
 
 #### Quy luật giá trị  `quy-luat-gia-tri`
 
-- **Định nghĩa:** Quy luật giá trị là quy luật kinh tế cơ bản của sản xuất và trao đổi hàng hóa. Quy luật yêu cầu việc sản xuất và trao đổi hàng hóa phải dựa trên cơ sở hao phí lao động xã hội cần thiết.
-- **Giải thích:** Trong sản xuất, hao phí lao động cá biệt phải phù hợp với hao phí lao động xã hội cần thiết. Trong trao đổi, hàng hóa được trao đổi theo nguyên tắc ngang giá. Quy luật điều tiết sản xuất và lưu thông, kích thích cải tiến kỹ thuật, tăng năng suất lao động, và phân hóa những người sản xuất hàng hóa.
+- **Định nghĩa:** Quy luật giá trị là một quy luật chủ yếu của thị trường. Nội dung: việc sản xuất và trao đổi hàng hóa phải được tiến hành trên cơ sở hao phí lao động xã hội cần thiết (giá trị = hao phí lao động xã hội cần thiết).
+- **Giải thích:** Nhà sản xuất có điều kiện sản xuất tốt hơn mức xã hội thì thu lợi nhuận cao; điều kiện bình thường thì thu lợi nhuận bình quân; điều kiện kém thì thất bại, bị đào thải.
 - **Ví dụ áo thun:** Xưởng nào làm áo nhanh hơn mức xã hội thì có lãi. Xưởng làm chậm hơn thì lỗ, buộc phải cải tiến.
-- **Nguồn:** Chương 2, 2.2. Thị trường và vai trò của các chủ thể tham gia thị trường, trang ? **(cần đối chiếu)**
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.1.3. Một số quy luật chủ yếu của thị trường — Quy luật giá trị; Thước đo của lượng giá trị hàng hóa, trang 30, 85
 
 #### Cung và cầu (quy luật cung – cầu)  `cung-cau`
 
-- **Định nghĩa:** Cung là khối lượng hàng hóa có thể đưa ra thị trường trong một thời kỳ tương ứng với mức giá nhất định. Cầu là nhu cầu có khả năng thanh toán đối với hàng hóa. Quy luật cung – cầu là quy luật điều tiết quan hệ giữa cung và cầu hàng hóa trên thị trường.
-- **Giải thích:** Cung lớn hơn cầu thì giá cả giảm xuống thấp hơn giá trị. Cung nhỏ hơn cầu thì giá cả tăng lên cao hơn giá trị. Cung bằng cầu thì giá cả phù hợp với giá trị.
+- **Định nghĩa:** Cung là số lượng hàng hóa, dịch vụ mà người bán có khả năng và sẵn sàng bán ở các mức giá khác nhau trong một thời gian nhất định. Cầu là số lượng hàng hóa, dịch vụ mà người mua có khả năng và sẵn sàng mua ở các mức giá khác nhau trong một thời gian nhất định.
+- **Giải thích:** Quy luật cung – cầu cho thấy cung và cầu tác động lẫn nhau, ảnh hưởng đến giá cả: cung bằng cầu thì giá cả bằng giá trị; cung lớn hơn cầu thì giá cả thấp hơn giá trị; cung nhỏ hơn cầu thì giá cả cao hơn giá trị. Quy luật này điều tiết quan hệ sản xuất và lưu thông hàng hóa.
 - **Ví dụ áo thun:** Cuối mùa, áo tồn kho nhiều hơn số người muốn mua nên phải giảm giá. Vào mùa nóng, áo ít mà người mua nhiều thì giá tăng.
-- **Nguồn:** Chương 2, 2.2. Thị trường và vai trò của các chủ thể tham gia thị trường, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu định nghĩa cung, cầu và cách nêu quan hệ cung – cầu – giá cả.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật cung – cầu, trang 20, 86–88
 
 #### Cạnh tranh  `canh-tranh`
 
-- **Định nghĩa:** Cạnh tranh là sự ganh đua giữa các chủ thể kinh tế nhằm giành lấy những điều kiện thuận lợi trong sản xuất, tiêu thụ hoặc thị trường để thu được lợi ích tối đa.
-- **Giải thích:** Cạnh tranh buộc các nhà sản xuất cải tiến kỹ thuật, giảm hao phí lao động. Đó là động lực của tăng trưởng, đồng thời dẫn đến phân hóa người sản xuất.
+- **Định nghĩa:** Cạnh tranh là sự ganh đua giữa những chủ thể kinh tế với nhau nhằm có được những ưu thế về sản xuất cũng như tiêu thụ, và thông qua đó thu được lợi ích tối đa.
+- **Giải thích:** Trong nội bộ ngành, các doanh nghiệp cải tiến kỹ thuật, đổi mới công nghệ, hợp lý hóa sản xuất, tăng năng suất lao động, hạ thấp giá trị cá biệt của hàng hóa. Kết quả là hình thành giá trị thị trường (giá trị xã hội) của từng loại hàng hóa. Cạnh tranh thúc đẩy lực lượng sản xuất, nhưng cạnh tranh không lành mạnh gây tổn hại môi trường kinh doanh.
 - **Ví dụ áo thun:** Nhà máy B nhập máy mới làm áo nhanh hơn, hạ giá bán và giành thị phần của xưởng thủ công A.
-- **Nguồn:** Chương 2, 2.2. Thị trường và vai trò của các chủ thể tham gia thị trường, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu định nghĩa cạnh tranh và quy luật cạnh tranh.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật cạnh tranh; Cạnh tranh trong nội bộ ngành; Tác động của cạnh tranh, trang 90–91, 94–95
 
 #### Tích lũy tư bản  `tich-luy-tu-ban`
 
-- **Định nghĩa:** Tích lũy tư bản là sự chuyển hóa một phần giá trị thặng dư trở lại thành tư bản, hay là quá trình tái sản xuất mở rộng tư bản chủ nghĩa. Nguồn gốc duy nhất của tích lũy tư bản là giá trị thặng dư.
-- **Giải thích:** Nhà tư bản dùng một phần giá trị thặng dư để mua thêm tư liệu sản xuất và thuê thêm công nhân, mở rộng sản xuất. Cạnh tranh thúc đẩy quá trình đó.
+- **Định nghĩa:** Thực chất của tích lũy tư bản là sự chuyển hóa một phần giá trị thặng dư thành tư bản (tư bản phụ thêm), hay tư bản đẻ ra tư bản.
+- **Giải thích:** Giá trị thặng dư thu được chia thành phần dành cho tiêu dùng và phần tích lũy để tái sản xuất mở rộng. Quy mô tích lũy tăng nhờ nâng cao tỷ suất giá trị thặng dư, tăng năng suất lao động, sử dụng hiệu quả máy móc và đại lượng tư bản ứng trước.
 - **Ví dụ áo thun:** Chủ nhà máy B dùng phần giá trị thặng dư thu được để mua thêm máy dệt và thuê thêm công nhân, mở rộng nhà máy.
-- **Nguồn:** Chương 3, 3.2. Tích lũy tư bản, trang ? **(cần đối chiếu)**
-  - Ghi chú: Cần đối chiếu định nghĩa. Giáo trình xếp mục này ở Chương 3.
+- **Nguồn:** Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 2. Tích lũy tư bản — bản chất và các nhân tố tăng quy mô tích lũy, trang 64–65
 
 #### So sánh: Giá trị và giá cả  `dist-gia-tri-gia-ca`
 
 **Giá trị**
-- Là lao động xã hội của người sản xuất kết tinh trong hàng hóa.
+- Là lượng lao động xã hội của người sản xuất kết tinh trong hàng hóa.
 - Do thời gian lao động xã hội cần thiết quyết định.
 - Là cơ sở, là nội dung bên trong.
 
 **Giá cả**
-- Là giá trị biểu hiện bằng tiền.
-- Lên xuống thường xuyên do cung – cầu, cạnh tranh, giá trị của tiền.
+- Là chỉ số của tỷ lệ trao đổi giữa hàng hóa và tiền; giá trị biểu hiện bằng tiền.
+- Ít khi thống nhất với giá trị mà xoay quanh giá trị theo quy luật cung – cầu.
 - Là hình thức biểu hiện bên ngoài.
 
-> Chốt: Giá cả không đồng nhất với giá trị nhưng gắn với giá trị: giá cả lên xuống xung quanh giá trị. Trên tổng thể xã hội, tổng giá cả bằng tổng giá trị.
+> Chốt: Giá cả không đồng nhất với giá trị nhưng gắn với giá trị: giá cả lên xuống xung quanh giá trị. Cung bằng cầu thì giá cả bằng giá trị.
 
-- **Nguồn:** Chương 2, 2.1.3. Tiền và 2.2. Thị trường (giá cả thị trường), trang ? **(cần đối chiếu)**
-  - Ghi chú: Câu về tổng giá cả bằng tổng giá trị cần đối chiếu xem giáo trình có nêu không; nếu không, hãy bỏ.
+- **Nguồn:** Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị và giá cả; Quy luật cung – cầu, trang 20, 45, 88
 
 ### Tầng 3 — Kiểm tra nhanh
 
@@ -698,19 +683,19 @@ Chiếc áo ra khỏi xưởng và đến thị trường. Ở đó, giá của 
 - [ ] D. Giá cả và giá trị đều không thể thay đổi.
 
 Đáp án đúng: **C**
-Giải thích: Đúng là c. Cung nhỏ hơn cầu thì người mua cạnh tranh, giá cả tăng lên cao hơn giá trị. Phương án a sai vì giá trị do thời gian lao động xã hội cần thiết quyết định, không do cung – cầu. Phương án b là trường hợp cung lớn hơn cầu.
-Nguồn: Chương 2, 2.2. Thị trường và vai trò của các chủ thể tham gia thị trường, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là c. Cung nhỏ hơn cầu thì giá cả cao hơn giá trị. Phương án a sai vì giá trị do hao phí lao động xã hội cần thiết quyết định, không do cung – cầu. Phương án b là trường hợp cung lớn hơn cầu.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị và giá cả; Quy luật cung – cầu, trang 20, 88
 
-**Câu 2.** Tác động nào sau đây KHÔNG thuộc tác động của quy luật giá trị?
+**Câu 2.** Nhà máy B hao phí 5 giờ để làm một chiếc áo, thấp hơn mức thời gian lao động xã hội cần thiết. Khi áo bán theo giá trị xã hội, điều gì xảy ra với B?
 
-- [ ] A. Điều tiết sản xuất và lưu thông hàng hóa.
-- [ ] B. Kích thích cải tiến kỹ thuật, tăng năng suất lao động.
-- [ ] C. Phân hóa những người sản xuất hàng hóa.
-- [x] D. Làm cho mọi nhà sản xuất có thu nhập như nhau.
+- [ ] A. B thua lỗ vì hao phí ít giờ lao động hơn.
+- [ ] B. B chỉ thu lợi nhuận bình quân như mọi nhà sản xuất khác.
+- [ ] C. B thất bại, bị đào thải khỏi thị trường.
+- [x] D. B thu được lợi nhuận cao hơn mức bình quân.
 
 Đáp án đúng: **D**
-Giải thích: Đúng là d. Quy luật giá trị phân hóa người sản xuất: ai có hao phí lao động cá biệt thấp hơn mức xã hội thì có lãi, ai cao hơn thì thua lỗ. Ba phương án còn lại là các tác động mà giáo trình nêu.
-Nguồn: Chương 2, 2.2. Thị trường và vai trò của các chủ thể tham gia thị trường, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là d. Theo bài giảng, sản xuất trong điều kiện tốt hơn mức xã hội thì lợi nhuận cao; điều kiện bình thường thì lợi nhuận bình quân (phương án b); điều kiện kém thì thất bại, bị đào thải (phương án c). Phương án a sai vì hao phí thấp hơn mức xã hội là có lợi, không phải thua lỗ.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa; Giá trị hàng hóa và giá trị thặng dư, trang 30–31
 
 ## Chương 06 — Nhìn lại
 
@@ -734,8 +719,8 @@ Nguồn: Chương 2, 2.2. Thị trường và vai trò của các chủ thể th
 - [ ] D. Giá cả do lao động quyết định; giá trị do cung – cầu quyết định.
 
 Đáp án đúng: **B**
-Giải thích: Đúng là b. Giá cả là hình thức biểu hiện bằng tiền của giá trị. Phương án a đánh đồng hai khái niệm. Phương án c và d đảo ngược hoặc lẫn lộn vai trò: cung – cầu làm giá cả lệch khỏi giá trị, không quyết định giá trị.
-Nguồn: Chương 2, 2.1.3. Tiền; 2.2. Thị trường, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là b. Giá cả là giá trị biểu hiện bằng tiền, là chỉ số tỷ lệ trao đổi giữa hàng hóa và tiền, và xoay quanh giá trị theo cung – cầu. Phương án a đánh đồng hai khái niệm. Phương án c và d đảo ngược hoặc lẫn lộn vai trò: cung – cầu làm giá cả lệch khỏi giá trị, không quyết định giá trị.
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị và giá cả; Giá trị hàng hóa (biểu hiện bằng tiền), trang 20, 45
 
 **Câu 2.** Khi nhà tư bản thuê công nhân may, nhà tư bản mua cái gì?
 
@@ -745,8 +730,8 @@ Nguồn: Chương 2, 2.1.3. Tiền; 2.2. Thị trường, trang ? **(cần đố
 - [x] D. Sức lao động của công nhân, tức hàng hóa sức lao động.
 
 Đáp án đúng: **D**
-Giải thích: Đúng là d. Hàng hóa bán trên thị trường là sức lao động. Phương án a hấp dẫn nhưng sai: lao động là việc sử dụng sức lao động, chỉ xảy ra sau khi mua. Phương án b sai vì người lao động tự do về thân thể, không bị mua như tài sản.
-Nguồn: Chương 3, 3.1. Hàng hóa sức lao động, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là d. Cái người công nhân bán cho nhà tư bản là sức lao động, không phải lao động. Phương án a hấp dẫn nhưng sai: lao động là việc sử dụng sức lao động, chỉ xảy ra sau khi mua. Phương án b sai vì người lao động tự do về thân thể, không bị mua như tài sản.
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 43–44
 
 **Câu 3.** Mối quan hệ giữa giá trị thặng dư và lợi nhuận là gì?
 
@@ -756,8 +741,8 @@ Nguồn: Chương 3, 3.1. Hàng hóa sức lao động, trang ? **(cần đối 
 - [ ] D. Giá trị thặng dư là phần lợi nhuận được chia cho công nhân.
 
 Đáp án đúng: **A**
-Giải thích: Đúng là a. Lợi nhuận là hình thái chuyển hóa của giá trị thặng dư, nhưng bị coi như do cả c và v tạo ra, nên che giấu nguồn gốc thật. Phương án b đánh đồng hai khái niệm. Phương án c đảo ngược quan hệ.
-Nguồn: Chương 3, 3.3. Các hình thức biểu hiện của giá trị thặng dư, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là a. Về chất, lợi nhuận và giá trị thặng dư là một, nhưng lợi nhuận là hình thái thần bí của giá trị thặng dư: nó làm ta tưởng giá trị thặng dư do cả c và v tạo ra, nên che giấu nguồn gốc thật. Phương án b bỏ qua sự khác biệt về hình thức biểu hiện và về lượng. Phương án c đảo ngược quan hệ: nguồn gốc duy nhất của giá trị thặng dư là lao động làm thuê.
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 3.1. Lợi nhuận — chi phí sản xuất TBCN; Bản chất lợi nhuận, trang 72, 75
 
 **Câu 4.** Trong xưởng may được trang bị máy móc rất hiện đại, bộ phận tư bản nào là nguồn gốc của giá trị thặng dư?
 
@@ -768,7 +753,7 @@ Nguồn: Chương 3, 3.3. Các hình thức biểu hiện của giá trị thặ
 
 Đáp án đúng: **C**
 Giải thích: Đúng là c. Máy móc, nguyên liệu chỉ chuyển giá trị cũ vào sản phẩm (c). Phương án a là nhầm lẫn thường gặp: máy móc giúp tăng năng suất, nhưng không tự tạo ra giá trị mới.
-Nguồn: Chương 3, 3.1. Tư bản bất biến và tư bản khả biến, trang ? **(cần đối chiếu)**
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Vai trò của tư bản bất biến và tư bản khả biến; Máy móc có tạo ra giá trị thặng dư hay không?, trang 30, 62
 
 **Câu 5.** Xưởng A mất 10 giờ làm một chiếc áo, trong khi thời gian lao động xã hội cần thiết là 7 giờ. Lượng giá trị của chiếc áo do xưởng A làm ra trên thị trường là bao nhiêu?
 
@@ -779,9 +764,9 @@ Nguồn: Chương 3, 3.1. Tư bản bất biến và tư bản khả biến, tra
 
 Đáp án đúng: **B**
 Giải thích: Đúng là b. Lượng giá trị do thời gian lao động xã hội cần thiết quyết định. Phương án a nhầm thời gian cá biệt với xã hội. Phương án d nhầm giá cả với giá trị. Xưởng A không được thừa nhận 3 giờ hao phí thừa.
-Nguồn: Chương 2, 2.1.2. Lượng giá trị hàng hóa, trang ? **(cần đối chiếu)**
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Lượng giá trị hàng hóa; Thước đo của lượng giá trị hàng hóa, trang 26–30
 
-**Câu 6.** Ngày lao động giữ nguyên 8 giờ, nhưng năng suất lao động xã hội tăng khiến giá trị sức lao động giảm, thời gian lao động tất yếu giảm. Đây là phương pháp nào?
+**Câu 6.** Ngày lao động giữ nguyên 8 giờ, nhưng năng suất lao động xã hội tăng khiến giá trị sức lao động giảm, thời gian lao động cần thiết (tất yếu) giảm. Đây là phương pháp nào?
 
 - [ ] A. Sản xuất giá trị thặng dư tuyệt đối.
 - [ ] B. Tích lũy tư bản.
@@ -789,8 +774,8 @@ Nguồn: Chương 2, 2.1.2. Lượng giá trị hàng hóa, trang ? **(cần đ�
 - [x] D. Sản xuất giá trị thặng dư tương đối.
 
 Đáp án đúng: **D**
-Giải thích: Đúng là d. Rút ngắn thời gian lao động tất yếu trong khi ngày lao động không đổi là giá trị thặng dư tương đối. Phương án a là kéo dài ngày lao động trong khi thời gian tất yếu không đổi. Phương án b là chuyển giá trị thặng dư thành tư bản.
-Nguồn: Chương 3, 3.1. Các phương pháp sản xuất giá trị thặng dư, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là d. Rút ngắn thời gian lao động cần thiết trên cơ sở tăng năng suất lao động xã hội, trong khi ngày lao động không đổi, là giá trị thặng dư tương đối. Phương án a là kéo dài tuyệt đối ngày lao động trong khi thời gian cần thiết không đổi. Phương án b là chuyển giá trị thặng dư thành tư bản.
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 1.3. Các phương pháp sản xuất giá trị thặng dư, trang 61
 
 **Câu 7.** Giá trị trao đổi của chiếc áo là gì?
 
@@ -801,20 +786,20 @@ Nguồn: Chương 3, 3.1. Các phương pháp sản xuất giá trị thặng d�
 
 Đáp án đúng: **A**
 Giải thích: Đúng là a. Phương án b là giá trị sử dụng. Phương án c nhầm lao động cá biệt với giá trị. Phương án d chỉ là một phần chi phí, không phải tỷ lệ trao đổi.
-Nguồn: Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)**
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa (mặt lượng) — giá trị trao đổi, trang 18–19
 
 **Câu 8.** Trong cùng một người thợ may, lao động tạo ra giá trị của chiếc áo là loại lao động nào?
 
 - [ ] A. Lao động cụ thể, vì thợ may làm ra chiếc áo cụ thể.
 - [ ] B. Lao động giản đơn, không cần đào tạo.
-- [x] C. Lao động trừu tượng, tức hao phí sức lao động nói chung của người sản xuất.
+- [x] C. Lao động trừu tượng, tức hao phí sức lực, thần kinh của người sản xuất khi gạt bỏ hình thức cụ thể.
 - [ ] D. Sức lao động, vì đây là năng lực của thợ may.
 
 Đáp án đúng: **C**
-Giải thích: Đúng là c. Lao động trừu tượng tạo ra giá trị. Phương án a hấp dẫn nhưng sai: lao động cụ thể tạo ra giá trị sử dụng. Phương án d nhầm sức lao động (năng lực) với lao động (việc sử dụng năng lực).
-Nguồn: Chương 2, 2.1.2. Tính hai mặt của lao động sản xuất hàng hóa, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là c. Lao động trừu tượng tạo ra giá trị. Phương án a hấp dẫn nhưng sai: lao động cụ thể tạo ra giá trị sử dụng. Phương án d nhầm sức lao động (năng lực) với lao động (việc tiêu dùng năng lực).
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.2. Tính hai mặt của lao động sản xuất hàng hóa, trang 41–44
 
-**Câu 9.** Với c = 60, v = 20, m = 20, thời gian lao động tất yếu 4 giờ. Kéo dài ngày lao động từ 8 lên 10 giờ, thời gian tất yếu giữ nguyên. Tỷ suất giá trị thặng dư m' là bao nhiêu?
+**Câu 9.** Với c = 60, v = 20, m = 20, thời gian lao động cần thiết (tất yếu) 4 giờ. Kéo dài ngày lao động từ 8 lên 10 giờ, thời gian cần thiết giữ nguyên. Tỷ suất giá trị thặng dư m' là bao nhiêu?
 
 - [ ] A. 100%
 - [x] B. 150%
@@ -822,8 +807,8 @@ Nguồn: Chương 2, 2.1.2. Tính hai mặt của lao động sản xuất hàng
 - [ ] D. 200%
 
 Đáp án đúng: **B**
-Giải thích: Đúng là b. Thời gian thặng dư 6 giờ, thời gian tất yếu 4 giờ. m = 30, v = 20 nên m' = 30 / 20 × 100% = 150%. Phương án a là mức gốc. Phương án d là mức khi ngày lao động 12 giờ.
-Nguồn: Chương 3, 3.1. Tỷ suất giá trị thặng dư, trang ? **(cần đối chiếu)**
+Giải thích: Đúng là b. Thời gian thặng dư 6 giờ, thời gian cần thiết 4 giờ. m = 30, v = 20 nên m' = 30 / 20 × 100% = 150%. Phương án a là mức gốc. Phương án d là mức khi ngày lao động 12 giờ.
+Nguồn: Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tỷ suất giá trị thặng dư; Phương pháp sản xuất giá trị thặng dư tuyệt đối, trang 57, 60
 
 **Câu 10.** Khi cung áo thun lớn hơn cầu, điều gì đúng?
 
@@ -834,12 +819,17 @@ Nguồn: Chương 3, 3.1. Tỷ suất giá trị thặng dư, trang ? **(cần �
 
 Đáp án đúng: **D**
 Giải thích: Đúng là d. Cung – cầu làm giá cả lệch khỏi giá trị. Giá trị do thời gian lao động xã hội cần thiết quyết định. Phương án a nhầm giá cả với giá trị. Phương án c sai vì giá cả thường dao động quanh giá trị.
-Nguồn: Chương 2, 2.2. Quy luật cung – cầu, trang ? **(cần đối chiếu)**
+Nguồn: Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật cung – cầu, trang 88
 
 #### Tài liệu tham khảo
 
-- Bộ Giáo dục và Đào tạo (2021), Giáo trình Kinh tế chính trị Mác – Lênin (Dành cho bậc đại học hệ không chuyên lý luận chính trị), Nxb Chính trị quốc gia Sự thật, Hà Nội.
-- C. Mác và Ph. Ăngghen (1993), Toàn tập, t.23 (Tư bản, quyển I), Nxb Chính trị quốc gia, Hà Nội.
+- Bộ Giáo dục và Đào tạo (2026), Kinh tế chính trị Mác – Lênin, Nxb Chính trị quốc gia Sự thật, Hà Nội. (Giáo trình chính, theo Đề cương chi tiết học phần BAA00102 – Kinh tế chính trị Mác – Lênin, ĐHQG-HCM.)
+- V.I. Lênin (2005), Toàn tập, tập 27, Nxb Chính trị quốc gia Sự thật, Hà Nội. (Tài liệu tham khảo theo Đề cương chi tiết học phần BAA00102.)
+- Karl Marx, Tư bản, Tập thứ nhất, Quyển 1, phần 1 và phần 2, Nxb Sự Thật, Hà Nội, 1984. (Các đoạn trích Marx được dẫn trong bài giảng.)
+- Giáo trình “Kinh tế chính trị Mác – Lênin”, Tài liệu tập huấn 2019. (Được liệt kê là tài liệu tham khảo trong bài giảng Chương 2 và Chương 1.)
+- ThS. Lê Văn Thông, Đề cương bài giảng môn học Kinh tế chính trị Mác – Lênin, Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của Kinh tế chính trị Mác – Lênin (tài liệu gửi sinh viên).
+- ThS. Lê Văn Thông, Đề cương bài giảng môn học Kinh tế chính trị Mác – Lênin, Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường (tài liệu gửi sinh viên).
+- ThS. Lê Văn Thông, Đề cương bài giảng môn học Kinh tế chính trị Mác – Lênin, Chương 3: Giá trị thặng dư trong nền kinh tế thị trường (tài liệu gửi sinh viên).
 
 **Thông điệp kết:** GIỜ ĐÂY, HÃY NHÌN MỘT CHIẾC ÁO THUN THEO MỘT CÁCH KHÁC.
 
@@ -847,39 +837,39 @@ Nguồn: Chương 2, 2.2. Quy luật cung – cầu, trang ? **(cần đối chi
 
 | Thuật ngữ | Định nghĩa | Chương | Nguồn |
 |---|---|---|---|
-| Hàng hóa | Sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán. | hang-hoa | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Giá trị sử dụng | Công dụng của vật, có thể thỏa mãn nhu cầu nào đó của con người. | hang-hoa | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Giá trị (của hàng hóa) | Lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa. | hang-hoa | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Giá trị trao đổi | Quan hệ về số lượng, tỷ lệ trao đổi giữa những giá trị sử dụng khác nhau; là hình thức biểu hiện ra bên ngoài của giá trị. | hang-hoa | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Sản xuất của cải vật chất | Quá trình con người sử dụng tư liệu lao động tác động vào đối tượng lao động để tạo ra những sản phẩm cần thiết cho đời sống và phát triển xã hội. | san-xuat | Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)** |
-| Tư liệu sản xuất | Gồm đối tượng lao động và tư liệu lao động. | san-xuat | Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)** |
-| Đối tượng lao động | Những vật mà lao động của con người tác động vào. Có thể có sẵn trong tự nhiên, hoặc đã qua lao động (gọi là nguyên liệu). | san-xuat | Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)** |
-| Tư liệu lao động | Những vật hay hệ thống vật dùng để truyền dẫn sự tác động của con người lên đối tượng lao động; công cụ lao động giữ vai trò quyết định. | san-xuat | Chương 1, Mục về sản xuất của cải vật chất, lực lượng sản xuất (chưa xác định đúng mục), trang ? **(cần đối chiếu)** |
-| Sức lao động | Toàn bộ những năng lực thể chất và tinh thần tồn tại trong một con người, được người đó vận dụng vào quá trình sản xuất. | san-xuat | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Lao động cụ thể | Lao động có ích dưới một hình thức cụ thể của những nghề nghiệp chuyên môn nhất định; tạo ra giá trị sử dụng. | san-xuat | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Lao động trừu tượng | Lao động của người sản xuất hàng hóa khi đã gạt bỏ hình thức cụ thể, tức sự hao phí sức lao động nói chung; tạo ra giá trị. | san-xuat | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Thời gian lao động xã hội cần thiết | Thời gian đòi hỏi để sản xuất ra một giá trị sử dụng nào đó trong điều kiện bình thường của xã hội, với trình độ thành thạo trung bình, cường độ lao động trung bình; thường đồng nhất với thời gian lao động cá biệt của người cung cấp đại bộ phận hàng hóa. | san-xuat | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Chất của giá trị hàng hóa | Lao động trừu tượng của người sản xuất hàng hóa kết tinh trong hàng hóa. | gia-tri | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Lượng giá trị hàng hóa | Lượng lao động xã hội kết tinh trong hàng hóa, đo bằng thời gian lao động xã hội cần thiết. | gia-tri | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Thời gian lao động cá biệt | Thời gian lao động hao phí của từng người sản xuất để làm ra một hàng hóa. | gia-tri | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Năng suất lao động | Năng lực sản xuất của lao động, tính bằng số sản phẩm làm ra trong một đơn vị thời gian hoặc thời gian hao phí cho một đơn vị sản phẩm. | gia-tri | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Cường độ lao động | Mức độ khẩn trương, nặng nhọc của lao động trong một đơn vị thời gian. | gia-tri | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Lao động giản đơn và lao động phức tạp | Lao động giản đơn là lao động mà người bình thường không cần đào tạo cũng làm được. Lao động phức tạp phải qua đào tạo, huấn luyện; tạo ra nhiều giá trị hơn trong cùng thời gian. | gia-tri | Chương 2, 2.1.2. Hàng hóa, trang ? **(cần đối chiếu)** |
-| Tư bản | Giá trị mang lại giá trị thặng dư bằng cách bóc lột lao động không công của công nhân làm thuê; phản ánh quan hệ sản xuất xã hội giữa giai cấp tư sản và công nhân làm thuê. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Tư bản bất biến (c) | Bộ phận tư bản tồn tại dưới hình thức tư liệu sản xuất, giá trị được bảo tồn và chuyển vào sản phẩm. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Tư bản khả biến (v) | Bộ phận tư bản dùng để mua sức lao động; giá trị được tái tạo và tạo thêm một lượng giá trị mới lớn hơn. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Hàng hóa sức lao động | Sức lao động trở thành hàng hóa khi người lao động tự do về thân thể và không có đủ tư liệu sản xuất. Có hai thuộc tính: giá trị và giá trị sử dụng. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Thời gian lao động tất yếu | Phần thời gian trong ngày lao động mà công nhân tạo ra lượng giá trị ngang bằng giá trị sức lao động của mình. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Thời gian lao động thặng dư | Phần thời gian còn lại của ngày lao động, vượt quá thời gian lao động tất yếu; công nhân tạo ra giá trị thặng dư trong thời gian đó. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Giá trị thặng dư (m) | Phần giá trị mới dôi ra ngoài giá trị sức lao động, do công nhân làm thuê tạo ra và bị nhà tư bản chiếm không. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Tỷ suất giá trị thặng dư (m') | Tỷ lệ phần trăm giữa giá trị thặng dư và tư bản khả biến: m' = m / v × 100%. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Giá trị thặng dư tuyệt đối | Giá trị thặng dư thu được nhờ kéo dài ngày lao động vượt quá thời gian lao động tất yếu, khi thời gian lao động tất yếu không đổi. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Giá trị thặng dư tương đối | Giá trị thặng dư thu được nhờ rút ngắn thời gian lao động tất yếu, bằng cách hạ thấp giá trị sức lao động nhờ tăng năng suất lao động xã hội, trong khi ngày lao động không đổi. | tu-ban | Chương 3, 3.1. Lý luận của C.Mác về giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Lợi nhuận | Hình thức biểu hiện, hình thái chuyển hóa của giá trị thặng dư, được quan niệm là con đẻ của toàn bộ tư bản ứng trước. Không đồng nhất với giá trị thặng dư. | tu-ban | Chương 3, 3.3. Các hình thức biểu hiện của giá trị thặng dư, trang ? **(cần đối chiếu)** |
-| Tiền tệ (tiền) | Hàng hóa đặc biệt, tách ra từ thế giới hàng hóa làm vật ngang giá chung thống nhất; thể hiện lao động xã hội. | thi-truong | Chương 2, 2.1.3. Tiền, trang ? **(cần đối chiếu)** |
-| Trao đổi hàng hóa | Quan hệ chuyển giao hàng hóa giữa những người sản xuất theo nguyên tắc ngang giá, thông qua mua bán. | thi-truong | Chương 2, 2.1.3. Tiền, trang ? **(cần đối chiếu)** |
-| Giá cả | Giá trị của hàng hóa được biểu hiện bằng tiền. | thi-truong | Chương 2, 2.2. Thị trường, trang ? **(cần đối chiếu)** |
-| Quy luật giá trị | Quy luật kinh tế cơ bản của sản xuất và trao đổi hàng hóa: sản xuất và trao đổi phải dựa trên cơ sở hao phí lao động xã hội cần thiết. | thi-truong | Chương 2, 2.2. Thị trường, trang ? **(cần đối chiếu)** |
-| Cung và cầu (quy luật cung – cầu) | Cung là khối lượng hàng hóa đưa ra thị trường tương ứng với mức giá; cầu là nhu cầu có khả năng thanh toán. Quy luật cung – cầu điều tiết quan hệ giữa cung và cầu. | thi-truong | Chương 2, 2.2. Thị trường, trang ? **(cần đối chiếu)** |
-| Cạnh tranh | Sự ganh đua giữa các chủ thể kinh tế nhằm giành điều kiện thuận lợi trong sản xuất, tiêu thụ hoặc thị trường để thu lợi ích tối đa. | thi-truong | Chương 2, 2.2. Thị trường, trang ? **(cần đối chiếu)** |
-| Tích lũy tư bản | Sự chuyển hóa một phần giá trị thặng dư trở lại thành tư bản; nguồn gốc là giá trị thặng dư. | thi-truong | Chương 3, 3.2. Tích lũy tư bản, trang ? **(cần đối chiếu)** |
+| Hàng hóa | Sản phẩm của lao động, có thể thỏa mãn nhu cầu nào đó của con người thông qua trao đổi, mua bán. | hang-hoa | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 1.2. Hàng hóa, trang 12–13 |
+| Giá trị sử dụng | Công dụng của vật phẩm, có thể thỏa mãn nhu cầu nào đó của con người. | hang-hoa | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Hai thuộc tính của hàng hóa, trang 16–17 |
+| Giá trị (của hàng hóa) | Lượng lao động xã hội của người sản xuất hàng hóa “kết tinh” trong hàng hóa đó. Giá trị là phạm trù lịch sử. | hang-hoa | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa, trang 21 |
+| Giá trị trao đổi | Một quan hệ về số lượng, một tỷ lệ theo đó những giá trị sử dụng loại này được trao đổi với những giá trị sử dụng loại khác. | hang-hoa | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa (mặt lượng), trang 18 |
+| Quá trình sản xuất | Quá trình tiêu dùng tư liệu sản xuất và sức lao động; giá trị sử dụng cũ được tiêu dùng, chuyển sang giá trị sử dụng mới. | san-xuat | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Quá trình sản xuất hàng hóa, trang 23 |
+| Tư liệu sản xuất | Gồm tư liệu lao động và đối tượng lao động. | san-xuat | Bài giảng Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của KTCT Mác – Lênin, Phương thức sản xuất — lực lượng sản xuất, trang 23 |
+| Đối tượng lao động | Bộ phận của tư liệu sản xuất mà lao động của con người tác động vào; trong bài giảng gồm nguyên vật liệu. | san-xuat | Bài giảng Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của KTCT Mác – Lênin, Phương thức sản xuất — lực lượng sản xuất (tư liệu sản xuất), trang ? **(cần đối chiếu)** |
+| Tư liệu lao động | Gồm công cụ lao động, hệ thống bình chứa của sản xuất và kết cấu hạ tầng của sản xuất. | san-xuat | Bài giảng Chương 1: Đối tượng, phương pháp nghiên cứu và chức năng của KTCT Mác – Lênin, Phương thức sản xuất — lực lượng sản xuất, trang 23 |
+| Sức lao động | Toàn bộ những năng lực thể chất và tinh thần tồn tại trong một cơ thể, trong một con người đang sống, và được người đó đem ra vận dụng mỗi khi sản xuất ra một giá trị sử dụng nào đó. | san-xuat | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 14 |
+| Lao động cụ thể | Lao động có ích dưới hình thức cụ thể của nghề nghiệp, chuyên môn nhất định; cùng với nội dung vật chất cấu thành của sản phẩm tạo ra giá trị sử dụng. | san-xuat | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.2. Tính hai mặt của lao động sản xuất hàng hóa, trang 41–42 |
+| Lao động trừu tượng | Lao động của người sản xuất hàng hóa khi đã gạt bỏ những hình thức cụ thể của nó; là sự hao phí sức lực và thần kinh, tạo nên giá trị hàng hóa. | san-xuat | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Tính hai mặt của lao động sản xuất hàng hóa, trang 43 |
+| Thời gian lao động xã hội cần thiết | Thời gian cần thiết để sản xuất ra một đơn vị hàng hóa, trong hoàn cảnh xã hội nhất định, điều kiện bình thường của xã hội, với trình độ kỹ thuật trung bình, trình độ khéo léo trung bình và cường độ lao động trung bình. | san-xuat | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa, trang 29 |
+| Chất của giá trị hàng hóa | Lao động xã hội của người làm ra hàng hóa (lao động trừu tượng), kết tinh trong hàng hóa. | gia-tri | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị hàng hóa — chất giá trị, trang 24 |
+| Lượng giá trị hàng hóa | Lượng lao động hao phí để sản xuất ra hàng hóa đó, đo bằng thời gian lao động xã hội cần thiết. | gia-tri | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Lượng giá trị hàng hóa; Thước đo của lượng giá trị hàng hóa, trang 26, 28–29 |
+| Thời gian lao động cá biệt | Thời gian lao động hao phí của từng người sản xuất để làm ra một hàng hóa. | gia-tri | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa, trang ? **(cần đối chiếu)** |
+| Năng suất lao động | Năng lực sản xuất của lao động, tính bằng số lượng sản phẩm sản xuất ra trong một đơn vị thời gian hoặc số lượng thời gian cần thiết để sản xuất ra một đơn vị sản phẩm. Tỷ lệ nghịch với giá trị hàng hóa. | gia-tri | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Năng suất lao động, trang 35, 37 |
+| Cường độ lao động | Mức độ khẩn trương, nặng nhọc của lao động trong một đơn vị thời gian. | gia-tri | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Thước đo của lượng giá trị hàng hóa, trang ? **(cần đối chiếu)** |
+| Lao động giản đơn và lao động phức tạp | Lao động phức tạp quy đổi thành n lần lao động giản đơn. Mức độ phức tạp của lao động tỷ lệ thuận với giá trị hàng hóa. | gia-tri | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Các nhân tố ảnh hưởng đến lượng giá trị hàng hóa; Mức độ phức tạp của lao động, trang 27–28, 34, 37 |
+| Tư bản | Sự vận động của giá trị nhằm mang lại giá trị thặng dư; tiền, hàng hóa vận động theo công thức T – H – T'. Tư bản là một quan hệ xã hội giữa người với người, do các vật làm trung gian. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Công thức chung của tư bản, trang 5, 7, 37 |
+| Tư bản bất biến (c) | Bộ phận tư bản biến thành tư liệu sản xuất (nguyên liệu, vật liệu phụ, tư liệu lao động), không thay đổi đại lượng giá trị của nó. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tư bản bất biến và tư bản khả biến, trang 41 |
+| Tư bản khả biến (v) | Bộ phận tư bản biến thành sức lao động, thay đổi giá trị trong quá trình sản xuất: tái sản xuất ra vật ngang giá với bản thân nó và còn sản xuất ra giá trị thặng dư. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tư bản bất biến và tư bản khả biến, trang 42 |
+| Hàng hóa sức lao động | Sức lao động trở thành hàng hóa khi người lao động tự do về thân thể và buộc phải bán sức lao động vì không có hàng hóa nào khác để bán. Có hai thuộc tính: giá trị và giá trị sử dụng; khi sử dụng nó tạo ra giá trị mới lớn hơn giá trị bản thân nó. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Hàng hóa sức lao động, trang 15–19 |
+| Thời gian lao động cần thiết (tất yếu) | Phần thời gian trong ngày lao động mà công nhân tạo ra lượng giá trị ngang bằng giá trị sức lao động của mình. Khác với thời gian lao động xã hội cần thiết của Chương 03. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Giá trị thặng dư TBCN — ngày lao động, trang 32, 35 |
+| Thời gian lao động thặng dư | Phần còn lại của ngày lao động, sau thời gian lao động cần thiết; công nhân tạo ra giá trị thặng dư trong thời gian đó. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Giá trị thặng dư TBCN — ngày lao động, trang 32, 35 |
+| Giá trị thặng dư (m) | Một bộ phận của giá trị mới dôi ra ngoài giá trị sức lao động, do công nhân làm thuê tạo ra và thuộc về nhà tư bản. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Quá trình sản xuất giá trị thặng dư, trang 24 |
+| Tỷ suất giá trị thặng dư (m') | Tỷ số tính theo phần trăm giữa giá trị thặng dư và tư bản khả biến tương ứng: m' = m / v × 100%, cũng bằng thời gian lao động thặng dư chia thời gian lao động cần thiết. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, Tỷ suất và khối lượng giá trị thặng dư, trang 57 |
+| Giá trị thặng dư tuyệt đối | Phương pháp thực hiện trên cơ sở kéo dài tuyệt đối ngày lao động của công nhân trong điều kiện thời gian lao động cần thiết không đổi. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 1.3. Các phương pháp sản xuất giá trị thặng dư, trang 60 |
+| Giá trị thặng dư tương đối | Phương pháp thực hiện bằng cách rút ngắn thời gian lao động cần thiết để kéo dài tương ứng thời gian lao động thặng dư, trên cơ sở tăng năng suất lao động xã hội, trong điều kiện độ dài ngày lao động không đổi. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 1.3. Các phương pháp sản xuất giá trị thặng dư, trang 61 |
+| Lợi nhuận | Số tiền lời nhà tư bản thu được sau khi bán hàng hóa do chênh lệch giữa giá trị hàng hóa và chi phí tư bản (G = k + p). Về chất, p và m là một; p là hình thái thần bí của m, làm ta tưởng m do toàn bộ (c + v) tạo ra. | tu-ban | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 3.1. Lợi nhuận; Bản chất lợi nhuận, trang 72, 75 |
+| Tiền tệ (tiền) | Hàng hóa đặc biệt, được tách ra từ thế giới hàng hóa làm vật ngang giá chung trong tất cả các hàng hóa đem trao đổi. | thi-truong | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 1.3. Tiền tệ — bản chất của tiền, trang 61 |
+| Trao đổi hàng hóa | Trong lưu thông hàng hóa giản đơn, trao đổi thông qua tiền theo công thức H – T – H (bán để mua), dựa trên cơ sở hao phí lao động xã hội cần thiết (ngang giá). | thi-truong | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật giá trị; Giá trị hàng hóa, trang 85, 19 |
+| Giá cả | Chỉ số đại lượng giá trị hàng hóa, chỉ số của tỷ lệ trao đổi giữa hàng hóa và tiền; ít khi thống nhất với giá trị mà xoay quanh giá trị theo quy luật cung – cầu. | thi-truong | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Giá trị và giá cả, trang 20 |
+| Quy luật giá trị | Một quy luật chủ yếu của thị trường: việc sản xuất và trao đổi hàng hóa phải được tiến hành trên cơ sở hao phí lao động xã hội cần thiết. | thi-truong | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, 2.1.3. Một số quy luật chủ yếu của thị trường — Quy luật giá trị, trang 85 |
+| Cung và cầu (quy luật cung – cầu) | Cung là số lượng hàng hóa, dịch vụ người bán có khả năng và sẵn sàng bán ở các mức giá khác nhau; cầu là số lượng người mua có khả năng và sẵn sàng mua. Cung và cầu tác động lẫn nhau, ảnh hưởng đến giá cả. | thi-truong | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật cung – cầu, trang 86–88 |
+| Cạnh tranh | Sự ganh đua giữa những chủ thể kinh tế với nhau nhằm có được những ưu thế về sản xuất cũng như tiêu thụ và thông qua đó thu được lợi ích tối đa. | thi-truong | Bài giảng Chương 2: Hàng hóa, thị trường và vai trò của các chủ thể tham gia thị trường, Quy luật cạnh tranh, trang 90 |
+| Tích lũy tư bản | Sự chuyển hóa một phần giá trị thặng dư thành tư bản (tư bản phụ thêm), hay tư bản đẻ ra tư bản. | thi-truong | Bài giảng Chương 3: Giá trị thặng dư trong nền kinh tế thị trường, 2.1. Bản chất của tích lũy tư bản, trang 64 |

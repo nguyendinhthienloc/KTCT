@@ -16,7 +16,7 @@ export const intro: IntroContent = {
     {
       phase: "thread",
       title: "Sợi — lao động cụ thể",
-      body: "Bông được kéo thành sợi. Công việc kéo sợi có mục đích, công cụ và kỹ năng riêng: đó là **lao động cụ thể**.",
+      body: "Bông được kéo thành sợi. Công việc kéo sợi có mục đích, phương tiện và phương pháp riêng: đó là **lao động cụ thể**.",
       conceptId: "lao-dong-cu-the",
     },
     {

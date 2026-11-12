@@ -2,6 +2,7 @@
 
 import type { ValueContent } from "@/content/schema";
 import { FactoryCompare } from "@/components/interactive/factory/FactoryCompare";
+import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { RichText } from "@/components/ui/RichText";
 import { SourceNote } from "@/components/ui/SourceNote";
@@ -55,7 +56,8 @@ export function Ch03Value({ content }: { content: ValueContent }) {
       )}
 
       {/* ───── Tầng 2 ───── */}
-      <section aria-labelledby="ch03-academic" className="container-cinema border-t border-ink/10 pt-20 md:pt-28">
+      <LearnMore tone="light">
+      <section aria-labelledby="ch03-academic">
         <p id="ch03-academic" className="eyebrow mb-12 text-bronze">
           Giải thích học thuật
         </p>
@@ -157,6 +159,7 @@ export function Ch03Value({ content }: { content: ValueContent }) {
           </div>
         </div>
       </section>
+      </LearnMore>
 
       {/* ───── Tầng 3 ───── */}
       <section className="container-cinema mt-24 md:mt-32">

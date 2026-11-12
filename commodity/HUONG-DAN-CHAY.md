@@ -56,3 +56,17 @@ Người chấm chỉ cần giải nén, cài Node.js, chạy `node serve.mjs` r
 - **Trang trắng hoặc không hiển thị đúng:** chạy lại bản build bằng `npm run build`, rồi chạy lại `node serve.mjs`.
 - **Phông chữ bị lỗi:** build lại khi có kết nối mạng ổn định.
 - **Báo lỗi "Chưa có thư mục out/":** chạy `npm run build` trước khi chạy `node serve.mjs`.
+
+## 7. Tính năng "Hỏi chiếc áo" (trợ lý AI)
+
+Nút "Hỏi chiếc áo" ở góc dưới bên phải mở khung hỏi đáp. Chiếc áo trả lời dựa trên nội dung các chương. Khi không có khóa AI hoặc không gọi được máy chủ, khung tự chuyển sang **chế độ ngoại tuyến** (bộ hỏi đáp soạn sẵn trong `content/faq.ts`), nên trang vẫn dùng được.
+
+**Bật AI thật (Gemini):**
+
+1. Tạo tệp `commodity/.env` với một dòng: `GEMINI_API_KEY=khóa_của_bạn`. Không commit tệp này (`.gitignore` đã bỏ qua `.env*`) và không chia sẻ khóa.
+2. Chạy `npm run build` (lệnh này tự tạo `public/knowledge.json` từ nội dung chương), rồi `node serve.mjs`.
+3. Mở địa chỉ được in ra. `serve.mjs` cung cấp thêm `POST /api/hoi`; khóa chỉ nằm phía máy chủ, không đi vào trình duyệt.
+
+**Chế độ phát triển (`npm run dev`):** chạy `node serve.mjs` ở một cửa sổ khác (cổng 3001, ví dụ `PORT=3001 node serve.mjs`), và tạo `.env.local` với `NEXT_PUBLIC_API_BASE=http://localhost:3001`. Máy chủ đã bật CORS cho `http://localhost:3000`.
+
+**Lưu ý:** nếu mở bản build mà không qua `serve.mjs` (ví dụ mở thẳng tệp HTML), khung hỏi đáp chạy ở chế độ ngoại tuyến. Nút "Báo sai" chỉ lưu vào trình duyệt (`localStorage`, khóa `commodity.reports.v1`), không gửi đi đâu.
