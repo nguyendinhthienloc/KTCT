@@ -272,9 +272,9 @@ export function AskTheShirt() {
             }`}
           >
             {/* Pet graphic */}
-            <div className={open || isDragging ? "" : "anim-pet-float"}>
+            <div className={open || isDragging ? "" : "sm:anim-pet-float"}>
               <ShirtPet
-                className="w-16 h-16 sm:w-20 sm:h-20"
+                className="w-14 h-14 sm:w-20 sm:h-20"
                 isOpen={open}
                 isHovered={isHovered || isDragging}
               />

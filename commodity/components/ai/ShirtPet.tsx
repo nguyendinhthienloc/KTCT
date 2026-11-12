@@ -24,16 +24,16 @@ export function ShirtPet({
 
   return (
     <div className={`relative select-none ${className}`}>
-      {/* Vòng aura ánh sáng vàng đồng / bronze pulse khi active */}
+      {/* Vòng aura ánh sáng vàng đồng / bronze pulse khi active - tối ưu drop-shadow thay vì blur-md trên mobile */}
       <div
-        className={`absolute -inset-2 rounded-full bg-bronze/20 blur-md transition-opacity duration-500 pointer-events-none ${
-          isHovered || isOpen || isThinking ? "opacity-100 scale-110" : "opacity-30 scale-95"
+        className={`absolute -inset-1 rounded-full bg-bronze/15 transition-opacity duration-300 pointer-events-none sm:blur-sm ${
+          isHovered || isOpen || isThinking ? "opacity-100 scale-105" : "opacity-0 scale-95"
         }`}
       />
 
       <svg
         viewBox="0 0 100 100"
-        className="w-full h-full relative drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] overflow-visible"
+        className="w-full h-full relative drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)] sm:drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] overflow-visible"
         aria-hidden="true"
       >
         <defs>

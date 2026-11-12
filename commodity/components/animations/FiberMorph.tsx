@@ -321,12 +321,15 @@ export function FiberMorph({ captions }: { captions: IntroContent["morphCaptions
       W = rect.width;
       H = rect.height;
       S = Math.min(W, H);
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const isMobile = W < 768;
+      // Trên điện thoại: dpr cố định tối đa 1.25 để giảm tải fill-rate GPU 4-5 lần
+      dpr = isMobile ? Math.min(window.devicePixelRatio || 1, 1.25) : Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = Math.round(W * dpr);
       canvas.height = Math.round(H * dpr);
       canvas.style.width = `${W}px`;
       canvas.style.height = `${H}px`;
-      N = W < 768 ? 1600 : 3400;
+      // Giảm số lượng hạt trên mobile từ 1600 xuống 750 (đủ nét nhưng GPU nhẹ nhàng)
+      N = isMobile ? 750 : 3400;
       const r = mulberry32(42);
       size = Float32Array.from({ length: N }, () => 1.6 + Math.pow(r(), 2.2) * 3.2);
       alpha = Float32Array.from({ length: N }, () => 0.45 + r() * 0.5);
@@ -346,6 +349,12 @@ export function FiberMorph({ captions }: { captions: IntroContent["morphCaptions
       // làm mượt theo thời gian: hằng số ~ 0.12s, không phụ thuộc FPS
       shown += (progress - shown) * (1 - Math.exp(-dt / 0.12));
       const f = phaseAt(shown);
+
+      // Khi không cuộn và hạt đã dừng ở hình hoàn chỉnh, ngắt vẽ để tiết kiệm pin & GPU điện thoại
+      const diff = Math.abs(progress - shown);
+      if (diff < 0.0005 && f >= 0.5 && Math.abs(f - Math.round(f)) < 0.01) {
+        return;
+      }
       const seg = Math.min(Math.floor(f), 2);
       const t = f - seg;
       const A = frames[seg];
