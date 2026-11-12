@@ -14,7 +14,7 @@
 | ⏸2 | Điểm duyệt học thuật | ⏸ Chờ nhóm | Đọc `docs/noi-dung-hoc-thuat.md` sau khi đối chiếu xong |
 | S4 | Dựng chương song song | ✅ Xong | Agent A: Ch.01–02 · Agent B: Ch.03–04 · Agent C: Ch.05–06 + thuật ngữ |
 | S5 | Tích hợp & kiểm thử | ✅ Lần 1 | tsc/eslint sạch; không tràn ngang ở 375px; console không lỗi; build tĩnh OK |
-| S6 | Bàn giao | 🔨 | `serve.mjs` chạy offline: `/`, `/thuat-ngu/`, `/gioi-thieu/` → 200 |
+| S6 | Bàn giao | ✅ | Offline: `serve.mjs`. Online: https://commodity-ktct.vercel.app (chat ở chế độ ngoại tuyến) |
 
 Ký hiệu: ⏳ chưa làm · 🔨 đang làm · ✅ xong · ⛔ bị chặn · ⏸ chờ duyệt
 
