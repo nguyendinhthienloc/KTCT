@@ -1,0 +1,6 @@
+{
+  "framework": null,
+  "installCommand": "cd commodity && npm ci",
+  "buildCommand": "cd commodity && npm run build",
+  "outputDirectory": "commodity/out"
+}
