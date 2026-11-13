@@ -329,7 +329,7 @@ export function FiberMorph({ captions }: { captions: IntroContent["morphCaptions
       canvas.style.width = `${W}px`;
       canvas.style.height = `${H}px`;
       // Giảm số lượng hạt trên mobile từ 1600 xuống 750 (đủ nét nhưng GPU nhẹ nhàng)
-      N = isMobile ? 750 : 3400;
+      N = isMobile ? 380 : 3400;
       const r = mulberry32(42);
       size = Float32Array.from({ length: N }, () => 1.6 + Math.pow(r(), 2.2) * 3.2);
       alpha = Float32Array.from({ length: N }, () => 0.45 + r() * 0.5);
@@ -433,8 +433,7 @@ export function FiberMorph({ captions }: { captions: IntroContent["morphCaptions
       st = ScrollTrigger.create({
         trigger: root.current,
         start: "top top",
-        end: () => `+=${window.innerHeight * (W < 768 ? 2.6 : 3.4)}`,
-        pin: stage.current,
+        end: "bottom bottom",
         scrub: true,
         onUpdate: (self) => {
           progress = self.progress;
@@ -466,8 +465,8 @@ export function FiberMorph({ captions }: { captions: IntroContent["morphCaptions
   const current = captions.find((c) => c.phase === PHASES[phase]) ?? captions[0];
 
   return (
-    <div ref={root} id="hanh-trinh" className="relative">
-      <div ref={stage} className="relative h-[100svh] w-full overflow-hidden bg-ink">
+    <div ref={root} id="hanh-trinh" className="relative h-[360svh] md:h-[440svh]">
+      <div ref={stage} className="sticky top-0 h-[100svh] w-full overflow-hidden bg-ink">
         <canvas
           ref={canvasRef}
           role="img"

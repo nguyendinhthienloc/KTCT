@@ -15,6 +15,8 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
   // Điện thoại: thanh địa chỉ ẩn/hiện khi cuộn gây resize → không refresh lại ScrollTrigger (hết giật)
   ScrollTrigger.config({ ignoreMobileResize: true });
+  // Ảnh/font tải xong làm đổi chiều cao trang → tính lại vị trí kích hoạt một lần
+  window.addEventListener("load", () => ScrollTrigger.refresh(), { once: true });
 }
 
 export { gsap, ScrollTrigger };
