@@ -79,6 +79,19 @@ export function Ch03Story({
       tl.from(lineRef.current, { autoAlpha: 0, left: `${pct(first.hoursPerShirt)}%`, duration: 0.9, ease: "power2.out" }, 2.2);
       tl.to({}, { duration: 0.4 });
     });
+    mm.add("(max-width: 767px) and (prefers-reduced-motion: no-preference)", () => {
+      gsap.utils.toArray<HTMLElement>("[data-cap]", stage).forEach((el) =>
+        gsap.from(el, { autoAlpha: 0, y: 24, duration: 0.7, ease: "power2.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } }),
+      );
+      gsap.utils.toArray<HTMLElement>("[data-row]", stage).forEach((row) => {
+        const bar = row.querySelector("[data-bar]");
+        const tl = gsap.timeline({ scrollTrigger: { trigger: row, start: "top 88%", once: true } });
+        tl.from(row, { autoAlpha: 0, y: 20, duration: 0.5, ease: "power2.out" });
+        if (bar) tl.from(bar, { scaleX: 0, transformOrigin: "0 50%", duration: 0.8, ease: "power2.out" }, 0.1);
+      });
+      if (lineRef.current)
+        gsap.from(lineRef.current, { autoAlpha: 0, duration: 0.8, scrollTrigger: { trigger: lineRef.current, start: "top 90%", once: true } });
+    });
     return () => mm.revert();
   }, [first.hoursPerShirt]);
 

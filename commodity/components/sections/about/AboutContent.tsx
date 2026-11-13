@@ -49,7 +49,7 @@ export function AboutContent() {
 
         <Section label="Thực hiện">
           <p className="font-display text-2xl font-700 text-ink">Nguyễn Đình Thiên Lộc</p>
-          <p className="text-sm text-ink/70">MSSV 24125093 · Chương trình Cử nhân Tài năng (APCS) · Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS)</p>
+          <p className="text-sm text-ink/70">MSSV 24125093 · Chương trình Tiên tiến (APCS) · Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (HCMUS)</p>
         </Section>
 
         <Section label="Môn học">
