@@ -13,6 +13,8 @@ import { useEffect, useState } from "react";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
+  // Điện thoại: thanh địa chỉ ẩn/hiện khi cuộn gây resize → không refresh lại ScrollTrigger (hết giật)
+  ScrollTrigger.config({ ignoreMobileResize: true });
 }
 
 export { gsap, ScrollTrigger };

@@ -446,6 +446,8 @@ export function FiberMorph({ captions }: { captions: IntroContent["morphCaptions
     const onResize = () => {
       window.clearTimeout(resizeTimer);
       resizeTimer = window.setTimeout(() => {
+        // Trên điện thoại chỉ đổi chiều cao (thanh địa chỉ) → bỏ qua, tránh dựng lại hạt khi đang cuộn
+        if (Math.abs(el.getBoundingClientRect().width - W) < 1) return;
         setup();
         ScrollTrigger.refresh();
       }, 200);

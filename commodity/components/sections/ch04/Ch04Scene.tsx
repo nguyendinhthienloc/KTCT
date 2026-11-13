@@ -66,6 +66,19 @@ export function Ch04Scene({ baseline }: { baseline: SurplusBaseline }) {
 
       return () => render(N);
     });
+    mm.add("(max-width: 767px) and (prefers-reduced-motion: no-preference)", () => {
+      const reveal = (els: HTMLElement[], vars: gsap.TweenVars, trigger: Element | null, extra: gsap.TweenVars = {}) => {
+        if (!els.length || !trigger) return;
+        gsap.from(els, { ...vars, ...extra, scrollTrigger: { trigger, start: "top 88%", once: true } });
+      };
+      const q = (s: string) => gsap.utils.toArray<HTMLElement>(s, stage);
+      q("[data-cap]").forEach((el) => reveal([el], { autoAlpha: 0, y: 24, duration: 0.7, ease: "power2.out" }, el));
+      const fills = q("[data-fill]");
+      reveal(fills, { scaleX: 0, transformOrigin: "0 50%", duration: 0.6, stagger: 0.08, ease: "power2.out" }, fills[0]?.parentElement ?? null);
+      const segs = q("[data-seg]");
+      reveal(segs, { scaleX: 0, transformOrigin: "0 50%", duration: 0.7, stagger: 0.2, ease: "power2.out" }, segs[0] ?? null);
+      q("[data-final]").forEach((el) => reveal([el], { autoAlpha: 0, y: 20, duration: 0.6, ease: "power2.out" }, el));
+    });
     return () => mm.revert();
   }, [r, hours, nec]);
 

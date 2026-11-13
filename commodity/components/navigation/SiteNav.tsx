@@ -47,7 +47,7 @@ export function SiteNav() {
     >
       <div
         aria-hidden
-        className={`absolute inset-0 -z-10 backdrop-blur-md transition-colors duration-500 ${
+        className={`absolute inset-0 -z-10 md:backdrop-blur-md transition-colors duration-500 ${
           onLight ? "bg-ivory/75" : "bg-ink/55"
         }`}
       />
