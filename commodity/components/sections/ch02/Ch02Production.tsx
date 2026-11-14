@@ -85,8 +85,14 @@ export function Ch02Production({ content }: { content: ProductionContent }) {
             });
             return;
           }
+          // Công đoạn 5: "Cắt vải" kích hoạt sớm hơn (khi vừa chạm vào màn hình bên phải) để có đủ thời gian vẽ thong thả
+          const triggerStart = i === 4 ? "left 90%" : "left 75%";
+          const animDuration = i === 4 ? 2.0 : 1.4;
+          const staggerTime = i === 4 ? 0.12 : 0.08;
           draw(p, {
-            scrollTrigger: { trigger: p, containerAnimation: tween, start: "left 75%", once: true },
+            duration: animDuration,
+            stagger: staggerTime,
+            scrollTrigger: { trigger: p, containerAnimation: tween, start: triggerStart, once: true },
           });
         });
         setActive(0);
