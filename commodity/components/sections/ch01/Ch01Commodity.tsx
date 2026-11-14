@@ -207,16 +207,29 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
             </div>
           </div>
 
-          <div className="mt-24 grid grid-cols-1 gap-x-8 gap-y-14 border-t border-ink/10 pt-12 md:mt-36 md:grid-cols-3">
-            {visual.beats.map((b, i) => (
-              <article key={b.id} data-reveal>
-                <p className="mb-4 font-display text-sm tabular-nums text-bronze">{pad(i + 1)}</p>
-                <h3 className="font-display text-2xl font-600 leading-tight tracking-tight md:text-[1.7rem]">{b.heading}</h3>
-                <p className="mt-4 leading-relaxed text-ink/70">
-                  <RichText text={b.body} />
-                </p>
-              </article>
-            ))}
+          <div className="mt-20 border-t border-ink/10 pt-12 md:mt-28">
+            <p className="eyebrow mb-8 text-bronze">4 góc nhìn về chiếc áo</p>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {visual.beats.map((b, i) => (
+                <article
+                  key={b.id}
+                  data-reveal
+                  className="group relative flex flex-col justify-between rounded-xl border border-ink/10 bg-ivory/60 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-bronze/60 hover:shadow-md"
+                >
+                  <div>
+                    <span className="flex size-7 items-center justify-center rounded-full border border-bronze/50 font-display text-xs tabular-nums text-bronze group-hover:bg-bronze group-hover:text-ink">
+                      {pad(i + 1)}
+                    </span>
+                    <h3 className="mt-4 font-display text-xl font-700 leading-snug tracking-tight text-ink [text-wrap:balance]">
+                      {b.heading}
+                    </h3>
+                  </div>
+                  <p className="mt-4 text-[0.92rem] leading-relaxed text-ink/70">
+                    <RichText text={b.body} />
+                  </p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
 
