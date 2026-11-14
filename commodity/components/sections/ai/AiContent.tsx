@@ -238,7 +238,8 @@ export function AiContent() {
         </h1>
 
         <p className="mt-6 max-w-3xl font-serif text-2xl italic text-ink/70 md:text-3xl">
-          Website này được dựng trong một phiên làm việc bằng một quy trình nhiều agent AI. Nhóm quyết
+          Website này được dựng và tối ưu bằng quy trình agent AI, kết hợp cùng Antigravity (Gemini)
+          trong việc debug hiệu năng, xử lý chuyển động và hoàn thiện hệ thống. Nhóm quyết
           định, duyệt và sở hữu độ chính xác của từng câu chữ.
         </p>
 

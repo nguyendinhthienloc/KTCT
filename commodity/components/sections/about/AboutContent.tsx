@@ -67,14 +67,16 @@ export function AboutContent() {
           </p>
         </Section>
 
-        <Section label="Công nghệ">
+        <Section label="Công nghệ & Công cụ hỗ trợ">
           <p>
             Next.js, React, TypeScript, Tailwind CSS, GSAP ScrollTrigger. Hình ảnh được tạo hoàn toàn
             bằng mã (SVG, Canvas).
           </p>
           <p>
-            Trang tĩnh, không cần đăng nhập, không thu thập dữ liệu. Tiến độ chỉ lưu trong trình duyệt
-            của bạn.
+            Trang tĩnh, không cần đăng nhập, không thu thập dữ liệu. Tiến độ chỉ lưu trong phiên làm việc của bạn.
+          </p>
+          <p className="text-sm text-ink/75">
+            <strong>Hỗ trợ phát triển & Debug:</strong> Được hỗ trợ và kiểm thử bởi <strong>Antigravity (Google DeepMind)</strong> với mô hình <strong>Gemini</strong> trong quá trình tối ưu hóa hiệu năng di động, tinh chỉnh chuyển động giao diện và tích hợp trợ lý AI.
           </p>
         </Section>
 
