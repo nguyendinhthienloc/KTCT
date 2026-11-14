@@ -12,6 +12,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useState } from "react";
 
 if (typeof window !== "undefined") {
+  // Tắt tính năng tự động ghi nhớ vị trí cuộn của trình duyệt khi F5:
+  // Giúp khi refresh luôn trở về đầu trang (0, 0) và kích hoạt lại toàn bộ animations từ đầu
+  if ("scrollRestoration" in window.history) {
+    window.history.scrollRestoration = "manual";
+  }
+
   gsap.registerPlugin(ScrollTrigger);
   // Điện thoại: thanh địa chỉ ẩn/hiện khi cuộn gây resize → không refresh lại ScrollTrigger (hết giật)
   ScrollTrigger.config({ ignoreMobileResize: true });
