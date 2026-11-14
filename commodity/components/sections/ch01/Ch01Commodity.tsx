@@ -86,9 +86,24 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
             </p>
           </div>
 
-          <div data-stage className="mt-16 grid grid-cols-1 items-center gap-12 md:mt-24 lg:grid-cols-12 lg:gap-8">
-            <div className="lg:col-span-7">
-              <div className="relative mx-auto aspect-[400/470] w-full max-w-[620px]">
+          <div data-stage className="mt-12 grid grid-cols-1 items-center gap-10 md:mt-16 lg:grid-cols-12 lg:gap-8">
+            <div className="flex flex-col items-center lg:col-span-7">
+              {/* Chọn màu áo đưa lên đầu */}
+              <div className="mb-6 flex w-full max-w-[460px] flex-col items-center gap-2 text-center">
+                <ChipGroup
+                  label="Màu áo"
+                  tone="light"
+                  options={COLORS.map((c) => ({ id: c.id, label: c.label }))}
+                  value={color}
+                  onChange={setColor}
+                />
+                <p className="text-[0.82rem] leading-snug text-ink/60 [text-wrap:balance]">
+                  Đổi màu không đổi công dụng của chiếc áo — giá trị sử dụng nằm ở thuộc tính có ích.
+                </p>
+              </div>
+
+              {/* Chiếc áo thu nhỏ kích thước (max-w-[440px] thay vì 620px) */}
+              <div className="relative mx-auto aspect-[400/470] w-full max-w-[440px]">
                 <div
                   data-shirt
                   className="absolute inset-0 [filter:drop-shadow(0_0_0.6px_rgba(16,16,16,0.55))_drop-shadow(0_0_0.6px_rgba(16,16,16,0.35))]"
@@ -103,7 +118,7 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                       <TShirt
                         className="h-full w-full"
                         tint={c.tint}
-                                                label={
+                        label={
                           c.id === "ngà"
                             ? "Chiếc áo thun cotton nhìn từ phía trước, với các điểm đánh số để khám phá"
                             : `Chiếc áo thun cotton màu ${c.label.toLowerCase()}`
@@ -140,18 +155,6 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
                     </button>
                   );
                 })}
-              </div>
-              <div className="mx-auto mt-6 flex max-w-[620px] flex-col items-center gap-3 text-center">
-                <ChipGroup
-                  label="Màu áo"
-                  tone="light"
-                  options={COLORS.map((c) => ({ id: c.id, label: c.label }))}
-                  value={color}
-                  onChange={setColor}
-                />
-                <p className="text-[0.85rem] leading-snug text-ink/60">
-                  Đổi màu không đổi công dụng của chiếc áo — giá trị sử dụng nằm ở thuộc tính có ích của nó.
-                </p>
               </div>
             </div>
 

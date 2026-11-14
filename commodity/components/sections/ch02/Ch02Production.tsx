@@ -75,7 +75,14 @@ export function Ch02Production({ content }: { content: ProductionContent }) {
         });
         panels.forEach((p, i) => {
           if (i === 0) {
-            draw(p, { delay: 0.3 });
+            // Công đoạn 1 (Trồng và thu hoạch bông): kích hoạt ngay khi cuộn tới scene hoặc vào tầm nhìn
+            draw(p, {
+              scrollTrigger: {
+                trigger: scene,
+                start: "top 75%",
+                once: true,
+              },
+            });
             return;
           }
           draw(p, {
