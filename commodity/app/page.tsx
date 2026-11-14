@@ -44,7 +44,7 @@ export default function Home() {
           <span>
             COMMODITY<span className="text-bronze">.</span> — Thực hiện bởi{" "}
             <span className="text-ivory/80">Nguyễn Đình Thiên Lộc</span> (24125093 · APCS, HCMUS) · GVHD:{" "}
-            <span className="text-ivory/80">ThS. Nguyễn Anh Khoa</span>
+            <span className="text-ivory/80">Thầy Nguyễn Anh Khoa</span>
           </span>
           <a href="/gioi-thieu/" className="underline decoration-bronze underline-offset-4 hover:text-ivory">
             Giới thiệu dự án

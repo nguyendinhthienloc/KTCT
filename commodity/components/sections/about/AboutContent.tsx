@@ -54,7 +54,7 @@ export function AboutContent() {
 
         <Section label="Môn học">
           <p>Kinh tế chính trị Mác – Lênin</p>
-          <p>Giảng viên hướng dẫn: ThS. Nguyễn Anh Khoa</p>
+          <p>Giảng viên hướng dẫn: Thầy Nguyễn Anh Khoa</p>
         </Section>
 
         <Section label="Nguồn học thuật">

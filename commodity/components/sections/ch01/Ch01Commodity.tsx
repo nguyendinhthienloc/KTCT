@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { CommodityContent } from "@/content/schema";
-import { gsap } from "@/lib/motion";
+import { gsap, ScrollTrigger } from "@/lib/motion";
 import { ChapterShell } from "@/components/ui/ChapterShell";
 import { LearnMore } from "@/components/ui/LearnMore";
 import { QuizBlock } from "@/components/ui/QuizBlock";
@@ -25,10 +25,22 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
   const rootRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const [color, setColor] = useState<ColorId>("ngà");
+  const [beatsOpen, setBeatsOpen] = useState(false);
   const { visual, academic, hotspots, check } = content;
   const current = hotspots[Math.min(active, hotspots.length - 1)];
   const dark = color === "than" || color === "chàm";
   const linked = current ? academic.concepts.find((c) => c.id === current.conceptId) : undefined;
+
+  // Khi đóng/mở beats: recalculate ScrollTrigger để không bị lệch các cảnh ghim phía dưới
+  const firstBeatsToggle = useRef(true);
+  useEffect(() => {
+    if (firstBeatsToggle.current) {
+      firstBeatsToggle.current = false;
+      return;
+    }
+    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    return () => cancelAnimationFrame(id);
+  }, [beatsOpen]);
 
   useEffect(() => {
     const root = rootRef.current;
@@ -207,29 +219,53 @@ export function Ch01Commodity({ content }: { content: CommodityContent }) {
             </div>
           </div>
 
-          <div className="mt-20 border-t border-ink/10 pt-12 md:mt-28">
-            <p className="eyebrow mb-8 text-bronze">4 góc nhìn về chiếc áo</p>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {visual.beats.map((b, i) => (
-                <article
-                  key={b.id}
-                  data-reveal
-                  className="group relative flex flex-col justify-between rounded-xl border border-ink/10 bg-ivory/60 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-bronze/60 hover:shadow-md"
+          <div className="mt-16 border-t border-ink/10 pt-8 md:mt-24">
+            <button
+              type="button"
+              aria-expanded={beatsOpen}
+              onClick={() => setBeatsOpen((v) => !v)}
+              className="group flex w-full items-center justify-between gap-6 py-2 text-left transition-opacity hover:opacity-90"
+            >
+              <div>
+                <p className="eyebrow text-bronze">Khám phá sâu hơn</p>
+                <h4 className="mt-1 font-display text-xl font-600 text-ink md:text-2xl">
+                  4 góc nhìn về chiếc áo
+                </h4>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-500 uppercase tracking-wider text-bronze">
+                <span>{beatsOpen ? "Thu gọn" : "Mở rộng"}</span>
+                <span
+                  aria-hidden
+                  className="inline-block text-2xl transition-transform duration-300"
+                  style={{ transform: beatsOpen ? "rotate(45deg)" : "none" }}
                 >
-                  <div>
-                    <span className="flex size-7 items-center justify-center rounded-full border border-bronze/50 font-display text-xs tabular-nums text-bronze group-hover:bg-bronze group-hover:text-ink">
-                      {pad(i + 1)}
-                    </span>
-                    <h3 className="mt-4 font-display text-xl font-700 leading-snug tracking-tight text-ink [text-wrap:balance]">
-                      {b.heading}
-                    </h3>
-                  </div>
-                  <p className="mt-4 text-[0.92rem] leading-relaxed text-ink/70">
-                    <RichText text={b.body} />
-                  </p>
-                </article>
-              ))}
-            </div>
+                  +
+                </span>
+              </div>
+            </button>
+
+            {beatsOpen && (
+              <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                {visual.beats.map((b, i) => (
+                  <article
+                    key={b.id}
+                    className="group relative flex flex-col justify-between rounded-xl border border-ink/10 bg-ivory/60 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-bronze/60 hover:shadow-md"
+                  >
+                    <div>
+                      <span className="flex size-7 items-center justify-center rounded-full border border-bronze/50 font-display text-xs tabular-nums text-bronze group-hover:bg-bronze group-hover:text-ink">
+                        {pad(i + 1)}
+                      </span>
+                      <h3 className="mt-4 font-display text-xl font-700 leading-snug tracking-tight text-ink [text-wrap:balance]">
+                        {b.heading}
+                      </h3>
+                    </div>
+                    <p className="mt-4 text-[0.92rem] leading-relaxed text-ink/70">
+                      <RichText text={b.body} />
+                    </p>
+                  </article>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
